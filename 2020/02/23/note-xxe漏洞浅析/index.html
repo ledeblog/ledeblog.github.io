@@ -80,12 +80,14 @@
 
 
 
-<meta name="description" content="记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+<meta name="description" content="XEE漏洞​    这两天看php:&#x2F;&#x2F;liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。   XXE漏洞，即是XML外部实体注入。 当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。另外php版本大于5.4.45的默认">
+<meta property="og:type" content="article">
+<meta property="og:title" content="note-xxe漏洞浅析">
+<meta property="og:url" content="http://yoursite.com/2020/02/23/note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="记录">
+<meta property="og:description" content="XEE漏洞​    这两天看php:&#x2F;&#x2F;liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。   XXE漏洞，即是XML外部实体注入。 当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。另外php版本大于5.4.45的默认">
+<meta property="article:published_time" content="2020-02-23T09:18:22.000Z">
+<meta property="article:modified_time" content="2020-02-23T11:47:23.481Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -117,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/page/2/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/02/23/note-xxe漏洞浅析/"/>
 
 
 
 
 
-  <title>归档 | 个人博客</title>
+  <title>note-xxe漏洞浅析 | 个人博客</title>
   
 
 
@@ -142,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     
 	
@@ -209,416 +211,154 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/23/note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dele">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">note-xxe漏洞浅析</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-23T17:18:22+08:00">
+                2020-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 21 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/02/16/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-02-16T19:56:24+08:00"
-              content="2020-02-16" >
-          02-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url">
-              
-                <span itemprop="name">python 多线程</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-30T21:20:47+08:00"
-              content="2020-01-30" >
-          01-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/30/sql%E6%B3%A8%E5%85%A5/" itemprop="url">
-              
-                <span itemprop="name">sql注入</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-30T21:16:57+08:00"
-              content="2020-01-30" >
-          01-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/29/upload-ichunqiu/" itemprop="url">
-              
-                <span itemprop="name">upload</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-29T21:14:15+08:00"
-              content="2020-01-29" >
-          01-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/" itemprop="url">
-              
-                <span itemprop="name">宽字节注入</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-20T21:11:05+08:00"
-              content="2020-01-20" >
-          01-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/17/python-json-beautifulsoup/" itemprop="url">
-              
-                <span itemprop="name">python-json-beautifulsoup</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-17T20:48:13+08:00"
-              content="2020-01-17" >
-          01-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/" itemprop="url">
-              
-                <span itemprop="name">python3-列表元组字典</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-16T20:46:55+08:00"
-              content="2020-01-16" >
-          01-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/15/next-%E6%97%A5%E5%BF%97%E5%92%8C%E5%BD%92%E6%A1%A3%E9%87%8D%E5%90%88%E9%97%AE%E9%A2%98/" itemprop="url">
-              
-                <span itemprop="name">next 日志和归档重合问题</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-01-15T20:45:19+08:00"
-              content="2020-01-15" >
-          01-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
+            
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/12/25/%E5%9C%A3%E8%AF%9E%E5%A4%BA%E6%97%97admin-wp/" itemprop="url">
-              
-                <span itemprop="name">圣诞夺旗admin-wp</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-25T20:39:22+08:00"
-              content="2019-12-25" >
-          12-25
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/12/12/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/" itemprop="url">
-              
-                <span itemprop="name">古典密码</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-12T20:33:30+08:00"
-              content="2019-12-12" >
-          12-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h4 id="XEE漏洞"><a href="#XEE漏洞" class="headerlink" title="XEE漏洞"></a>XEE漏洞</h4><p>​    这两天看php://liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。</p>
+<p>  XXE漏洞，即是<strong>XML外部实体注入。</strong></p>
+<p>当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。</p>
+<p>要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。<strong>另外php版本大于5.4.45的默认不解析外部实体</strong>……</p>
+<p>​    将payload注入XML文件中，一旦文件被执行，将会读取服务器上的本地文件，并对内网发起访问扫描内部网络端口。</p>
+<p>实际上读取服务器本地文件在web 题中很常见，构造xml代码，一旦有回显的情况，文件目录就几乎很容易看清，就算没有回显，也能通过类似于php流的方法进行写脚本以入侵；</p>
+<p><a href="https://www.freebuf.com/articles/web/177979.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/web/177979.html</a></p>
+<p><a href="https://blog.csdn.net/qq_40491569/article/details/83066200" target="_blank" rel="noopener">https://blog.csdn.net/qq_40491569/article/details/83066200</a></p>
+<p><a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p>
+<p>**<a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/23/note-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9Ephp-fiter%E6%B5%81%E6%B5%85%E6%9E%90/" rel="next" title="note-文件包含漏洞php://fiter流浅析">
+                <i class="fa fa-chevron-left"></i> note-文件包含漏洞php://fiter流浅析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/23/http%E5%8D%8F%E8%AE%AE-url-%E6%9E%84%E6%88%90/" rel="prev" title="http协议-url 构成">
+                http协议-url 构成 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -626,6 +366,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -646,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -689,6 +442,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#XEE漏洞"><span class="nav-number">1.</span> <span class="nav-text">XEE漏洞</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -836,6 +605,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
