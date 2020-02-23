@@ -57,10 +57,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cat32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cat16.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -80,12 +80,12 @@
 
 
 
-<meta name="description" content="记录">
+<meta name="description" content="记录个人学习的脚步">
 <meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
+<meta property="og:title" content="deleのblog">
 <meta property="og:url" content="http://yoursite.com/page/3/index.html">
-<meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="记录">
+<meta property="og:site_name" content="deleのblog">
+<meta property="og:description" content="记录个人学习的脚步">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -123,7 +123,7 @@
 
 
 
-  <title>个人博客</title>
+  <title>deleのblog</title>
   
 
 
@@ -157,7 +157,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">个人博客</span>
+        <span class="site-title">deleのblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -188,6 +188,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -229,11 +269,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人博客">
+      <meta itemprop="name" content="deleのblog">
     </span>
 
     
@@ -277,6 +317,25 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
 
           
 
@@ -300,13 +359,13 @@
 <p>单下划线开头 <strong>_foo</strong> 的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用 <strong>from xxx import *</strong> 而导入</p>
 <p><strong>__foo</strong> 代表类的私有成员，以双下划线开头和结尾的 <strong><em>\</em>foo**</strong> 代表 Python 里特殊方法专用的标识，如 <strong><em>\</em>init\</strong>()** 代表类的构造函数。</p>
 <p>Python 可以同一行显示多条语句，方法是用分号 <strong>;</strong> 分开，如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; print (&#39;hello&#39;);print (&#39;runoob&#39;);hellorunoob</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="builtin-name">print</span> (<span class="string">'hello'</span>);<span class="builtin-name">print</span> (<span class="string">'runoob'</span>);hellorunoob</span><br></pre></td></tr></table></figure>
 
 <p><a href="https://imgse.com/i/Q6YB7R" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/12/Q6YB7R.md.png" alt="Q6YB7R.md.png"></a></p>
 <p>python 最具特色的就是用缩进来写模块。</p>
 <p>缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行。</p>
 <p>但是我们可以使用斜杠（ \）将一行的语句分为多行显示，如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">total &#x3D; item_one + \        item_two + \        item_three</span><br></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">total</span> = <span class="keyword">item_one </span>+ \        <span class="keyword">item_two </span>+ \        <span class="keyword">item_three</span></span><br></pre></td></tr></table></figure>
 
 <h5 id="Python注释"><a href="#Python注释" class="headerlink" title="Python注释"></a><strong>Python注释</strong></h5><p>python中单行注释采用 # 开头。</p>
 <p>python 中多行注释使用三个单引号(‘’’)或三个双引号(“””)。</p>
@@ -316,7 +375,7 @@
 <h5 id="命令行调入-py文件"><a href="#命令行调入-py文件" class="headerlink" title="命令行调入.py文件"></a>命令行调入.py文件</h5><p>cmd 后，直接 &gt;python D:\test.py //拿在D盘的.py文件演示</p>
 <p><img src="https://s2.ax1x.com/2019/12/12/Q66gIO.png" alt="Q66gIO.png"></p>
 <h4 id="等待用户输入"><a href="#等待用户输入" class="headerlink" title="等待用户输入"></a>等待用户输入</h4><p>下面的程序执行后就会等待用户输入，按回车键后就会退出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from pip._vendor.distlib.compat import raw_inputprint(&quot;x\n&quot;)raw_input(&quot;按下 enter 键退出，其他任意键显示...\n&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from pip.<span class="module-access"><span class="module"><span class="identifier">_vendor</span>.</span></span>distlib.compat import raw<span class="constructor">_inputprint(<span class="string">"x\n"</span>)</span>raw<span class="constructor">_input(<span class="string">"按下 enter 键退出，其他任意键显示...\n"</span>)</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="看到这里我不觉想了想，为什么不直接学3-8呢，醉了"><a href="#看到这里我不觉想了想，为什么不直接学3-8呢，醉了" class="headerlink" title="看到这里我不觉想了想，为什么不直接学3.8呢，醉了"></a>看到这里我不觉想了想，为什么不直接学3.8呢，醉了</h4><p>Python 3 源码文件以 <strong>UTF-8</strong> 编码，所有字符串都是 unicode 字符串。</p>
 <h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><ul>
@@ -332,10 +391,10 @@
 <li><strong>float</strong> (浮点数), 如 1.23、3E-2</li>
 <li><strong>complex</strong> (复数), 如 1 + 2j、 1.1 + 2.2j</li>
 </ul>
-<h4 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 str&#x3D;&#39;Runoob&#39; print(str)                 # 输出字符串print(str[0:-1])           # 输出第一个到倒数第二个的所有字符print(str[0])              # 输出字符串第一个字符print(str[2:5])            # 输出从第三个开始到第五个的字符print(str[2:])             # 输出从第三个开始后的所有字符print(str * 2)             # 输出字符串两次print(str + &#39;你好&#39;)        # 连接字符串 print(&#39;------------------------------&#39;) print(&#39;hello\nrunoob&#39;)      # 使用反斜杠(\)+n转义特殊字符print(r&#39;hello\nrunoob&#39;)     # 在字符串前面添加一个 r，表示原始字符串，不会发生转义print (str + &quot;TEST&quot;) # 连接字符串RunoobRunooRnoonoobRunoobRunoobRunoob你好------------------------------hellorunoobhello\nrunoob</span><br></pre></td></tr></table></figure>
+<h4 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h4><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3 <span class="built_in">str</span>=<span class="string">'Runoob'</span> <span class="built_in">print</span>(<span class="built_in">str</span>)                 # 输出字符串<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">0</span>:<span class="number">-1</span>])           # 输出第一个到倒数第二个的所有字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">0</span>])              # 输出字符串第一个字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">2</span>:<span class="number">5</span>])            # 输出从第三个开始到第五个的字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">2</span>:])             # 输出从第三个开始后的所有字符<span class="built_in">print</span>(<span class="built_in">str</span> * <span class="number">2</span>)             # 输出字符串两次<span class="built_in">print</span>(<span class="built_in">str</span> + <span class="string">'你好'</span>)        # 连接字符串 <span class="built_in">print</span>(<span class="string">'------------------------------'</span>) <span class="built_in">print</span>(<span class="string">'hello\nrunoob'</span>)      # 使用反斜杠(\)+n转义特殊字符<span class="built_in">print</span>(r<span class="string">'hello\nrunoob'</span>)     # 在字符串前面添加一个 r，表示原始字符串，不会发生转义<span class="built_in">print</span> (<span class="built_in">str</span> + <span class="string">"TEST"</span>) # 连接字符串RunoobRunooRnoonoobRunoobRunoobRunoob你好------------------------------hellorunoobhello\nrunoob</span><br></pre></td></tr></table></figure>
 
 <p><strong>等待用户输入</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 input(&quot;\n\n按下 enter 键后退出。&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python3 input("\n\n按下 enter 键后退出。")</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h4><p>缩进相同的一组语句构成一个代码块，我们称之代码组。</p>
 <p>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。</p>
@@ -346,7 +405,7 @@
 <p>从某个模块中导入某个函数,格式为： <strong>from somemodule import somefunction</strong></p>
 <p>从某个模块中导入多个函数,格式为： <strong>from somemodule import firstfunc, secondfunc, thirdfunc</strong></p>
 <p><strong>Python3 基本数据类型</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 counter &#x3D; 100          # 整型变量miles   &#x3D; 1000.0       # 浮点型变量name    &#x3D; &quot;runoob&quot;     # 字符串 print (counter)print (miles)print (name)</span><br></pre></td></tr></table></figure>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3 counter = <span class="number">100</span>          # 整型变量miles   = <span class="number">1000.0</span>       # 浮点型变量name    = <span class="string">"runoob"</span>     # 字符串 print (counter)print (miles)print (name)</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>1、Python可以同时为多个变量赋值，如a, b = 1, 2。</li>
@@ -359,7 +418,7 @@
 <p>列表是写在方括号 <strong>[]</strong> 之间、用逗号分隔开的元素列表。</p>
 <p>和字符串一样，列表同样可以被索引和截取，列表被截取后返回一个包含所需元素的新列表。</p>
 <p>列表截取的语法格式如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量[头下标:尾下标]</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量<span class="selector-attr">[头下标:尾下标]</span></span><br></pre></td></tr></table></figure>
           
         
       
@@ -433,8 +492,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="dele" />
+            
               <p class="site-author-name" itemprop="name">dele</p>
-              <p class="site-description motion-element" itemprop="description">记录</p>
+              <p class="site-description motion-element" itemprop="description">记录个人学习的脚步</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -442,7 +505,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>

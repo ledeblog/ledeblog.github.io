@@ -57,10 +57,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cat32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cat16.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="sql注入">
 <meta property="og:url" content="http://yoursite.com/2020/01/30/sql%E6%B3%A8%E5%85%A5/index.html">
-<meta property="og:site_name" content="个人博客">
+<meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="&#x3D;，select,union ichunqiu的一道题，过滤的蛮基础的   1.打开网页显示是一个数值注入点 1.29.1  尝试注入 id &#x3D; 1 or 1 &#x3D; 1#  报错，应该是过滤了，尝试字符后发现是过滤等号 尝试了 like,rlike，!(&lt;&gt;),都不行，正则regexp可以 3.注入 id &#x3D; 1 or 1 regexp 1# 1.29.2 4.找回显点，发现select">
 <meta property="article:published_time" content="2020-01-30T13:16:57.000Z">
 <meta property="article:modified_time" content="2020-02-22T13:21:11.341Z">
@@ -125,7 +125,7 @@
 
 
 
-  <title>sql注入 | 个人博客</title>
+  <title>sql注入 | deleのblog</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">个人博客</span>
+        <span class="site-title">deleのblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -189,6 +189,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -230,11 +270,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人博客">
+      <meta itemprop="name" content="deleのblog">
     </span>
 
     
@@ -275,6 +315,25 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -421,8 +480,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="dele" />
+            
               <p class="site-author-name" itemprop="name">dele</p>
-              <p class="site-description motion-element" itemprop="description">记录</p>
+              <p class="site-description motion-element" itemprop="description">记录个人学习的脚步</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -430,7 +493,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>

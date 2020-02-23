@@ -57,10 +57,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cat32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cat16.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="宽字节注入">
 <meta property="og:url" content="http://yoursite.com/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/index.html">
-<meta property="og:site_name" content="个人博客">
+<meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="宽字节注入 url gbk转，&#x3D; -》%20,等 报错注入， 好复杂，没搞懂什么意思 是一个函数，没太懂，updatexml函数，具体再补充 &#x3D; 过滤代替，like、！（&lt;&gt;），正则regexp 括号过滤， 还有可以用burpsuite批量测试过滤语句 盲注 sleep()函数 select 语句 and sleep(),前为真执行sleep，前为假不执行 or sleep(),前真不">
 <meta property="og:image" content="https://s2.ax1x.com/2020/01/21/1kZWDS.png">
 <meta property="article:published_time" content="2020-01-20T13:11:05.000Z">
@@ -127,7 +127,7 @@
 
 
 
-  <title>宽字节注入 | 个人博客</title>
+  <title>宽字节注入 | deleのblog</title>
   
 
 
@@ -160,7 +160,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">个人博客</span>
+        <span class="site-title">deleのblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -191,6 +191,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -232,11 +272,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人博客">
+      <meta itemprop="name" content="deleのblog">
     </span>
 
     
@@ -277,6 +317,25 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -412,8 +471,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="dele" />
+            
               <p class="site-author-name" itemprop="name">dele</p>
-              <p class="site-description motion-element" itemprop="description">记录</p>
+              <p class="site-description motion-element" itemprop="description">记录个人学习的脚步</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -421,7 +484,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
