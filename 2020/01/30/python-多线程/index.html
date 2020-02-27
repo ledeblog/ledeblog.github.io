@@ -80,14 +80,14 @@
 
 
 
-<meta name="description" content="已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题， 独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；   不禁对python多线程到底如何实现起了兴趣， 要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统； 这些我们不关注，但python多线程是">
+<meta name="description" content="已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题， 独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；   不禁对python多线程到底如何实现起了兴趣， 要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python 多线程">
 <meta property="og:url" content="http://yoursite.com/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
 <meta property="og:site_name" content="deleのblog">
-<meta property="og:description" content="已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题， 独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；   不禁对python多线程到底如何实现起了兴趣， 要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统； 这些我们不关注，但python多线程是">
+<meta property="og:description" content="已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题， 独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；   不禁对python多线程到底如何实现起了兴趣， 要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；">
 <meta property="article:published_time" content="2020-01-30T13:20:47.000Z">
-<meta property="article:modified_time" content="2020-02-22T13:23:03.376Z">
+<meta property="article:modified_time" content="2020-02-27T14:01:28.709Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -355,6 +355,8 @@
 <p>独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；</p>
 <p>  不禁对python多线程到底如何实现起了兴趣，</p>
 <p>要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；</p>
+<a id="more"></a>
+
 <p>这些我们不关注，但python多线程是对于每一个任务进行合理的分配运行</p>
 <p>就例如，循环调用一个函数，这个函数需要一定时间，并且这个时间不固定，不固定的时间用在等待上，就比如网络连接，</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"><span class="keyword">from</span> threading import Thread</span><br><span class="line">def main(target):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span><span class="built_in"> port </span><span class="keyword">in</span> range(1,1024):</span><br><span class="line">        t = Thread(<span class="attribute">target</span>=portscan,args=(target,port))</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">def portscan(target,port):</span><br><span class="line">   <span class="built_in"> client </span>= socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    try:</span><br><span class="line">        client.connect((target, port))</span><br><span class="line"></span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"开放 [] %s:%d"</span> % (target, port))</span><br><span class="line">    except:</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"no %d"</span> % (port))</span><br></pre></td></tr></table></figure>
@@ -411,8 +413,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/16/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/18/%E7%AE%80%E4%BB%8B/" rel="prev" title="简介">
+                简介 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -485,7 +487,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -496,7 +498,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -507,7 +509,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

