@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="爬下vip电影​    实现这个关键点有两个： 1.解析网站， ​    首先上爱奇艺打开电影，ctrl c下url，再用http:&#x2F;&#x2F;jx.618g.com&#x2F;?url&#x3D;&#39;url&#39;; F12会发现视频播放其实是由若干的 .ts请求文件接成的视频，所以爬下来就行 2.直接上代码，多线程+requests">
 <meta property="article:published_time" content="2020-02-28T10:21:12.000Z">
-<meta property="article:modified_time" content="2020-02-28T10:30:46.344Z">
+<meta property="article:modified_time" content="2020-02-28T10:33:20.657Z">
 <meta property="article:author" content="dele">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -383,6 +383,9 @@
 
 <p>下面是西虹市首富的实例；</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Pool</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%03d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download2</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%4d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    po = Pool(<span class="number">4</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">        po.apply_async(download,args=(i,))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>,<span class="number">1700</span>):</span><br><span class="line">        po.apply_async(download2,args=(i,))</span><br><span class="line"></span><br><span class="line">    po.close()</span><br><span class="line">    po.join()</span><br></pre></td></tr></table></figure>
+
+<p>windows下视频合成命令 copy /b *.mp4 video.mp4</p>
+
       
     </div>
     
@@ -434,6 +437,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/01/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1-day1/" rel="prev" title="3.1php代码审计-day1">
+                3.1php代码审计-day1 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -514,7 +521,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -525,7 +532,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -536,7 +543,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
