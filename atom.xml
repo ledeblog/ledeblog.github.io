@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-01T12:25:42.394Z</updated>
+  <updated>2020-03-04T16:47:44.567Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,108 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.5-OWSAP TOP 10</title>
+    <link href="http://yoursite.com/2020/03/05/3.5-OWSAP-TOP-10/"/>
+    <id>http://yoursite.com/2020/03/05/3.5-OWSAP-TOP-10/</id>
+    <published>2020-03-04T16:47:44.000Z</published>
+    <updated>2020-03-04T16:47:44.567Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.5-kali下对靶机的实战渗透测试</title>
+    <link href="http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</id>
+    <published>2020-03-04T16:46:21.000Z</published>
+    <updated>2020-03-04T16:46:21.374Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.4-kali下嗅探工具ettercap</title>
+    <link href="http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7ettercap/"/>
+    <id>http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7ettercap/</id>
+    <published>2020-03-04T14:20:22.000Z</published>
+    <updated>2020-03-04T14:20:22.240Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.4-kali下密码爆破工具john</title>
+    <link href="http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7john/"/>
+    <id>http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7john/</id>
+    <published>2020-03-04T13:01:42.000Z</published>
+    <updated>2020-03-04T13:02:34.676Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/boy_from_village/article/details/80383419" target="_blank" rel="noopener">https://blog.csdn.net/boy_from_village/article/details/80383419</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/boy_from_village/article/details/80383419&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/boy_from_v
+      
+    
+    </summary>
+    
+    
+      <category term="-kali密码爆破工具" scheme="http://yoursite.com/categories/kali%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    
+      <category term="john" scheme="http://yoursite.com/tags/john/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kali工具 arp-scan 使用</title>
+    <link href="http://yoursite.com/2020/03/04/3.4-kali%E5%B7%A5%E5%85%B7-arp-scan-%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/03/04/3.4-kali%E5%B7%A5%E5%85%B7-arp-scan-%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-03-04T11:23:11.000Z</published>
+    <updated>2020-03-04T12:47:24.084Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    kali自带的一款轻量<strong>ARP扫描工具</strong>，该工具会自动解析MAC地址，得到对应硬件厂商。</p><h4 id="1-ARP"><a href="#1-ARP" class="headerlink" title="1.ARP"></a>1.ARP</h4><p>​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP/IP协议。</p><h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><p><a href="https://blog.csdn.net/weixin_43221560/article/details/90550294" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43221560/article/details/90550294</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    kali自带的一款轻量&lt;strong&gt;ARP扫描工具&lt;/strong&gt;，该工具会自动解析MAC地址，得到对应硬件厂商。&lt;/p&gt;
+&lt;h4 id=&quot;1-ARP&quot;&gt;&lt;a href=&quot;#1-ARP&quot; class=&quot;headerlink&quot; title=&quot;1.ARP&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="kali嗅探工具" scheme="http://yoursite.com/categories/kali%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    
+      <category term="arp-scan" scheme="http://yoursite.com/tags/arp-scan/"/>
+    
+  </entry>
   
   <entry>
     <title>3.1php代码审计-day1</title>
@@ -69,8 +171,8 @@
   
   <entry>
     <title>2.26安恒杯月赛wp</title>
-    <link href="http://yoursite.com/2020/02/27/2-26%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/"/>
-    <id>http://yoursite.com/2020/02/27/2-26%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/</id>
+    <link href="http://yoursite.com/2020/02/27/2.26-%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/"/>
+    <id>http://yoursite.com/2020/02/27/2.26-%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/</id>
     <published>2020-02-27T12:25:18.000Z</published>
     <updated>2020-02-27T14:00:13.893Z</updated>
     
@@ -150,8 +252,8 @@
   
   <entry>
     <title>2.23-html基础</title>
-    <link href="http://yoursite.com/2020/02/22/2-23-html%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2020/02/22/2-23-html%E5%9F%BA%E7%A1%80/</id>
+    <link href="http://yoursite.com/2020/02/22/2.23-html%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/02/22/2.23-html%E5%9F%BA%E7%A1%80/</id>
     <published>2020-02-22T09:43:05.000Z</published>
     <updated>2020-02-22T10:26:45.440Z</updated>
     
@@ -176,8 +278,8 @@
   
   <entry>
     <title>2.22-kali -binwalk</title>
-    <link href="http://yoursite.com/2020/02/22/2-22-kali-binwalk/"/>
-    <id>http://yoursite.com/2020/02/22/2-22-kali-binwalk/</id>
+    <link href="http://yoursite.com/2020/02/22/2.22-kali-binwalk/"/>
+    <id>http://yoursite.com/2020/02/22/2.22-kali-binwalk/</id>
     <published>2020-02-22T08:12:58.000Z</published>
     <updated>2020-02-22T08:24:38.655Z</updated>
     
@@ -199,10 +301,10 @@
   
   <entry>
     <title>2.21-php://liter 协议</title>
-    <link href="http://yoursite.com/2020/02/21/2-21-php-liter-%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://yoursite.com/2020/02/21/2-21-php-liter-%E5%8D%8F%E8%AE%AE/</id>
+    <link href="http://yoursite.com/2020/02/21/2.21-php-liter-%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://yoursite.com/2020/02/21/2.21-php-liter-%E5%8D%8F%E8%AE%AE/</id>
     <published>2020-02-21T12:00:48.000Z</published>
-    <updated>2020-03-01T12:33:32.235Z</updated>
+    <updated>2020-03-01T14:22:25.717Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task</a></p>]]></content>
     
@@ -225,8 +327,8 @@
   
   <entry>
     <title>2.20for april</title>
-    <link href="http://yoursite.com/2020/02/20/2-20for-april/"/>
-    <id>http://yoursite.com/2020/02/20/2-20for-april/</id>
+    <link href="http://yoursite.com/2020/02/20/2.20-for-april/"/>
+    <id>http://yoursite.com/2020/02/20/2.20-for-april/</id>
     <published>2020-02-20T05:34:54.000Z</published>
     <updated>2020-02-23T14:21:17.115Z</updated>
     
@@ -242,12 +344,12 @@
   
   <entry>
     <title>2.20渗透测试杂识</title>
-    <link href="http://yoursite.com/2020/02/20/2-20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/"/>
-    <id>http://yoursite.com/2020/02/20/2-20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/</id>
+    <link href="http://yoursite.com/2020/02/20/2.20-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/"/>
+    <id>http://yoursite.com/2020/02/20/2.20-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%9D%82%E8%AF%86/</id>
     <published>2020-02-20T05:26:14.000Z</published>
-    <updated>2020-03-01T12:25:47.238Z</updated>
+    <updated>2020-03-05T05:21:23.760Z</updated>
     
-    <content type="html"><![CDATA[<p>1.web容器：</p><p>  web容器是一种服务程序，在服务器一个端口就有一个提供相应服务的程序，而这个程序就是处理从客户端发出的请求，如JAVA中的Tomcat容器，调试JSP </p><p>ASP的IIS或PWS都是这样的容器。一个服务器可以有多个容器。</p><p>Tomcat和IIS、Apache</p><p>2.IIS解析漏洞</p><p>  IIS6.0有2种解析漏洞</p><p>\1. 目录解析</p><p>以*.asp命名的文件夹里的文件都将会被当成ASP文件执行。</p><p>\2. 文件解析</p><p>*.asp;.jpg 像这种畸形文件名在“；”后面的直接被忽略，也就是说当成 *.asp文件执行。</p><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>1.web容器：</p><p>  web容器是一种服务程序，在服务器一个端口就有一个提供相应服务的程序，而这个程序就是处理从客户端发出的请求，如JAVA中的Tomcat容器，调试JSP </p><p>ASP的IIS或PWS都是这样的容器。一个服务器可以有多个容器。</p><p>Tomcat和IIS、Apache</p><p>2.IIS解析漏洞</p><p>  IIS6.0有2种解析漏洞</p><p>\1. 目录解析</p><p>以*.asp命名的文件夹里的文件都将会被当成ASP文件执行。</p><p>\2. 文件解析</p><p>*.asp;.jpg 像这种畸形文件名在“；”后面的直接被忽略，也就是说当成 *.asp文件执行。</p><a id="more"></a><p>3.Access：</p><p>数据库文件的扩展名：MDB（JTT数据库文件，。mdb);</p><p>​    开发一些小型网站WEB应用程序时，用来存储数据。例如ASP+Access。这些应用程序都利用<a href="https://baike.baidu.com/item/ASP" target="_blank" rel="noopener">ASP</a>技术在<a href="https://baike.baidu.com/item/Internet" target="_blank" rel="noopener">Internet</a>Information Services运行．比较复杂的WEB应用程序则使用<a href="https://baike.baidu.com/item/PHP" target="_blank" rel="noopener">PHP</a>/MySQL或者ASP/[Microsoft SQL Server](<a href="https://baike.baidu.com/item/Microsoft" target="_blank" rel="noopener">https://baike.baidu.com/item/Microsoft</a> SQL Server/2947866)．</p><p>4.php-&gt;eval()执行代码</p>]]></content>
     
     <summary type="html">
     
@@ -269,6 +371,8 @@
     
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="渗透测试" scheme="http://yoursite.com/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -347,127 +451,6 @@
 &lt;p&gt;ichunqiu的一道题，过滤的蛮基础的&lt;/p&gt;
 &lt;p&gt;  1.打开网页显示是一个数值注入点&lt;/p&gt;
 &lt;p&gt;1.29.1&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>upload</title>
-    <link href="http://yoursite.com/2020/01/29/upload-ichunqiu/"/>
-    <id>http://yoursite.com/2020/01/29/upload-ichunqiu/</id>
-    <published>2020-01-29T13:14:15.000Z</published>
-    <updated>2020-02-27T14:02:36.487Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/" target="_blank" rel="noopener">http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/</a>  + u/2.php</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">T</span>&gt;</span>MYSQL<span class="tag">&lt;/<span class="name">T</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">U</span>&gt;</span>root<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span><span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">L</span>&gt;</span>utf8<span class="tag">&lt;/<span class="name">L</span>&gt;</span></span><br></pre></td></tr></table></figure><p>php菜刀</p> <a id="more"></a><p>过滤php</p><p>脚本一句话shell</p><p>​      </p><p>upload-2</p><p>涉及到文件类型限制和数据库操作</p><p>中国菜刀，</p><p>上传类型限制图片，用burpsuite repeater模块上传一句话php更改content-type为</p><p>image/jepg</p><p>2.1.1</p><p>连接后发现要登录数据里操作，配置</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">H</span>&gt;</span>localhost<span class="tag">&lt;/<span class="name">H</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;<span class="name">U</span>&gt;</span>ctf<span class="tag">&lt;/<span class="name">U</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span>ctfctfctf<span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br></pre></td></tr></table></figure><p>也就是数据库的用户名和密码。ok</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://f96a515a181e4c58b4c4ca051a5a96ccb616ba34919f4f34.changame.ichunqiu.com/&lt;/a&gt;  + u/2.php&lt;/p&gt;
-&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;T&lt;/span&gt;&amp;gt;&lt;/span&gt;MYSQL&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;T&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;H&lt;/span&gt;&amp;gt;&lt;/span&gt;localhost&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;H&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;U&lt;/span&gt;&amp;gt;&lt;/span&gt;root&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;U&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;P&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;P&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;L&lt;/span&gt;&amp;gt;&lt;/span&gt;utf8&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;L&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-&lt;p&gt;php菜刀&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>宽字节注入</title>
-    <link href="http://yoursite.com/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/"/>
-    <id>http://yoursite.com/2020/01/20/%E5%AE%BD%E5%AD%97%E8%8A%82%E6%B3%A8%E5%85%A5/</id>
-    <published>2020-01-20T13:11:05.000Z</published>
-    <updated>2020-02-27T14:00:47.771Z</updated>
-    
-    <content type="html"><![CDATA[<p>宽字节注入</p><p>url gbk转，= -》%20,等</p><p>报错注入，</p><p>好复杂，没搞懂什么意思</p><p>是一个函数，没太懂，updatexml函数，具体再补充</p><p>= 过滤代替，like、！（&lt;&gt;），正则regexp</p> <a id="more"></a><p>括号过滤，</p><p>还有可以用burpsuite批量测试过滤语句</p><p>盲注</p><p>sleep()函数</p><p>select 语句 and sleep(),前为真执行sleep，前为假不执行</p><p>or sleep(),前真不执行，前查询为假执行</p><p>if(a,b,c),</p><p>a=1,return b</p><p>a=0,return c</p><p>if()结合 substr()，结合sleep()</p><p>substr(‘字符’，返回的第几个字符，返回字符长度)</p><p>subsring(‘’ ,2) or substing(‘’ from 1)</p><p><img src="https://s2.ax1x.com/2020/01/21/1kZWDS.png" alt="1kZWDS.png"></p><p>过滤逗号，subsring 可以用from 代替， </p><p>if 用 select case when</p><p>字符型盲注</p><p>截取函数，</p><p>mid</p><p>substr/subsring</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;宽字节注入&lt;/p&gt;
-&lt;p&gt;url gbk转，= -》%20,等&lt;/p&gt;
-&lt;p&gt;报错注入，&lt;/p&gt;
-&lt;p&gt;好复杂，没搞懂什么意思&lt;/p&gt;
-&lt;p&gt;是一个函数，没太懂，updatexml函数，具体再补充&lt;/p&gt;
-&lt;p&gt;= 过滤代替，like、！（&amp;lt;&amp;gt;），正则regexp&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>python-json-beautifulsoup</title>
-    <link href="http://yoursite.com/2020/01/17/python-json-beautifulsoup/"/>
-    <id>http://yoursite.com/2020/01/17/python-json-beautifulsoup/</id>
-    <published>2020-01-17T12:48:13.000Z</published>
-    <updated>2020-02-27T14:01:32.779Z</updated>
-    
-    <content type="html"><![CDATA[<p>dump序列</p><p>loads  逆过程</p><p>配合显示字典</p><p>requests 爬 github网站的code等</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"><span class="comment">#auther:loop</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> loop_json</span><br><span class="line"></span><br><span class="line">key = <span class="string">"baidu"</span></span><br><span class="line"></span><br><span class="line">url = <span class="string">"https://api.github.com/search/code?q=%s"</span> % key</span><br><span class="line"></span><br><span class="line">TOKEN = <span class="string">'00e2b39028d493c56fc2737f7a9fa11011d02ef0'</span></span><br><span class="line">headers = &#123;<span class="string">"Authorization"</span>: <span class="string">"token %s"</span> % TOKEN&#125;</span><br><span class="line">params = &#123;<span class="string">"per_page"</span>: <span class="number">10</span>, <span class="string">"page"</span>: <span class="number">0</span>&#125;</span><br><span class="line"><span class="comment"># = requests.get(url, headers=headers, params=params)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#d = r.json()</span></span><br><span class="line"></span><br><span class="line">loop_json.abc()</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"test"</span></span><br></pre></td></tr></table></figure><p>Token是账户设置的一个值</p><p>key是查找内容</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">abc</span><span class="params">(ddd)</span>:</span></span><br><span class="line">    _dic = &#123;<span class="string">"name"</span>:<span class="string">"loop"</span>, <span class="string">"age"</span>:<span class="string">"12"</span>&#125;</span><br><span class="line"></span><br><span class="line">    s = json.dumps(_dic, indent=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#print type(s)</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"abc"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#d = json.loads(s)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#print d</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:<span class="comment">#只有主函数是本文件才会运行</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"loop"</span></span><br></pre></td></tr></table></figure><p>Beautifulsoup用来爬具体网页的信息</p><p><img src="https://s2.ax1x.com/2020/01/19/1CSj8s.png" alt="1CSj8s.png"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(html,<span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 缩进格式</span></span><br><span class="line">print(bs.prettify()) //会报错 <span class="string">'ascii'</span> codec can<span class="string">'t encode characters in position 359-367: ordinal not in range(128)</span></span><br><span class="line"><span class="string">解决：（python安装默认ascii，所以出现非ASCII 编码时会报错</span></span><br><span class="line"><span class="string">import sys  </span></span><br><span class="line"><span class="string">reload(sys)  </span></span><br><span class="line"><span class="string">sys.setdefaultencoding('</span>utf8<span class="string">') </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的所有内容</span></span><br><span class="line"><span class="string">print(bs.title) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的名称</span></span><br><span class="line"><span class="string">print(bs.title.name) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取title标签的文本内容</span></span><br><span class="line"><span class="string">print(bs.title.string) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取head标签的所有内容</span></span><br><span class="line"><span class="string">print(bs.head) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个div标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.div) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个div标签的id的值</span></span><br><span class="line"><span class="string">print(bs.div["id"])</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取第一个a标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.a) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签中的所有内容</span></span><br><span class="line"><span class="string">print(bs.find_all("a"))</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取id="u1"</span></span><br><span class="line"><span class="string">print(bs.find(id="u1")) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签，并遍历打印a标签中的href的值</span></span><br><span class="line"><span class="string">for item in bs.find_all("a"): </span></span><br><span class="line"><span class="string">print(item.get("href")) </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 获取所有的a标签，并遍历打印a标签的文本值</span></span><br><span class="line"><span class="string">for item in bs.find_all("a"): </span></span><br><span class="line"><span class="string">print(item.get_text())</span></span><br></pre></td></tr></table></figure><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line">reload(sys)  </span><br><span class="line">sys.setdefaultencoding('utf8') </span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line">from bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">url = <span class="string">"https://www.baidu.com"</span></span><br><span class="line"></span><br><span class="line">r = requests.<span class="keyword">get</span>(url)</span><br><span class="line">#<span class="built_in">print</span> r.content</span><br><span class="line">doc = r.content</span><br><span class="line">soup = <span class="type">BeautifulSoup</span>(doc,<span class="string">"html.parser"</span>)</span><br><span class="line"><span class="built_in">print</span> soup.prettify()</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;dump序列&lt;/p&gt;
-&lt;p&gt;loads  逆过程&lt;/p&gt;
-&lt;p&gt;配合显示字典&lt;/p&gt;
-&lt;p&gt;requests 爬 github网站的code等&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>python-requests</title>
-    <link href="http://yoursite.com/2020/01/17/python-requestss/"/>
-    <id>http://yoursite.com/2020/01/17/python-requestss/</id>
-    <published>2020-01-17T05:47:01.000Z</published>
-    <updated>2020-02-27T14:02:25.796Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'https://account.tophant.com/login.html?response_type=code&amp;client_id=b611bfe4ef417dbc&amp;state=2e509c092de6ba1bf39a6fff76dd9a76'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#requests的请求方法:get、post、put、delete、head、options等</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url)</span><br><span class="line">r = requests.post(url,<span class="attribute">data</span>=xxx)</span><br><span class="line">r = requests.put(url)</span><br><span class="line">r = requests.delete(url)</span><br><span class="line">r = requests.head(url)</span><br><span class="line">r = requests.options(url)</span><br><span class="line"></span><br><span class="line"><span class="comment">#代理认证：</span></span><br><span class="line">proxies = &#123;</span><br><span class="line">  <span class="string">"http"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">  <span class="string">"https"</span>: <span class="string">"http://127.0.0.1:8080"</span>,</span><br><span class="line">&#125;</span><br><span class="line">proxies = &#123;</span><br><span class="line">    <span class="string">"http"</span>: <span class="string">"http://user:pass@10.10.1.10:3128/"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应码</span></span><br><span class="line"><span class="builtin-name">print</span> r.status_code</span><br><span class="line"></span><br><span class="line"><span class="comment">#重定向</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">allow_redirects</span>=<span class="literal">False</span>)</span><br><span class="line"><span class="builtin-name">print</span> r.history</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看相应内容</span></span><br><span class="line"><span class="builtin-name">print</span> r.text</span><br><span class="line"><span class="builtin-name">print</span> r.content</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改系统默认编码格式</span></span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求头</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看请求参数</span></span><br><span class="line"><span class="builtin-name">print</span> r.request.body</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看响应头</span></span><br><span class="line"><span class="builtin-name">print</span> r.headers</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#保存返回的结果</span></span><br><span class="line">fh = open(<span class="string">"abc.png"</span>, <span class="string">'w'</span>)</span><br><span class="line">fh.write(r.content)</span><br><span class="line">fh.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看返回的编码格式</span></span><br><span class="line"><span class="builtin-name">print</span> r.encoding</span><br><span class="line"></span><br><span class="line"><span class="comment">#更改返回的编码格式</span></span><br><span class="line">r.encoding = <span class="string">"utf-8"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#添加header头</span></span><br><span class="line">headers = &#123;<span class="string">'user-agent'</span>: <span class="string">'my-aasdasdaspp/0.0.1'</span>, <span class="string">'asd'</span>:<span class="string">'hello world!'</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改cookie</span></span><br><span class="line">cookies = dict(<span class="attribute">cookies_are</span>=<span class="string">'working'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获得响应头中的cookie</span></span><br><span class="line"><span class="builtin-name">print</span> r.cookies[<span class="string">'domain'</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#如何发送post请求</span></span><br><span class="line">payload = &#123;<span class="string">'name'</span>: <span class="string">'loop'</span>, <span class="string">'age'</span>: <span class="string">'12'</span>&#125;</span><br><span class="line">r = requests.post(<span class="string">"http://httpbin.org/post"</span>, <span class="attribute">data</span>=payload)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#设置超时</span></span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=5)</span><br><span class="line">r = requests.<span class="builtin-name">get</span>(url, <span class="attribute">timeout</span>=None)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用session</span></span><br><span class="line">conn = requests.session()</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line">r = conn.<span class="builtin-name">get</span>(url)</span><br><span class="line"><span class="builtin-name">print</span> r.request.headers</span><br><span class="line"></span><br><span class="line"><span class="comment">#请求方法</span></span><br><span class="line">r = requests.post(url, <span class="attribute">proxies</span>=proxies, <span class="attribute">headers</span>=headers, <span class="attribute">cookies</span>=cookies, <span class="attribute">verify</span>=<span class="literal">False</span>, <span class="attribute">data</span>=payload)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2
-      
-    
-    </summary>
-    
-    
-      <category term="学习note" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0note/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python3-列表元组字典</title>
-    <link href="http://yoursite.com/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/"/>
-    <id>http://yoursite.com/2020/01/16/python3-%E5%88%97%E8%A1%A8%E5%85%83%E7%BB%84%E5%AD%97%E5%85%B8/</id>
-    <published>2020-01-16T12:46:55.000Z</published>
-    <updated>2020-02-27T14:01:23.146Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="python-day3-列表、元组、字典"><a href="#python-day3-列表、元组、字典" class="headerlink" title="python-day3 列表、元组、字典"></a>python-day3 列表、元组、字典</h3><h4 id="列表，"><a href="#列表，" class="headerlink" title="列表，"></a>列表，</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list1 = ['Google', 'Runoob', <span class="number">1997</span>, <span class="number">2000</span>];list2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];list3 = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>,<span class="string">"d"</span>]</span><br></pre></td></tr></table></figure><p>列表下标从0开始</p><h5 id="访问，"><a href="#访问，" class="headerlink" title="访问，"></a>访问，</h5><h5 id="删除"><a href="#删除" class="headerlink" title="删除,"></a>删除,</h5><p>del list[0];</p><h5 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h5><p>len（list）长度；+连接；*重复；3 in list 判断是否存在；</p><a id="more"></a><h5 id="访问，-1"><a href="#访问，-1" class="headerlink" title="访问，"></a>访问，</h5><p>：是之后，list[0:]，-号是从后往前；</p><h5 id="嵌套："><a href="#嵌套：" class="headerlink" title="嵌套："></a>嵌套：</h5><p>x=[],n=[],y=[x,n];</p><h5 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h5><p> len(),max/min(),</p><h5 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h5><p>list.append(obj)在列表末尾添加新的对象<br>list.count(obj)统计某个元素在列表中出现的次数<br>list.extend(seq)在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）<br>list.index(obj)从列表中找出某个值第一个匹配项的索引位置<br>list.insert(index, obj)将对象插入列表<br>list.pop([index=-1])移除列表中的一个元素（默认最后一个元素），并且返回该元素的值<br>list.remove(obj)移除列表中某个值的第一个匹配项<br>list.reverse()反向列表中元素<br>list.sort( key=None, reverse=False)对原列表进行排序<br>list.clear()清空列表<br>list.copy()复制列表</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list = [<span class="string">1,2,3,4</span>]list.append('name')print(list)print(len(list))print(list*4)list.remove('name')print(list)for i in list:    print(i)n = [<span class="string">1,2</span>]x = [<span class="string">1,2,3</span>]list = [<span class="string">n,x</span>]print(list)print(list[<span class="string">0</span>][<span class="symbol">1</span>])//[<span class="string">1, 2, 3, 4, 'name'</span>]5[<span class="string">1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name', 1, 2, 3, 4, 'name'</span>][<span class="symbol">1, 2, 3, 4</span>]1234[[1, 2], [1, 2, 3]]2</span><br></pre></td></tr></table></figure><h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>Python 的元组与列表类似，不同之处在于元组的元素不能修改。</p><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">tup1</span>=(<span class="string">'z'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>)tup2=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)tup3=<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>print(<span class="keyword">type</span>(tup3))</span><br></pre></td></tr></table></figure><p>空元组：tup1=（）；</p><p>元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用：</p><h5 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h5><p>一样用[]；</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tup1 = (<span class="string">'Google'</span>, <span class="string">'Runoob'</span>, <span class="number">1997</span>, <span class="number">2000</span>)tup2 = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span> ) print (<span class="string">"tup1[0]: "</span>, tup1[<span class="number">0</span>])print (<span class="string">"tup2[1:5]: "</span>, tup2[<span class="number">1</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></figure><p>和列表一致，无法修改，除非重新赋值到另一个元组；</p><p>无法删除，只可以全部删除</p><p>空数组无法输出，输出会报错；</p><h5 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h5><p>len();+;*;in ;for x in tup();</p><p>id()查看元组地址；</p><h4 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h4><p>字典是另一种可变容器模型，且可存储任意类型对象。</p><p>字典的每个键值(key=&gt;value)对用冒号(<strong>:</strong>)分割，每个对之间用逗号(<strong>,</strong>)分割，整个字典包括在花括号(<strong>{})</strong>中；</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;key1 : value1, key2 : value2 &#125;dict = &#123;'Alice': '<span class="number">2341</span>', 'Beth': '<span class="number">9102</span>', 'Cecil': '<span class="number">3258</span>'&#125;</span><br></pre></td></tr></table></figure><h5 id="访问-1"><a href="#访问-1" class="headerlink" title="访问"></a>访问</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: 7, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; <span class="builtin-name">print</span> (<span class="string">"dict['Name']: "</span>, dict[<span class="string">'Name'</span>])<span class="builtin-name">print</span> (<span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>])</span><br></pre></td></tr></table></figure><h5 id="修改字典"><a href="#修改字典" class="headerlink" title="修改字典"></a>修改字典</h5><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Runoob'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125; dict[<span class="string">'Age'</span>] = <span class="number">8</span>               # 更新 Agedict[<span class="string">'School'</span>] = <span class="string">"菜鸟教程"</span>  # 添加信息</span><br><span class="line">del dict[<span class="string">'Name'</span>] # 删除键 <span class="string">'Name'</span>dict.clear()     # 清空字典del dict         # 删除字典</span><br></pre></td></tr></table></figure><h5 id="字典特性"><a href="#字典特性" class="headerlink" title="字典特性"></a>字典特性</h5><p>1.不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，否则输入后定义的键值</p><p>2.键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行，如下实例：</p><h5 id="内置方法"><a href="#内置方法" class="headerlink" title="内置方法"></a>内置方法</h5><table><thead><tr><th>1</th><th><a href="https://www.runoob.com/python3/python3-att-dictionary-clear.html" target="_blank" rel="noopener">radiansdict.clear()</a> 删除字典内所有元素</th></tr></thead><tbody><tr><td>2</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-copy.html" target="_blank" rel="noopener">radiansdict.copy()</a> 返回一个字典的浅复制</td></tr><tr><td>3</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-fromkeys.html" target="_blank" rel="noopener">radiansdict.fromkeys()</a>  创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值</td></tr><tr><td>4</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-get.html" target="_blank" rel="noopener">radiansdict.get(key, default=None)</a> 返回指定键的值，如果值不在字典中返回default值</td></tr><tr><td>5</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-in.html" target="_blank" rel="noopener">key in dict</a> 如果键在字典dict里返回true，否则返回false</td></tr><tr><td>6</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-items.html" target="_blank" rel="noopener">radiansdict.items()</a> 以列表返回可遍历的(键, 值) 元组数组</td></tr><tr><td>7</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-keys.html" target="_blank" rel="noopener">radiansdict.keys()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td></tr><tr><td>8</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-setdefault.html" target="_blank" rel="noopener">radiansdict.setdefault(key, default=None)</a>     和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default</td></tr><tr><td>9</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-update.html" target="_blank" rel="noopener">radiansdict.update(dict2)</a> 把字典dict2的键/值对更新到dict里</td></tr><tr><td>10</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-values.html" target="_blank" rel="noopener">radiansdict.values()</a> 返回一个迭代器，可以使用 list() 来转换为列表</td></tr><tr><td>11</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-pop.html" target="_blank" rel="noopener">pop(key[,default])</a> 删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</td></tr><tr><td>12</td><td><a href="https://www.runoob.com/python3/python3-att-dictionary-popitem.html" target="_blank" rel="noopener"> popitem()</a> 随机返回并删除字典中的最后一对键和值。</td></tr></tbody></table><p>input（）函数</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;python-day3-列表、元组、字典&quot;&gt;&lt;a href=&quot;#python-day3-列表、元组、字典&quot; class=&quot;headerlink&quot; title=&quot;python-day3 列表、元组、字典&quot;&gt;&lt;/a&gt;python-day3 列表、元组、字典&lt;/h3&gt;&lt;h4 id=&quot;列表，&quot;&gt;&lt;a href=&quot;#列表，&quot; class=&quot;headerlink&quot; title=&quot;列表，&quot;&gt;&lt;/a&gt;列表，&lt;/h4&gt;&lt;figure class=&quot;highlight lsl&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;list1 = [&#39;Google&#39;, &#39;Runoob&#39;, &lt;span class=&quot;number&quot;&gt;1997&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2000&lt;/span&gt;];list2 = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; ];list3 = [&lt;span class=&quot;string&quot;&gt;&quot;a&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;b&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;c&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;d&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;列表下标从0开始&lt;/p&gt;
-&lt;h5 id=&quot;访问，&quot;&gt;&lt;a href=&quot;#访问，&quot; class=&quot;headerlink&quot; title=&quot;访问，&quot;&gt;&lt;/a&gt;访问，&lt;/h5&gt;&lt;h5 id=&quot;删除&quot;&gt;&lt;a href=&quot;#删除&quot; class=&quot;headerlink&quot; title=&quot;删除,&quot;&gt;&lt;/a&gt;删除,&lt;/h5&gt;&lt;p&gt;del list[0];&lt;/p&gt;
-&lt;h5 id=&quot;操作符&quot;&gt;&lt;a href=&quot;#操作符&quot; class=&quot;headerlink&quot; title=&quot;操作符&quot;&gt;&lt;/a&gt;操作符&lt;/h5&gt;&lt;p&gt;len（list）长度；+连接；*重复；3 in list 判断是否存在；&lt;/p&gt;
     
     </summary>
     
