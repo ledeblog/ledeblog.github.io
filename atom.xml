@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-06T02:52:54.172Z</updated>
+  <updated>2020-03-06T08:16:39.263Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,52 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>3.6-linux基础</title>
-    <link href="http://yoursite.com/2020/03/06/3-6-linux%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2020/03/06/3-6-linux%E5%9F%BA%E7%A1%80/</id>
-    <published>2020-03-06T02:52:54.000Z</published>
-    <updated>2020-03-06T02:52:54.172Z</updated>
+    <title>3.6-物联网作业-传传感器</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%9C%E4%B8%9A-%E4%BC%A0%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%9C%E4%B8%9A-%E4%BC%A0%E4%BC%A0%E6%84%9F%E5%99%A8/</id>
+    <published>2020-03-06T08:15:06.000Z</published>
+    <updated>2020-03-06T08:16:39.263Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    设计作业1：基于APP Inventor的加速度传感器和方向传感器物联网应用开发</p><p>（1）PPT 1份，10页以内（2）APP操作视频</p><p><a href="https://imgchr.com/i/3q5akj" target="_blank" rel="noopener"><img src="/images/3q5akj.png" alt="3q5akj.png"></a></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    设计作业1：基于APP Inventor的加速度传感器和方向传感器物联网应用开发&lt;/p&gt;
+&lt;p&gt;（1）PPT 1份，10页以内（2）APP操作视频&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://imgchr.com/i/3q5akj&quot; target=&quot;_blan
+      
     
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-linux基础</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-linux%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-linux%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-03-06T02:52:54.000Z</published>
+    <updated>2020-03-06T07:26:10.741Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="linux操作系统课记录"><a href="#linux操作系统课记录" class="headerlink" title="linux操作系统课记录"></a>linux操作系统课记录</h3><p>​    课上演示linux版本centos6.0+；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;linux操作系统课记录&quot;&gt;&lt;a href=&quot;#linux操作系统课记录&quot; class=&quot;headerlink&quot; title=&quot;linux操作系统课记录&quot;&gt;&lt;/a&gt;linux操作系统课记录&lt;/h3&gt;&lt;p&gt;​    课上演示linux版本centos6.0+；&lt;/p
+      
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
     
   </entry>
   
@@ -188,11 +223,11 @@
   </entry>
   
   <entry>
-    <title>3.5-kali下对靶机的实战渗透测试</title>
+    <title>kali下对靶机DC-1的实战渗透测试</title>
     <link href="http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     <id>http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</id>
     <published>2020-03-04T16:46:21.000Z</published>
-    <updated>2020-03-05T14:46:14.628Z</updated>
+    <updated>2020-03-06T08:15:18.721Z</updated>
     
     <content type="html"><![CDATA[<p>​            <strong>记录渗透测试靶机练习-DC-1</strong></p><p>​    靶机来源vulnhub;</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">https:</span><span class="comment">//www.vulnhub.com/?page=1</span></span><br></pre></td></tr></table></figure><p>DC-1</p><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">描述</span><br><span class="line">DC-<span class="number">1</span>是一个专门构建的易受攻击的实验室，目的是获得渗透测试领域的经验。</span><br><span class="line"></span><br><span class="line">它的设计初学者是一个挑战，但是它的难易程度取决于您的技能和知识以及学习能力。</span><br><span class="line"></span><br><span class="line">要成功完成此挑战，您需要具备Linux技能，熟悉Linux命令行以及具有基本渗透测试工具的经验，例如可以在Kali Linux或Parrot Security OS上找到的工具。</span><br><span class="line"></span><br><span class="line">有多种获<span class="built_in">得root</span>的方法，但是，我包括了一些标志，这些标志包含了初学者的线索。</span><br><span class="line"></span><br><span class="line">总共有五个标志，但是最终目标是<span class="built_in">在root</span>的主目录中找到并读取该标志。您甚至不需要成<span class="built_in">为root</span>用户即可执行此操作，但是，您将需<span class="built_in">要root</span>特权。</span><br><span class="line"></span><br><span class="line">根据您的技能水平，您可能可以跳过查找大多数这些标志并直接获<span class="built_in">得root</span>资格。</span><br><span class="line"></span><br><span class="line">初学者可能会遇到以前从未遇到过的挑战，但是Google搜索应该是获得完成此挑战所需信息所需要的全部。</span><br></pre></td></tr></table></figure><h4 id="开始："><a href="#开始：" class="headerlink" title="开始："></a>开始：</h4><p>​    靶机页面：</p><p><a href="https://imgchr.com/i/37lLfe" target="_blank" rel="noopener"><img src="/images/37lLfe.png" alt="37lLfe.png"></a></p><p>有一些操作系统的信息，Debian GNU/Linux 7,显示需要登录，那可能就需要后续密码的爆破；linux的系统密码在之前有温习过；</p><h4 id="嗅探："><a href="#嗅探：" class="headerlink" title="嗅探："></a>嗅探：</h4><p>其实相当于内网渗透，目标主机于本机位于同一个局域网下，用arp-scan探测</p><p><a href="https://imgchr.com/i/378LfU" target="_blank" rel="noopener"><img src="/images/378LfU.png" alt="378LfU.png"></a></p><p>目标IP：192.168.0.108；</p><p>信息收集其实算跳过了，因为直接到的内网渗透；</p><h4 id="端口扫描："><a href="#端口扫描：" class="headerlink" title="端口扫描："></a>端口扫描：</h4><p><a href="https://imgchr.com/i/37aQNn" target="_blank" rel="noopener"><img src="/images/37aQNn.png" alt="37aQNn.png"></a></p><p>这个只扫了有限的端口；</p><p><a href="https://imgchr.com/i/37asgK" target="_blank" rel="noopener"><img src="/images/37asgK.png" alt="37asgK.png"></a></p><p>-p- 命令扫描0-65535个</p><p>看到有22/80端口开放；</p><p>访问192.168.0.108:80</p><p><a href="https://imgchr.com/i/37w2tA" target="_blank" rel="noopener"><img src="/images/37w2tA.png" alt="37w2tA.png"></a><br>看得到Drupal site，框架是Drupal；</p><p>想想看msf对这个框架有没有方法，search一下</p><p><a href="https://imgchr.com/i/37wfpt" target="_blank" rel="noopener"><img src="/images/37wfpt-1583394228188.png" alt="37wfpt.png"></a></p><p>选取一个等级为excellent的使用；</p><p>show options设置rhost 192.168.0.108</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这里<span class="number">2018</span><span class="number">-3</span><span class="number">-28</span>的漏洞是Drupal 在<span class="number">3</span>月<span class="number">28</span>日爆出的一个远程代码执行漏洞，CVE编号CVE<span class="number">-2018</span><span class="number">-7600</span>。</span><br></pre></td></tr></table></figure><p>exploit;</p><p>会自动建立session,输入shell后可以对目标靶机操作</p><p>所在的目录是网站的绝对路径 <code>/var/www</code></p><p><a href="https://imgchr.com/i/37yvcR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/05/37yvcR.png" alt="37yvcR.png"></a></p><h4 id="get-shell"><a href="#get-shell" class="headerlink" title="get shell"></a>get shell</h4><p>ls查看</p><p><a href="https://imgchr.com/i/376ZjI" target="_blank" rel="noopener"><img src="/images/376ZjI.md.png" alt="376ZjI.md.png"></a></p><p>发现 flag1.txt;</p><p><img src="/images/376yvR.png" alt="376yvR.png"></p><p>提醒查看config file，也就是配置文件；</p><p>drupal默认配置文件是在sites/default/setting.php下</p><p>打卡；</p><p><a href="https://imgchr.com/i/372Sun" target="_blank" rel="noopener"><img src="/images/372Sun.png" alt="372Sun.png"></a></p><p>是网站数据库的内容，有数据库用户名等信息，接下来应该是要到网站数据库中找线索；</p><p>这里之后本来是卡住了的，看了有两个思路，</p><p>1.是获取linux下的用户名，hydra+john the Ripper爆破，爆破后使用ssh远程连接登录，权限够进入mysql查看用户，再修改密码的sha512值，然后发现还是要提权，提权后发现flag；</p><p>2.然后另一个就是用python写shell交互命令，然后直接登录MySQL重置密码获得提示，再之后进入用户页面找机会提权；</p><p>绕不过的提权，学习目录上加上一个linux提权；</p><h4 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h4><p><a href="https://imgchr.com/i/37ToR0" target="_blank" rel="noopener"><img src="/images/37ToR0.th.png" alt="37ToR0.th.png"></a></p><p>这里要提一下linux下的drupal用户和密码加密</p><p><a href="https://www.isfirst.net/drupal/drupal-reset-password" target="_blank" rel="noopener">https://www.isfirst.net/drupal/drupal-reset-password</a></p><p>之后就又获得一个tips，通过 -exec 命令来获得密码一类；</p><p><img src="/images/3777tA.png" alt="3777tA.png"></p><p>其实perm 是linux下find命令的一个参数，例如，</p><p>find -perm，即根据文件权限查找文件；</p><p>综合之下就是用find + exec；</p><p>这里两种思路汇聚，前面第一种是ssh远程爆破flag4密码登录，另一种使用python交互shell找到/home/flag4文件夹下；</p><p>之后就都是利用find进行提权；</p><p><img src="/images/3HpM6J.png" alt="3HpM6J.png"></p><p>这里cat 命令显示权限不够，于是准备提权；</p><p><strong>SUID提权</strong>：<a href="https://blog.csdn.net/qq_36119192/article/details/84872644" target="_blank" rel="noopener">https://blog.csdn.net/qq_36119192/article/details/84872644</a></p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">find</span> flag4.txt -exec <span class="string">"whoami"</span> \;</span><br><span class="line">用 -exec 查看文件权限；</span><br><span class="line"><span class="builtin-name">find</span> flag4.txt -exec <span class="string">"/bin/sh"</span> \;</span><br><span class="line"><span class="comment"># 这段命令的意思就是先使用 find 命令查找 flag4.txt 文件，然后使用它的参数 -exec 来执行命令 /bin/sh ，这样我们就能获取到 root 权限了！</span></span><br></pre></td></tr></table></figure><p><a href="https://imgchr.com/i/3HP7Nt" target="_blank" rel="noopener"><img src="/images/3HP7Nt.png" alt="3HP7Nt.png"></a></p><p>到这就结束了；</p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>​    难点其实不在嗅探探查的过程，因为是靶机的原因，直接内网探测，框架的以及tips都给了，利用nmap、msf都是利用工具的过程，后面在Linux里的提权还有找线索的过程对我很难，证明linux还是要好好学，还有提权，当然，没有前面的漏洞也没有办法右后面的提权；</p><ul><li>arp-scan、nmap扫描工具的使用</li><li>Drupal框架的了解以及MSF操作台对其漏洞的使用</li><li>hydra+john the Ripper的弱口令密码爆破</li><li>爆破后使用ssh远程连接登录</li><li>find命令结合-exec参数的使用</li><li>linux下suid的提权</li><li>Drupal忘记管理密码重置管理密码的四种方法</li></ul><p>参考链接：</p><p><a href="http://liuwx.cn/Vulnhub-DC-1.html" target="_blank" rel="noopener">http://liuwx.cn/Vulnhub-DC-1.html</a></p><p><a href="https://www.isfirst.net/drupal/drupal-reset-password" target="_blank" rel="noopener">https://www.isfirst.net/drupal/drupal-reset-password</a></p><p><a href="https://blog.csdn.net/qq_41954384/article/details/92164443" target="_blank" rel="noopener">https://blog.csdn.net/qq_41954384/article/details/92164443</a></p>]]></content>
     
@@ -510,34 +545,6 @@
       <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
     
       <category term="binwalk" scheme="http://yoursite.com/tags/binwalk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2.21-php://liter 协议</title>
-    <link href="http://yoursite.com/2020/02/21/2.21-php-liter-%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://yoursite.com/2020/02/21/2.21-php-liter-%E5%8D%8F%E8%AE%AE/</id>
-    <published>2020-02-21T12:00:48.000Z</published>
-    <updated>2020-03-05T06:43:05.288Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/fuckcat_2333/article/details/52132559?depth_1-utm_source=distribute.pc_relevant.none-task&amp;amp;utm_source=d
-      
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="文件包含" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/>
-    
-      <category term="php" scheme="http://yoursite.com/tags/php/"/>
     
   </entry>
   
