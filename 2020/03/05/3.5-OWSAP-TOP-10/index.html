@@ -82,14 +82,14 @@
 
 
 
-<meta name="description" content="记录个人学习的脚步">
+<meta name="description" content="TOP1 注入​    当将不受信任的数据作为命令或查询的一部分发送到解释器时，会出现诸如SQL，NoSQL，OS和LDAP注入之类的注入漏洞。攻击者的敌对数据可能会诱使解释器执行未经预期的命令或未经适当授权而访问数据。 ​    注入接触最多的是SQL注入，之前安恒杯月赛还接触了 flask相关的ssti注入； TOP2 Broken Authentication（失效的身份认证和会话管理）​">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.5-OWSAP TOP 10">
+<meta property="og:title" content="OWSAP TOP 10总结">
 <meta property="og:url" content="http://yoursite.com/2020/03/05/3.5-OWSAP-TOP-10/index.html">
 <meta property="og:site_name" content="deleのblog">
-<meta property="og:description" content="记录个人学习的脚步">
+<meta property="og:description" content="TOP1 注入​    当将不受信任的数据作为命令或查询的一部分发送到解释器时，会出现诸如SQL，NoSQL，OS和LDAP注入之类的注入漏洞。攻击者的敌对数据可能会诱使解释器执行未经预期的命令或未经适当授权而访问数据。 ​    注入接触最多的是SQL注入，之前安恒杯月赛还接触了 flask相关的ssti注入； TOP2 Broken Authentication（失效的身份认证和会话管理）​">
 <meta property="article:published_time" content="2020-03-04T16:47:44.000Z">
-<meta property="article:modified_time" content="2020-03-04T16:47:44.567Z">
+<meta property="article:modified_time" content="2020-03-05T16:41:05.841Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>3.5-OWSAP TOP 10 | deleのblog</title>
+  <title>OWSAP TOP 10总结 | deleのblog</title>
   
 
 
@@ -284,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">3.5-OWSAP TOP 10</h1>
+          <h1 class="post-title" itemprop="name headline">OWSAP TOP 10总结</h1>
         
 
         <div class="post-meta">
@@ -306,6 +306,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -353,7 +375,28 @@
       
 
       
-        
+        <h3 id="TOP1-注入"><a href="#TOP1-注入" class="headerlink" title="TOP1 注入"></a>TOP1 注入</h3><p>​    当将不受信任的数据作为命令或查询的一部分发送到解释器时，会出现诸如SQL，NoSQL，OS和LDAP注入之类的注入漏洞。攻击者的敌对数据可能会诱使解释器执行未经预期的命令或未经适当授权而访问数据。</p>
+<p>​    注入接触最多的是SQL注入，之前安恒杯月赛还接触了 flask相关的ssti注入；</p>
+<h3 id="TOP2-Broken-Authentication（失效的身份认证和会话管理）"><a href="#TOP2-Broken-Authentication（失效的身份认证和会话管理）" class="headerlink" title="TOP2 Broken Authentication（失效的身份认证和会话管理）"></a>TOP2 Broken Authentication（<strong>失效的身份认证和会话管理</strong>）</h3><p>​    与认证和会话管理相关的应用程序功能往往得不到正确实施，导致了攻击者可以破坏密码，密钥，会话令牌或实施漏洞冒充其他用户身份。<br>危害如下：<br>​    这些漏洞可能导致部分甚至全部账户遭受攻击，一旦攻击成功，攻击者就能执行合法的任何操作<br>如何防范：<br>1.使用内置的会话管理功能<br>2.通过认证的问候<br>3.使用单一的入口点<br>4.确保在一开始登录SSL保护的网页</p>
+<h3 id="TOP3-XSS（跨站脚本攻击）"><a href="#TOP3-XSS（跨站脚本攻击）" class="headerlink" title="TOP3-XSS（跨站脚本攻击）"></a>TOP3-XSS（跨站脚本攻击）</h3><p>  跨站脚本是经常出现在web应用中的安全漏洞，其允许恶意web用户将代码植入到提供给其他用户使用的页面中，这些代码包括HTML代码和客户端脚本。黑客界公识是xss是新型的“缓冲区溢出攻击”</p>
+<p>种类：<br>存储型，反射型，DOM型<br>如何防范：<br>1.验证输入<br>2.编码输出（用来确保输入的字符被视为数据，而不是作为html被浏览器所解析）</p>
+<p> 感觉XEE也属于XSS；</p>
+<h3 id="TOP4-不安全的对象直接引用"><a href="#TOP4-不安全的对象直接引用" class="headerlink" title="TOP4-不安全的对象直接引用"></a>TOP4-不安全的对象直接引用</h3><p>  一个已经授权的用户通过更改访问时的一个参数，从而访问到原本其并没有得到授权的对象。</p>
+<p>如何防范：<br>1.使用基于用户或会话的间接对象访问，这样可防止攻击者直接攻击为授权资源<br>2.访问检查：对任何来自不受信源所使用的所有对象进行访问控制检查<br>3.避免在url或网页中直接引用内部文件名或数据库关键字<br>4.验证用户输入和url请求，拒绝包含./ ../的请求</p>
+<p>  感觉linux下suid提权是这方面的，</p>
+<h3 id="TOP5-跨站请求伪造（CSRF）"><a href="#TOP5-跨站请求伪造（CSRF）" class="headerlink" title="TOP5-跨站请求伪造（CSRF）"></a>TOP5-跨站请求伪造（CSRF）</h3><p>​    跨站请求伪造，攻击者通过用户的浏览器注入额外的网络请求，破坏网络会话的完整性。浏览器的安全策略是允许当前界面发送到任何地址，因此也意味着如果用户浏览了自己无法控制的资源时，攻击者可以通过控制页面的内容来控制浏览器，发送其精心构造的请求，这些精心构造的请求很难和合法的请求区分开。</p>
+<p>如何防范：<br>1.给每个HTTP请求添加一个不可预测的令牌，并保证该令牌对每个用户会话来说是唯一的。<br>最好的办法就是将独有的令牌包含在隐藏字段中，通过HTTP请求发送，避免在URL中暴露出来。<br>2.要求用户重新认证或判断他们是一个真实的用户。</p>
+<h3 id="TOP6-安全配置错误"><a href="#TOP6-安全配置错误" class="headerlink" title="TOP6-安全配置错误"></a>TOP6-安全配置错误</h3><p>​    安全配置错误可以发生在一个应用程序堆栈的任何层面，包括平台，web服务器，应用服务器，数据库，架构和自定义的代码。攻击者通过访问默认账户，未使用的网页，未安装的补丁的漏洞，未被保护的文件和目录等，以获得对系统为授权的访问。</p>
+<p> 危害如下；</p>
+<p> 系统可能在未知的情况下被完全攻破，用户数据可能随着时间被全部盗走或篡改。甚至导致整个系统被完全破坏</p>
+<p>如何防范：<br>1.自动化安装部署<br>2.及时了解并部署每个环节的软件更新和补丁信息<br>3.实施漏洞扫描和安全审计</p>
+<p> 和利用drupal 漏洞获得远程权限很相似；</p>
+<h3 id="TOP7-限制URL访问失败（缺少功能级访问控制）"><a href="#TOP7-限制URL访问失败（缺少功能级访问控制）" class="headerlink" title="TOP7-限制URL访问失败（缺少功能级访问控制）"></a>TOP7-限制URL访问失败（缺少功能级访问控制）</h3><p>​    这个漏洞也是与认证相关的，这种漏洞具体是指在系统已经对url的访问做了限制的情况下，但这种限制并没有生效。常见的例子是系统没有对用户进行角色的检查，以及用户通过修改URL的action并指向未被授权页面就能访问该页面同样是个漏洞<br>危害如下：<br>​    攻击者很容易就能把网址改成享有特权的网页，这样就可以使用匿名或普通用户访问未授保护的私人页面，从而提升未授权功能和相关数据信息</p>
+<p>如何防范：<br>1.检查管理权限的过程并确保能够容易进行升级和审计<br>2.默认缺省情况下，应该拒绝所有访问的执行权限。对于每个功能得访问，需要明确的角色授权<br>3.检查每个功能分配的权限合理有效</p>
+<h3 id="TOP8-未验证的重定向和转发"><a href="#TOP8-未验证的重定向和转发" class="headerlink" title="TOP8-未验证的重定向和转发"></a>TOP8-未验证的重定向和转发</h3><p>​    在Web应用中重定向是极为普通的，并且通常重定向所引发的目的是带有用户输入参数的目的url，而如果这些重定向未被验证，那么攻击者就可以引导用户访问他们想要用户访问的站点。<br>​    同样，转发也是极为普遍的，本质上转发是在同一个应用中对一个新页面发送请求，并且有时是用参数来定义目标页面的。同样，如果参数未被验证，那么攻击者就可以利用其来绕过认证或是授权检查<br>危害如下：<br>攻击者通过重定向可以试图安装恶意软件或诱使受害人泄露密码等铭感信息，通过转发可以绕过访问限制<br>如何防范：<br>1.避免使用重定向和转发<br>2.如果使用了，不要在确定目标时涉及到用户参数<br>3.如果无法避免使用用户参数，则应确保目标参数值对于当前用户是有效的并已授权<br>如果是需要登录的，可以从session当中获取登录信息，然后判断</p>
+<h3 id="TOP9-应用已知漏洞的组件"><a href="#TOP9-应用已知漏洞的组件" class="headerlink" title="TOP9-应用已知漏洞的组件"></a>TOP9-应用已知漏洞的组件</h3><p>​    组件（例如库，框架和其他软件模块）以与应用程序相同的权限运行。如果利用易受攻击的组件，这种攻击可能会导致严重的数据丢失或服务器接管。使用具有已知漏洞的组件的应用程序和API可能会破坏应用程序防御并实现各种攻击和破坏。<br>如何防范：<br>1.识别正在使用的组件和版本，包括所有的依赖<br>2.更新组件或引用的库文件到最新<br>3.建立安全策略来管理组件的使用</p>
+<h3 id="TOP10-敏感信息暴露"><a href="#TOP10-敏感信息暴露" class="headerlink" title="TOP10-敏感信息暴露"></a>TOP10-敏感信息暴露</h3><p>​    由于代码编写不严谨或应用固有的功能，造成网站服务器信息被非法获取，属于一种低危漏洞。</p>
+
       
     </div>
     
@@ -399,6 +442,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/05/3-5-linux%E4%B8%8B%E6%8F%90%E6%9D%83%E6%8A%80%E5%B7%A7/" rel="prev" title="3.5-linux下提权技巧">
+                3.5-linux下提权技巧 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -450,8 +497,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -470,7 +526,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -481,7 +537,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -492,7 +548,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -544,6 +600,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP1-注入"><span class="nav-number">1.</span> <span class="nav-text">TOP1 注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP2-Broken-Authentication（失效的身份认证和会话管理）"><span class="nav-number">2.</span> <span class="nav-text">TOP2 Broken Authentication（失效的身份认证和会话管理）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP3-XSS（跨站脚本攻击）"><span class="nav-number">3.</span> <span class="nav-text">TOP3-XSS（跨站脚本攻击）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP4-不安全的对象直接引用"><span class="nav-number">4.</span> <span class="nav-text">TOP4-不安全的对象直接引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP5-跨站请求伪造（CSRF）"><span class="nav-number">5.</span> <span class="nav-text">TOP5-跨站请求伪造（CSRF）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP6-安全配置错误"><span class="nav-number">6.</span> <span class="nav-text">TOP6-安全配置错误</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP7-限制URL访问失败（缺少功能级访问控制）"><span class="nav-number">7.</span> <span class="nav-text">TOP7-限制URL访问失败（缺少功能级访问控制）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP8-未验证的重定向和转发"><span class="nav-number">8.</span> <span class="nav-text">TOP8-未验证的重定向和转发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP9-应用已知漏洞的组件"><span class="nav-number">9.</span> <span class="nav-text">TOP9-应用已知漏洞的组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOP10-敏感信息暴露"><span class="nav-number">10.</span> <span class="nav-text">TOP10-敏感信息暴露</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
