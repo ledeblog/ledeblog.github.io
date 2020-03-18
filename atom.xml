@@ -251,9 +251,9 @@
       <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
     
     
-      <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
-    
       <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+      <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   
@@ -280,9 +280,9 @@
       <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
     
     
-      <category term="ssrf" scheme="http://yoursite.com/tags/ssrf/"/>
-    
       <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
+    
+      <category term="ssrf" scheme="http://yoursite.com/tags/ssrf/"/>
     
   </entry>
   
