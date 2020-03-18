@@ -82,20 +82,26 @@
 
 
 
-<meta name="description" content="lampiao渗透（Drupal+脏牛提权）">
+<meta name="description" content="lampiao渗透（Drupal+脏牛提权）信息收集arp-scan -l 扫描同网段；  改变NAT模式使用arp-scan +nmap   发现目标主机，linux；开放22&#x2F;80，ssh链接和80端口访问都可以尝试； 访问 访问无果，发现1898端口，又是drupal，想起上一个靶机，直接用msf操作一下试试； 和上一个一样，在网站更新文件里找到版本是drupal7.54  开始攻击就是说，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lampiao渗透（Drupal+脏牛提权）">
 <meta property="og:url" content="http://yoursite.com/2020/03/06/3.6-lampiao%E6%B8%97%E9%80%8F%EF%BC%88Drupal-%E8%84%8F%E7%89%9B%E6%8F%90%E6%9D%83%EF%BC%89/index.html">
 <meta property="og:site_name" content="deleのblog">
-<meta property="og:description" content="lampiao渗透（Drupal+脏牛提权）">
+<meta property="og:description" content="lampiao渗透（Drupal+脏牛提权）信息收集arp-scan -l 扫描同网段；  改变NAT模式使用arp-scan +nmap   发现目标主机，linux；开放22&#x2F;80，ssh链接和80端口访问都可以尝试； 访问 访问无果，发现1898端口，又是drupal，想起上一个靶机，直接用msf操作一下试试； 和上一个一样，在网站更新文件里找到版本是drupal7.54  开始攻击就是说，">
+<meta property="og:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200313155952.png">
+<meta property="og:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200313161332.png">
+<meta property="og:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200318202258.png">
+<meta property="og:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200318234518.png">
+<meta property="og:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200319000124.png">
 <meta property="article:published_time" content="2020-03-05T16:44:11.000Z">
-<meta property="article:modified_time" content="2020-03-05T16:45:43.382Z">
+<meta property="article:modified_time" content="2020-03-18T16:35:28.443Z">
 <meta property="article:author" content="dele">
 <meta property="article:tag" content="kali">
 <meta property="article:tag" content="渗透测试实战">
 <meta property="article:tag" content="靶机">
 <meta property="article:tag" content="drupal">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/QQ%E6%88%AA%E5%9B%BE20200313155952.png">
 
 
 
@@ -276,7 +282,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
+      <meta itemprop="image" content="/images/3.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -379,7 +385,38 @@
       
 
       
-        <p><a href="https://www.cnblogs.com/kuaile1314/p/11684518.html" target="_blank" rel="noopener">lampiao渗透（Drupal+脏牛提权）</a></p>
+        <h5 id="lampiao渗透（Drupal-脏牛提权）"><a href="#lampiao渗透（Drupal-脏牛提权）" class="headerlink" title="lampiao渗透（Drupal+脏牛提权）"></a><a href="https://www.cnblogs.com/kuaile1314/p/11684518.html" target="_blank" rel="noopener">lampiao渗透（Drupal+脏牛提权）</a></h5><h5 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h5><p>arp-scan -l 扫描同网段；</p>
+<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200313155952.png" alt=""></p>
+<p>改变NAT模式使用arp-scan +nmap </p>
+<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200313161332.png" alt=""></p>
+<p>发现目标主机，linux；开放22/80，ssh链接和80端口访问都可以尝试；</p>
+<p>访问</p>
+<p>访问无果，发现1898端口，又是drupal，想起上一个靶机，直接用msf操作一下试试；</p>
+<p>和上一个一样，在网站更新文件里找到版本是drupal7.54</p>
+<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318202258.png" alt=""></p>
+<h5 id="开始攻击"><a href="#开始攻击" class="headerlink" title="开始攻击"></a>开始攻击</h5><p>就是说，用msf工作台的search drupal的2018.3.28的漏洞可以拿到shell；</p>
+<p>设置 rhost,rport,target后run</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c <span class="string">'import pty;pty.spawn("/bin/sh")'</span></span><br></pre></td></tr></table></figure>
+
+<p>创建一个python的原生终端；</p>
+<p>后面查看系统版本，然后用searchsploit，找到可以用的exp</p>
+<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318234518.png" alt=""></p>
+<p>麻烦在不会用这个exp，脏牛，</p>
+<p>上面是提权后的，实际上是在shell里下载；</p>
+<p>wget 脏牛之后，不是cpp文件，原exp是cpp的后缀；</p>
+<p>所以mv改名；</p>
+<p>之后</p>
+<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200319000124.png" alt=""></p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">g++ -Wall -pedantic -O2 -std=c++<span class="number">11</span> -pthread -o dcow <span class="number">40847.</span>cpp -lutil</span><br><span class="line">./dcow -s</span><br><span class="line">达成提权目的，获得root权限；</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ul>
+<li>依旧是基于drupal的一个框架，网站目录里更新日志以及setting.php里会有信息，</li>
+<li>其实主要还是2018.3.28日的那个漏洞</li>
+<li>还有用到的cewl来爬去爆破字典</li>
+<li>之前的弱口令密码爆破要再看看</li>
+</ul>
 
       
     </div>
@@ -493,13 +530,22 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/1.jpg"
+                src="/images/3.jpg"
                 alt="dele" />
             
               <p class="site-author-name" itemprop="name">dele</p>
@@ -513,7 +559,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">53</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -524,7 +570,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -535,7 +581,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -587,6 +633,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#lampiao渗透（Drupal-脏牛提权）"><span class="nav-number">1.</span> <span class="nav-text">lampiao渗透（Drupal+脏牛提权）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#信息收集"><span class="nav-number">2.</span> <span class="nav-text">信息收集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#开始攻击"><span class="nav-number">3.</span> <span class="nav-text">开始攻击</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

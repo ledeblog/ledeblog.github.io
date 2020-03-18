@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="&#x3D;，select,union ichunqiu的一道题，过滤的蛮基础的   1.打开网页显示是一个数值注入点 1.29.1">
 <meta property="article:published_time" content="2020-01-30T13:16:57.000Z">
-<meta property="article:modified_time" content="2020-03-05T08:04:57.259Z">
+<meta property="article:modified_time" content="2020-03-11T09:12:19.591Z">
 <meta property="article:author" content="dele">
 <meta property="article:tag" content="注入">
 <meta property="article:tag" content="ctf">
@@ -274,7 +274,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dele">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
+      <meta itemprop="image" content="/images/3.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -387,7 +387,7 @@
 <li>尝试注入 id = 1 or 1 = 1#</li>
 </ol>
 <p>报错，应该是过滤了，尝试字符后发现是过滤等号</p>
-<p>尝试了 like,rlike，!(&lt;&gt;),都不行，正则regexp可以</p>
+<p><strong>尝试了 like,rlike，!(&lt;&gt;),都不行，正则regexp可以</strong></p>
 <p>3.注入 id = 1 or 1 regexp 1#</p>
 <p>1.29.2</p>
 <p>4.找回显点，发现select和union都过滤，试了很多，发现&lt;&gt;可以绕过</p>
@@ -405,7 +405,7 @@
 <p>(se&lt;&gt;lect group_concat(flAg_T5ZNdrm) from info)</p>
 <p>奇怪的是最后一步又不过滤info，搞不懂</p>
 <p>2.sqli这题就是上一题注出的另一个表users</p>
-<p>这题找到注入页面就颇费了一番心思，重定向搞了人一手</p>
+<p>这题找到注入页面就颇费了一番心思，<strong>重定向搞了人一手</strong></p>
 <p>而且发现可以注入</p>
 <p>id = 1 ‘ and ’1/0 时，想着用字符盲注算了，结果ASCII怎么都不行</p>
 <p>气死了，常规注入算了，</p>
@@ -530,7 +530,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/1.jpg"
+                src="/images/3.jpg"
                 alt="dele" />
             
               <p class="site-author-name" itemprop="name">dele</p>
@@ -544,7 +544,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">53</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -555,7 +555,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -566,7 +566,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
