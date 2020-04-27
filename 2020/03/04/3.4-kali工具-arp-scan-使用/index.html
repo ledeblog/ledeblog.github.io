@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="kali,嗅探工具,arp-scan," />
+  <meta name="keywords" content="kali,嗅探工具,arp-scan,netdiscover," />
 
 
 
@@ -82,18 +82,19 @@
 
 
 
-<meta name="description" content="​    kali自带的一款轻量ARP扫描工具，该工具会自动解析MAC地址，得到对应硬件厂商。 1.ARP​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP&#x2F;IP协议。 2.https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_43221560&#x2F;article&#x2F;details&#x2F;90550294">
+<meta name="description" content="​    kali自带的一款轻量ARP扫描工具，该工具会自动解析MAC地址，得到对应硬件厂商。 ARP​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP&#x2F;IP协议。 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_43221560&#x2F;article&#x2F;details&#x2F;90550294 参数意义 netdiscover">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kali工具 arp-scan 使用">
 <meta property="og:url" content="http://yoursite.com/2020/03/04/3.4-kali%E5%B7%A5%E5%85%B7-arp-scan-%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="deleのblog">
-<meta property="og:description" content="​    kali自带的一款轻量ARP扫描工具，该工具会自动解析MAC地址，得到对应硬件厂商。 1.ARP​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP&#x2F;IP协议。 2.https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_43221560&#x2F;article&#x2F;details&#x2F;90550294">
+<meta property="og:description" content="​    kali自带的一款轻量ARP扫描工具，该工具会自动解析MAC地址，得到对应硬件厂商。 ARP​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP&#x2F;IP协议。 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_43221560&#x2F;article&#x2F;details&#x2F;90550294 参数意义 netdiscover">
 <meta property="article:published_time" content="2020-03-04T11:23:11.000Z">
-<meta property="article:modified_time" content="2020-03-05T12:05:16.561Z">
+<meta property="article:modified_time" content="2020-03-21T14:21:59.221Z">
 <meta property="article:author" content="dele">
 <meta property="article:tag" content="kali">
 <meta property="article:tag" content="嗅探工具">
 <meta property="article:tag" content="arp-scan">
+<meta property="article:tag" content="netdiscover">
 <meta name="twitter:card" content="summary">
 
 
@@ -379,8 +380,16 @@
 
       
         <p>​    kali自带的一款轻量<strong>ARP扫描工具</strong>，该工具会自动解析MAC地址，得到对应硬件厂商。</p>
-<h4 id="1-ARP"><a href="#1-ARP" class="headerlink" title="1.ARP"></a>1.ARP</h4><p>​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP/IP协议。</p>
-<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><p><a href="https://blog.csdn.net/weixin_43221560/article/details/90550294" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43221560/article/details/90550294</a></p>
+<h5 id="ARP"><a href="#ARP" class="headerlink" title="ARP"></a>ARP</h5><p>​    地址解析协议（Address Resolution Protocol），根据IP地址获得物理地址MAC的一个TCP/IP协议。</p>
+<p><a href="https://blog.csdn.net/weixin_43221560/article/details/90550294" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43221560/article/details/90550294</a></p>
+<p>参数<br>意义</p>
+<p>netdiscover</p>
+<p>-i：网卡<br>选择你监控的网卡。比如eth0</p>
+<p>-r：range<br>指定IP段。比如192.168.0.0/24</p>
+<p>-l：filename<br>从文件读取range列表</p>
+<p>-p<br>被动模式。默默的侦听指定的网卡以发现别的二层主机</p>
+<p>-t<br>ARP包发送间隔。单位毫秒。这个可以用来规避检测系统的告警。</p>
+<p>-c<br>发包数量</p>
 
       
     </div>
@@ -416,6 +425,8 @@
             <a href="/tags/%E5%97%85%E6%8E%A2%E5%B7%A5%E5%85%B7/" rel="tag"><i class="fa fa-tag"></i> 嗅探工具</a>
           
             <a href="/tags/arp-scan/" rel="tag"><i class="fa fa-tag"></i> arp-scan</a>
+          
+            <a href="/tags/netdiscover/" rel="tag"><i class="fa fa-tag"></i> netdiscover</a>
           
         </div>
       
@@ -521,7 +532,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-count">81</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -543,7 +554,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-count">58</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -605,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-ARP"><span class="nav-number">1.</span> <span class="nav-text">1.ARP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">2.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#ARP"><span class="nav-number">1.</span> <span class="nav-text">ARP</span></a></li></ol></div>
             
 
           </div>
