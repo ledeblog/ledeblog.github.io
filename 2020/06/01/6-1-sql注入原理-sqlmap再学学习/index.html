@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="deleのblog">
 <meta property="og:description" content="Easy注入： Wp 堆叠注入，过滤select，无法使用sele&lt;&gt;ct, 堆叠注入：分号隔开相关语句 正则过滤许多内容，但没过滤show，rename,alert； Rename table ‘words’ to ‘word1’;rename table ‘199923215445’ to words; Alert  ‘words’ change ‘flag’ ‘id’ varch">
 <meta property="article:published_time" content="2020-06-01T06:40:34.000Z">
-<meta property="article:modified_time" content="2020-06-01T12:55:29.877Z">
+<meta property="article:modified_time" content="2020-06-22T05:14:45.015Z">
 <meta property="article:author" content="dele">
 <meta property="article:tag" content="sql">
 <meta name="twitter:card" content="summary">
@@ -434,6 +434,28 @@
 <p>那么再查询’title’,-&gt;’debug’’；</p>
 <p><strong><em>\</em>预编译java+c#;mysql&gt;4.1版本**</strong></p>
 <p><strong><em>\</em>J*****</strong>*ava preparestatement函数；注入点****</p>
+<h4 id="绕过"><a href="#绕过" class="headerlink" title="绕过"></a>绕过</h4><h3 id="对于关键字的绕过"><a href="#对于关键字的绕过" class="headerlink" title="对于关键字的绕过"></a>对于关键字的绕过</h3><ol>
+<li><pre><code>1. 注释符绕过:`uni/**/on se/**/lect`
+2. 大小写绕过:`UniOn SeleCt`
+3. 双关键字绕过:`ununionion seselectlect`
+4. &lt;&gt;绕过:`unio&lt;&gt;n sel&lt;&gt;ect`
+5. 对于and,or的绕过其实还可以尝试一下&amp;&amp;,||,[异或注入]
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">2.</span> 编码绕过</span><br></pre></td></tr></table></figure>
+16进制绕过
+ASCII绕过</code></pre><p>3.空格</p>
+<p>/**/()回车url中的%0a</p>
+<p>4.过滤 or and xor not,符号</p>
+<p>and =&amp;&amp;or=|| xor = |#</p>
+<p>not = !</p>
+</li>
+</ol>
+<p>4.等号</p>
+<p>like,rlike模糊匹配，regexp正则替代</p>
+<p>‘&gt;’and&lt;</p>
+<p>5.过滤引号</p>
+<p>16进制；</p>
+<p>宽字节；GBK编码</p>
+<p>6.过滤逗号；</p>
 
       
     </div>
@@ -541,8 +563,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -561,7 +592,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">83</span>
+                  <span class="site-state-item-count">84</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -635,6 +666,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#绕过"><span class="nav-number">1.</span> <span class="nav-text">绕过</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对于关键字的绕过"><span class="nav-number"></span> <span class="nav-text">对于关键字的绕过</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

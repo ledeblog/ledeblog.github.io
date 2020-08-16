@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-07T08:35:43.462Z</updated>
+  <updated>2020-03-20T15:03:23.837Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试准备</title>
+    <link href="http://yoursite.com/2020/08/16/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"/>
+    <id>http://yoursite.com/2020/08/16/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
+    <published>2020-08-16T12:34:17.485Z</published>
+    <updated>2020-03-20T15:03:23.837Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="靶机实战"><a href="#靶机实战" class="headerlink" title="靶机实战"></a>靶机实战</h5><p>CD-1,lam..这俩都是drupal</p><p>提权一个是find+exp提权，一个是脏牛漏洞提权exp；</p><h5 id="dvwa"><a href="#dvwa" class="headerlink" title="dvwa"></a>dvwa</h5><h5 id="遇到的漏洞"><a href="#遇到的漏洞" class="headerlink" title="遇到的漏洞"></a>遇到的漏洞</h5><p>xee,文件包含,IIS解析，nginx目录穿越；</p><h5 id="注入，xss-csrf-ssrf原理应用"><a href="#注入，xss-csrf-ssrf原理应用" class="headerlink" title="注入，xss,csrf,ssrf原理应用"></a>注入，xss,csrf,ssrf原理应用</h5><p>ssti注入，</p><h6 id="xss"><a href="#xss" class="headerlink" title="xss"></a>xss</h6><pre><code>XSS又叫CSS (Cross Site Script) ，跨站脚本攻击。它指的是恶意攻击者往Web页面里插入恶意html代码，当用户浏览该页之时，嵌入其中Web里面的html代码会被执行，从而达到恶意的特殊目的。 </code></pre><h6 id="csrf"><a href="#csrf" class="headerlink" title="csrf"></a>csrf</h6><p>跨站域请求伪造</p><h6 id="ssrf"><a href="#ssrf" class="headerlink" title="ssrf"></a>ssrf</h6><p><a href="https://www.smmy365.com/detail/play" target="_blank" rel="noopener">https://www.smmy365.com/detail/play</a></p><p>实战：<a href="https://www.cnblogs.com/-zhong/p/11041653.html" target="_blank" rel="noopener">https://www.cnblogs.com/-zhong/p/11041653.html</a></p><h5 id="脱库，QQ诈骗，打开摄像头"><a href="#脱库，QQ诈骗，打开摄像头" class="headerlink" title="脱库，QQ诈骗，打开摄像头"></a>脱库，QQ诈骗，打开摄像头</h5><h5 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap,"></a>sqlmap,</h5><h5 id="扫描，nmap"><a href="#扫描，nmap" class="headerlink" title="扫描，nmap,"></a>扫描，nmap,</h5>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;靶机实战&quot;&gt;&lt;a href=&quot;#靶机实战&quot; class=&quot;headerlink&quot; title=&quot;靶机实战&quot;&gt;&lt;/a&gt;靶机实战&lt;/h5&gt;&lt;p&gt;CD-1,lam..这俩都是drupal&lt;/p&gt;
+&lt;p&gt;提权一个是find+exp提权，一个是脏牛漏洞提权exp；&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>漏洞分析ms系列</title>
+    <link href="http://yoursite.com/2020/06/09/%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90ms%E7%B3%BB%E5%88%97/"/>
+    <id>http://yoursite.com/2020/06/09/%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90ms%E7%B3%BB%E5%88%97/</id>
+    <published>2020-06-09T03:07:15.000Z</published>
+    <updated>2020-06-09T03:16:48.814Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="ms10-010漏洞"><a href="#ms10-010漏洞" class="headerlink" title="ms10-010漏洞"></a>ms10-010漏洞</h4><p>攻击复现在之前已经使用win7和kali靶机进行过攻击复现；</p><p>不过对原理一知半解，先开一个总结分析贴；</p><p><strong>EternalBlue(在微软的MS17-010中被修复)是在Windows的SMB服务处理SMB v1请求时发生的漏洞，这个漏洞导致攻击者在目标系统上可以执行任意代码。</strong></p><p>内核态函数srv!SrvOs2FeaListToNt在处理FEA(File Extended Attributes)转换时，在大非分页池(内核的数据结构，Large Non-Paged Kernel Pool)上存在缓冲区溢出</p><p><a href="https://blog.csdn.net/luoshenwei3533/article/details/82931999" target="_blank" rel="noopener">https://blog.csdn.net/luoshenwei3533/article/details/82931999</a></p><h4 id="MS08-067漏洞"><a href="#MS08-067漏洞" class="headerlink" title="MS08-067漏洞"></a>MS08-067漏洞</h4><p>MS08-067漏洞是通过MSRPC over SMB通道调用Server服务程序中的NetPathCanonicalize函数时触发的，而NetPathCanonicalize函数在远程访问其他主机时，会调用NetpwPathCanonicalize函数，对远程访问的路径进行规范化，而在NetpwPathCanonicalize函数中存在的逻辑错误，造成栈缓冲区可被溢出，而获得远程代码执行（Remote Code Execution）。</p><p><a href="https://www.freebuf.com/vuls/203881.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/203881.html</a></p><p>payload=windows/shell/bind_tcp；获取shell;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;ms10-010漏洞&quot;&gt;&lt;a href=&quot;#ms10-010漏洞&quot; class=&quot;headerlink&quot; title=&quot;ms10-010漏洞&quot;&gt;&lt;/a&gt;ms10-010漏洞&lt;/h4&gt;&lt;p&gt;攻击复现在之前已经使用win7和kali靶机进行过攻击复现；&lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>msfvenom简单应用</title>
@@ -70,9 +117,9 @@
     <link href="http://yoursite.com/2020/06/01/6-1-sql%E6%B3%A8%E5%85%A5%E5%8E%9F%E7%90%86-sqlmap%E5%86%8D%E5%AD%A6%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yoursite.com/2020/06/01/6-1-sql%E6%B3%A8%E5%85%A5%E5%8E%9F%E7%90%86-sqlmap%E5%86%8D%E5%AD%A6%E5%AD%A6%E4%B9%A0/</id>
     <published>2020-06-01T06:40:34.000Z</published>
-    <updated>2020-06-01T12:55:29.877Z</updated>
+    <updated>2020-06-22T05:14:45.015Z</updated>
     
-    <content type="html"><![CDATA[<p>Easy注入：</p><p>Wp</p><p>堆叠注入，过滤select，无法使用sele&lt;&gt;ct,</p><p>堆叠注入：分号隔开相关语句</p><p>正则过滤许多内容，但没过滤show，rename,alert；</p><p>Rename table ‘words’ to ‘word1’;rename table ‘199923215445’ to words;</p><p>Alert  ‘words’ change ‘flag’ ‘id’ varchar(100) character set utf8 collate utf8_general_ci not null;show columns from words;#</p><p>猜测背后的语句应该是 select $inject from words；</p><p>所以回显的是words表，但flag内容在数字表里，所以直接将数字表名改成words，并且将列数修改一致，然后再用or 1=1；回显就会显示flag，实在是没有select的被迫使用方法；</p><p>Wp</p><p>难点在于如何判断出征逻辑；</p><p>逻辑是<strong><em>\</em>sel**</strong>ect $_POST[query] || flag from flag</p><p>​    <em>，1；不过滤</em>号的话</p><p>需要使得mysql允许||当做连接符 set sql_mode=pipes_as_concat;</p><p>要从回显可以判断后台代码；</p><p>Sql Server注入</p><p>+用来连接语句</p><p>Having 1=1–；convert、case强制转换函数，显错注入；convert（int,(select top 1 users.username from users)）</p><p>Sys.database;sys_sql_login;information_schema.tables;</p><p>Order by 判断列；</p><p>User_name;db_name;</p><p>*xp_cmdshell；执行命令；</p><p><strong>Mysql</strong></p><p>Information_schema.schemata/tables/columns;</p><p>文件操作，load_file,into file;</p><p>连接字符串；concat/concat_ws(0x2c,user());</p><p><strong><em>\</em>报错注入；**</strong></p><p>Updatexml(1,xml格式冲突，3)</p><p>Extractvalue(1,/xx/xx/xml文件存储格式)</p><p>Floor(rand(0)*2)x goup by x;</p><p><strong><em>\</em>宽字节注入**</strong>：</p><p>Php.ini中，magic_quotes_gpc;自动（‘”\NULL）自动加一个斜杠；</p><p>所以用%d5’;</p><p><strong><em>\</em>长字符截断**</strong>；sql__mode;</p><p>查询admin时长度不一致也会返回，即注册或插入一个长度超过的admin，然后修改已知密码，就可以登陆成功；</p><p><strong><em>\</em>延时注入：**</strong></p><p>And 或者 if 来配合Sleep()，if(lenth(database()==0,sleep(3),1))</p><p>And if(ascii(mid(user(),1,1)=n,sleep(3),1)</p><p>Sql server中有waitfy，oracle的dbms_lock.sleep;</p><p>Oracle:</p><p>User_tablespace</p><p><strong><em>\</em>S*****</strong>*qlmap：****</p><p><strong><em>\</em>–current-db –table –columns –dump**</strong></p><p><strong><em>\</em>–privileges -U ueser；测试用户权限；**</strong></p><p><strong><em>\</em>–os–cmd=*****</strong>*”*<strong>**</strong>*net user*<strong>**</strong>*”*<strong>**</strong>*/–os–shell交互shell****</p><p><strong><em>\</em>–data=*****</strong>*””****</p><p><strong><em>\</em>-r http.txt –dbs；带http请求的注入**</strong></p><p><strong><em>\</em>连接到数据库 -d url –dbs;**</strong></p><p><strong><em>\</em>-tamper=*****</strong>*”*<strong>**</strong>*space/base64/spostro单引号/****</p><p>nmap 的NSE，或者WVS的策略或者APPSCAN的策略中检测是否有waf;–random-agent -v 2 #使用任意浏览器进行绕过，尤其是在WAF配置不当的时候</p><p><strong><em>\</em>穿山甲；**</strong></p><p><strong><em>\</em>防御：**</strong></p><p>调用现成的字符编译api；</p><p>类似的’-&gt;\’；</p><p>但这个是可以二次注入的，比如注入debug’-&gt;debug\’但会插入表单debug’</p><p>那么再查询’title’,-&gt;’debug’’；</p><p><strong><em>\</em>预编译java+c#;mysql&gt;4.1版本**</strong></p><p><strong><em>\</em>J*****</strong>*ava preparestatement函数；注入点****</p>]]></content>
+    <content type="html"><![CDATA[<p>Easy注入：</p><p>Wp</p><p>堆叠注入，过滤select，无法使用sele&lt;&gt;ct,</p><p>堆叠注入：分号隔开相关语句</p><p>正则过滤许多内容，但没过滤show，rename,alert；</p><p>Rename table ‘words’ to ‘word1’;rename table ‘199923215445’ to words;</p><p>Alert  ‘words’ change ‘flag’ ‘id’ varchar(100) character set utf8 collate utf8_general_ci not null;show columns from words;#</p><p>猜测背后的语句应该是 select $inject from words；</p><p>所以回显的是words表，但flag内容在数字表里，所以直接将数字表名改成words，并且将列数修改一致，然后再用or 1=1；回显就会显示flag，实在是没有select的被迫使用方法；</p><p>Wp</p><p>难点在于如何判断出征逻辑；</p><p>逻辑是<strong><em>\</em>sel**</strong>ect $_POST[query] || flag from flag</p><p>​    <em>，1；不过滤</em>号的话</p><p>需要使得mysql允许||当做连接符 set sql_mode=pipes_as_concat;</p><p>要从回显可以判断后台代码；</p><p>Sql Server注入</p><p>+用来连接语句</p><p>Having 1=1–；convert、case强制转换函数，显错注入；convert（int,(select top 1 users.username from users)）</p><p>Sys.database;sys_sql_login;information_schema.tables;</p><p>Order by 判断列；</p><p>User_name;db_name;</p><p>*xp_cmdshell；执行命令；</p><p><strong>Mysql</strong></p><p>Information_schema.schemata/tables/columns;</p><p>文件操作，load_file,into file;</p><p>连接字符串；concat/concat_ws(0x2c,user());</p><p><strong><em>\</em>报错注入；**</strong></p><p>Updatexml(1,xml格式冲突，3)</p><p>Extractvalue(1,/xx/xx/xml文件存储格式)</p><p>Floor(rand(0)*2)x goup by x;</p><p><strong><em>\</em>宽字节注入**</strong>：</p><p>Php.ini中，magic_quotes_gpc;自动（‘”\NULL）自动加一个斜杠；</p><p>所以用%d5’;</p><p><strong><em>\</em>长字符截断**</strong>；sql__mode;</p><p>查询admin时长度不一致也会返回，即注册或插入一个长度超过的admin，然后修改已知密码，就可以登陆成功；</p><p><strong><em>\</em>延时注入：**</strong></p><p>And 或者 if 来配合Sleep()，if(lenth(database()==0,sleep(3),1))</p><p>And if(ascii(mid(user(),1,1)=n,sleep(3),1)</p><p>Sql server中有waitfy，oracle的dbms_lock.sleep;</p><p>Oracle:</p><p>User_tablespace</p><p><strong><em>\</em>S*****</strong>*qlmap：****</p><p><strong><em>\</em>–current-db –table –columns –dump**</strong></p><p><strong><em>\</em>–privileges -U ueser；测试用户权限；**</strong></p><p><strong><em>\</em>–os–cmd=*****</strong>*”*<strong>**</strong>*net user*<strong>**</strong>*”*<strong>**</strong>*/–os–shell交互shell****</p><p><strong><em>\</em>–data=*****</strong>*””****</p><p><strong><em>\</em>-r http.txt –dbs；带http请求的注入**</strong></p><p><strong><em>\</em>连接到数据库 -d url –dbs;**</strong></p><p><strong><em>\</em>-tamper=*****</strong>*”*<strong>**</strong>*space/base64/spostro单引号/****</p><p>nmap 的NSE，或者WVS的策略或者APPSCAN的策略中检测是否有waf;–random-agent -v 2 #使用任意浏览器进行绕过，尤其是在WAF配置不当的时候</p><p><strong><em>\</em>穿山甲；**</strong></p><p><strong><em>\</em>防御：**</strong></p><p>调用现成的字符编译api；</p><p>类似的’-&gt;\’；</p><p>但这个是可以二次注入的，比如注入debug’-&gt;debug\’但会插入表单debug’</p><p>那么再查询’title’,-&gt;’debug’’；</p><p><strong><em>\</em>预编译java+c#;mysql&gt;4.1版本**</strong></p><p><strong><em>\</em>J*****</strong>*ava preparestatement函数；注入点****</p><h4 id="绕过"><a href="#绕过" class="headerlink" title="绕过"></a>绕过</h4><h3 id="对于关键字的绕过"><a href="#对于关键字的绕过" class="headerlink" title="对于关键字的绕过"></a>对于关键字的绕过</h3><ol><li><pre><code>1. 注释符绕过:`uni/**/on se/**/lect`2. 大小写绕过:`UniOn SeleCt`3. 双关键字绕过:`ununionion seselectlect`4. &lt;&gt;绕过:`unio&lt;&gt;n sel&lt;&gt;ect`5. 对于and,or的绕过其实还可以尝试一下&amp;&amp;,||,[异或注入]<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">2.</span> 编码绕过</span><br></pre></td></tr></table></figure>16进制绕过ASCII绕过</code></pre><p>3.空格</p><p>/**/()回车url中的%0a</p><p>4.过滤 or and xor not,符号</p><p>and =&amp;&amp;or=|| xor = |#</p><p>not = !</p></li></ol><p>4.等号</p><p>like,rlike模糊匹配，regexp正则替代</p><p>‘&gt;’and&lt;</p><p>5.过滤引号</p><p>16进制；</p><p>宽字节；GBK编码</p><p>6.过滤逗号；</p>]]></content>
     
     <summary type="html">
     
@@ -169,6 +216,43 @@
   </entry>
   
   <entry>
+    <title>12-12 python-1</title>
+    <link href="http://yoursite.com/2020/05/12/19.12.12-python-%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/05/12/19.12.12-python-%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-05-12T12:31:31.000Z</published>
+    <updated>2020-06-15T15:28:05.844Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>python定义变量，a=5,先定义一个5的对象，然后绑定到a上；</p><p>python3,一切皆为对象；</p><p>#coding=utf-8</p><p>def function():</p><p>​    pass</p><p>对象，由标识，类型，</p><p>内置函数type（），ID（），print（）；</p><p>中文# -<em>- coding: UTF-8 -</em>-；</p><p><em>Python3.X 源码文件默认使用utf-8编码，所以可以正常解析中文，无需指定 UTF-8 编码。</em></p><p>单下划线开头 <strong>_foo</strong> 的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用 <strong>from xxx import *</strong> 而导入</p><p><strong>__foo</strong> 代表类的私有成员，以双下划线开头和结尾的 <strong><em>\</em>foo**</strong> 代表 Python 里特殊方法专用的标识，如 <strong><em>\</em>init\</strong>()** 代表类的构造函数。</p><p>Python 可以同一行显示多条语句，方法是用分号 <strong>;</strong> 分开，如：</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="builtin-name">print</span> (<span class="string">'hello'</span>);<span class="builtin-name">print</span> (<span class="string">'runoob'</span>);hellorunoob</span><br></pre></td></tr></table></figure><p><a href="https://imgse.com/i/Q6YB7R" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/12/Q6YB7R.md.png" alt="Q6YB7R.md.png"></a></p><a id="more"></a><p>python 最具特色的就是用缩进来写模块。</p><p>缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行。</p><p>但是我们可以使用斜杠（ \）将一行的语句分为多行显示，如下所示：</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">total</span> = <span class="keyword">item_one </span>+ \        <span class="keyword">item_two </span>+ \        <span class="keyword">item_three</span></span><br></pre></td></tr></table></figure><h5 id="Python注释"><a href="#Python注释" class="headerlink" title="Python注释"></a><strong>Python注释</strong></h5><p>python中单行注释采用 # 开头。</p><p>python 中多行注释使用三个单引号(‘’’)或三个双引号(“””)。</p><p>空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。</p><p>记住：空行也是程序代码的一部分。</p><h4 id="print-输出"><a href="#print-输出" class="headerlink" title="print 输出"></a>print 输出</h4><p>print 默认输出是换行的，如果要实现不换行需要在变量末尾加上逗号 <strong>,</strong>。</p><h5 id="命令行调入-py文件"><a href="#命令行调入-py文件" class="headerlink" title="命令行调入.py文件"></a>命令行调入.py文件</h5><p>cmd 后，直接 &gt;python D:\test.py //拿在D盘的.py文件演示</p><p><img src="https://s2.ax1x.com/2019/12/12/Q66gIO.png" alt="Q66gIO.png"></p><h4 id="等待用户输入"><a href="#等待用户输入" class="headerlink" title="等待用户输入"></a>等待用户输入</h4><p>下面的程序执行后就会等待用户输入，按回车键后就会退出：</p><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from pip.<span class="module-access"><span class="module"><span class="identifier">_vendor</span>.</span></span>distlib.compat import raw<span class="constructor">_inputprint(<span class="string">"x\n"</span>)</span>raw<span class="constructor">_input(<span class="string">"按下 enter 键退出，其他任意键显示...\n"</span>)</span></span><br></pre></td></tr></table></figure><h4 id="看到这里我不觉想了想，为什么不直接学3-8呢，醉了"><a href="#看到这里我不觉想了想，为什么不直接学3-8呢，醉了" class="headerlink" title="看到这里我不觉想了想，为什么不直接学3.8呢，醉了"></a>看到这里我不觉想了想，为什么不直接学3.8呢，醉了</h4><p>Python 3 源码文件以 <strong>UTF-8</strong> 编码，所有字符串都是 unicode 字符串。</p><h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><ul><li>第一个字符必须是字母表中字母或下划线 <strong>_</strong> 。</li><li>标识符的其他的部分由字母、数字和下划线组成。</li><li>标识符对大小写敏感。</li></ul><p>在 Python 3 中，可以用中文作为变量名，非 ASCII 标识符也是允许的了</p><h4 id="数字-Number-类型"><a href="#数字-Number-类型" class="headerlink" title="数字(Number)类型"></a>数字(Number)类型</h4><p>python中数字有四种类型：整数、布尔型、浮点数和复数。</p><ul><li><strong>int</strong> (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。</li><li><strong>bool</strong> (布尔), 如 True。</li><li><strong>float</strong> (浮点数), 如 1.23、3E-2</li><li><strong>complex</strong> (复数), 如 1 + 2j、 1.1 + 2.2j</li></ul><h4 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h4><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3 <span class="built_in">str</span>=<span class="string">'Runoob'</span> <span class="built_in">print</span>(<span class="built_in">str</span>)                 # 输出字符串<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">0</span>:<span class="number">-1</span>])           # 输出第一个到倒数第二个的所有字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">0</span>])              # 输出字符串第一个字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">2</span>:<span class="number">5</span>])            # 输出从第三个开始到第五个的字符<span class="built_in">print</span>(<span class="built_in">str</span>[<span class="number">2</span>:])             # 输出从第三个开始后的所有字符<span class="built_in">print</span>(<span class="built_in">str</span> * <span class="number">2</span>)             # 输出字符串两次<span class="built_in">print</span>(<span class="built_in">str</span> + <span class="string">'你好'</span>)        # 连接字符串 <span class="built_in">print</span>(<span class="string">'------------------------------'</span>) <span class="built_in">print</span>(<span class="string">'hello\nrunoob'</span>)      # 使用反斜杠(\)+n转义特殊字符<span class="built_in">print</span>(r<span class="string">'hello\nrunoob'</span>)     # 在字符串前面添加一个 r，表示原始字符串，不会发生转义<span class="built_in">print</span> (<span class="built_in">str</span> + <span class="string">"TEST"</span>) # 连接字符串RunoobRunooRnoonoobRunoobRunoobRunoob你好------------------------------hellorunoobhello\nrunoob</span><br></pre></td></tr></table></figure><p><strong>等待用户输入</strong></p><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python3 input("\n\n按下 enter 键后退出。")</span></span><br></pre></td></tr></table></figure><h4 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h4><p>缩进相同的一组语句构成一个代码块，我们称之代码组。</p><p>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。</p><p>我们将首行及后面的代码组称为一个子句(clause)。</p><h4 id="Print-输出"><a href="#Print-输出" class="headerlink" title="Print 输出"></a>Print 输出</h4><p>print 默认输出是换行的，如果要实现不换行需要在变量末尾加上 <strong>end=””</strong>：</p><h4 id="import-与-from…import"><a href="#import-与-from…import" class="headerlink" title="import 与 from…import"></a>import 与 from…import</h4><p>在 python 用 <strong>import</strong> 或者 <strong>from…import</strong> 来导入相应的模块。</p><p>将整个模块(somemodule)导入，格式为： <strong>import somemodule</strong></p><p>从某个模块中导入某个函数,格式为： <strong>from somemodule import somefunction</strong></p><p>从某个模块中导入多个函数,格式为： <strong>from somemodule import firstfunc, secondfunc, thirdfunc</strong></p><p><strong>Python3 基本数据类型</strong></p><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3 counter = <span class="number">100</span>          # 整型变量miles   = <span class="number">1000.0</span>       # 浮点型变量name    = <span class="string">"runoob"</span>     # 字符串 print (counter)print (miles)print (name)</span><br></pre></td></tr></table></figure><ul><li>1、Python可以同时为多个变量赋值，如a, b = 1, 2。</li><li>2、一个变量可以通过赋值指向不同类型的对象。</li><li>3、数值的除法包含两个运算符：<strong>/</strong> 返回一个浮点数，<strong>//</strong> 返回一个整数。</li><li>4、在混合计算时，Python会把整型转换成为浮点数。</li></ul><h4 id="List（列表）"><a href="#List（列表）" class="headerlink" title="List（列表）"></a><strong>List（列表）</strong></h4><p>List（列表） 是 Python 中使用最频繁的数据类型。</p><p>列表可以完成大多数集合类的数据结构实现。列表中元素的类型可以不相同，它支持数字，字符串甚至可以包含列表（所谓嵌套）。</p><p>列表是写在方括号 <strong>[]</strong> 之间、用逗号分隔开的元素列表。</p><p>和字符串一样，列表同样可以被索引和截取，列表被截取后返回一个包含所需元素的新列表。</p><p>列表截取的语法格式如下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量<span class="selector-attr">[头下标:尾下标]</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h1&gt;&lt;p&gt;python定义变量，a=5,先定义一个5的对象，然后绑定到a上；&lt;/p&gt;
+&lt;p&gt;python3,一切皆为对象；&lt;/p&gt;
+&lt;p&gt;#coding=utf-8&lt;/p&gt;
+&lt;p&gt;def function():&lt;/p&gt;
+&lt;p&gt;​    pass&lt;/p&gt;
+&lt;p&gt;对象，由标识，类型，&lt;/p&gt;
+&lt;p&gt;内置函数type（），ID（），print（）；&lt;/p&gt;
+&lt;p&gt;中文# -&lt;em&gt;- coding: UTF-8 -&lt;/em&gt;-；&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Python3.X 源码文件默认使用utf-8编码，所以可以正常解析中文，无需指定 UTF-8 编码。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;单下划线开头 &lt;strong&gt;_foo&lt;/strong&gt; 的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用 &lt;strong&gt;from xxx import *&lt;/strong&gt; 而导入&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;__foo&lt;/strong&gt; 代表类的私有成员，以双下划线开头和结尾的 &lt;strong&gt;&lt;em&gt;\&lt;/em&gt;foo**&lt;/strong&gt; 代表 Python 里特殊方法专用的标识，如 &lt;strong&gt;&lt;em&gt;\&lt;/em&gt;init\&lt;/strong&gt;()** 代表类的构造函数。&lt;/p&gt;
+&lt;p&gt;Python 可以同一行显示多条语句，方法是用分号 &lt;strong&gt;;&lt;/strong&gt; 分开，如：&lt;/p&gt;
+&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&quot;builtin-name&quot;&gt;print&lt;/span&gt; (&lt;span class=&quot;string&quot;&gt;&#39;hello&#39;&lt;/span&gt;);&lt;span class=&quot;builtin-name&quot;&gt;print&lt;/span&gt; (&lt;span class=&quot;string&quot;&gt;&#39;runoob&#39;&lt;/span&gt;);hellorunoob&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgse.com/i/Q6YB7R&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/12/12/Q6YB7R.md.png&quot; alt=&quot;Q6YB7R.md.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>4.27-tcp/ip</title>
     <link href="http://yoursite.com/2020/04/27/4-27-tcp-ip/"/>
     <id>http://yoursite.com/2020/04/27/4-27-tcp-ip/</id>
@@ -260,9 +344,9 @@
     <link href="http://yoursite.com/2020/03/24/%E9%9D%A2%E7%BB%8F/"/>
     <id>http://yoursite.com/2020/03/24/%E9%9D%A2%E7%BB%8F/</id>
     <published>2020-03-24T08:16:20.000Z</published>
-    <updated>2020-03-24T14:47:31.144Z</updated>
+    <updated>2020-06-08T17:02:53.062Z</updated>
     
-    <content type="html"><![CDATA[<p>面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒；</p><p>安恒北京：</p><p>1.http报头；cookie，session，token</p><p>2.常见端口：</p><p>3389,443,445，</p><p>3.常见漏洞：</p><p>你要能列出来</p><p>4.文件上传漏洞</p>]]></content>
+    <content type="html"><![CDATA[<p>面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒；</p><p>安恒北京：</p><p>1.http报头；cookie，session，token</p><p>2.常见端口：</p><p>3389,443,445，</p><p>3.常见漏洞：</p><p>你要能列出来</p><p>4.文件上传漏洞</p><p>//</p><p>命令执行：</p><p>php 命令执行 system()/shell_exec()/shell_exec()/exec()/passthru()/;</p><p>java : exec()</p><p>三大框架：hibernate、spring、Struts</p><p>框架执行漏洞：</p><p>struts2代码执行漏洞：底层使用的Xwork核心；2010/7月Struts/xwork&lt;2.2.0；</p><p>thinkphp问题集中于dispatcher.class.php文件：</p><p>pathinfo数据解析合并到$_get[]数组；</p><p>index.php/module/action/param1/${@print(THINK_VERSION)}</p><p>index.php/module/action/param1/${@print(eval($_POST(c)))};</p><p>文件包含：</p><p>allow_url_include = off;</p><p>有文件包含但无法上传文件，</p>]]></content>
     
     <summary type="html">
     
@@ -406,80 +490,6 @@
     
     
       <category term="漏洞" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.22-hashcat密码爆破，很厉害</title>
-    <link href="http://yoursite.com/2020/03/22/3-22-hashcat%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%EF%BC%8C%E5%BE%88%E5%8E%89%E5%AE%B3/"/>
-    <id>http://yoursite.com/2020/03/22/3-22-hashcat%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4%EF%BC%8C%E5%BE%88%E5%8E%89%E5%AE%B3/</id>
-    <published>2020-03-22T12:44:26.000Z</published>
-    <updated>2020-03-22T12:44:48.026Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_37865996/article/details/83863075" target="_blank" rel="noopener">https://blog.csdn.net/qq_37865996/article/details/83863075</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_37865996/article/details/83863075&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_37865996/art
-      
-    
-    </summary>
-    
-    
-      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
-    
-    
-      <category term="hashcat" scheme="http://yoursite.com/tags/hashcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3.22-跨域安全</title>
-    <link href="http://yoursite.com/2020/03/22/3.22-%E8%B7%A8%E5%9F%9F%E5%AE%89%E5%85%A8/"/>
-    <id>http://yoursite.com/2020/03/22/3.22-%E8%B7%A8%E5%9F%9F%E5%AE%89%E5%85%A8/</id>
-    <published>2020-03-22T09:27:42.000Z</published>
-    <updated>2020-03-25T05:15:56.362Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.52bug.cn/hkjs/4936.html" target="_blank" rel="noopener">http://www.52bug.cn/hkjs/4936.html</a></p><h5 id="1-2-源的划分"><a href="#1-2-源的划分" class="headerlink" title="1.2 源的划分"></a>1.2 源的划分</h5><p>如果两个页面的协议、端口、域都相同，则两个页面具有相同的源。如下表所示：</p><p><img src="/images/15232395952675.png!small" alt="微信图片_20180408141628.png"></p><p>注意：源的划分中“域“并不是指资源对象所在的域，而是加载资源对象的域。例如a.com通过通过以下代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">http://b.com/b.js</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>加载了b.com上的b.js，但是b.js是运行在a.com上的，所以b.js的源是a.com而不是b.com。</p><h5 id="二、window-name"><a href="#二、window-name" class="headerlink" title="二、window.name"></a>二、window.name</h5><p> window.name的跨域本质上一种浏览器的特性，并不是安全漏洞，只是如果使用不当可能会有安全问题。在防御上，当在一个域去接收另一个域的window.name的值的时候要对其进行检测，此时它相当于一个输入点，而开发中要坚信任何输入都是不可信的原则。 </p><p>可xss;</p><h5 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h5><p> postMessage允许每一个Window（包括当前窗口、弹出窗口、iframe等）对象往其他的窗口发送文本消息，从而实现跨窗口消息传递，且这个功能不受同源策略影响。postMessage语法如下： </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.52bug.cn/hkjs/4936.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.52bug.cn/hkjs/4936.html&lt;/a&gt;&lt;/p&gt;
-&lt;h5 id=&quot;1-2-源的划分&quot;&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="漏洞" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.22-内网入侵ipc$连接</title>
-    <link href="http://yoursite.com/2020/03/22/3.22-%E5%86%85%E7%BD%91%E5%85%A5%E4%BE%B5ipc-%E8%BF%9E%E6%8E%A5/"/>
-    <id>http://yoursite.com/2020/03/22/3.22-%E5%86%85%E7%BD%91%E5%85%A5%E4%BE%B5ipc-%E8%BF%9E%E6%8E%A5/</id>
-    <published>2020-03-22T09:04:27.000Z</published>
-    <updated>2020-03-23T14:38:42.621Z</updated>
-    
-    <content type="html"><![CDATA[<p>ntscan/x-scan</p><p><a href="https://www.cnblogs.com/h4ck0ne/p/5154599.html" target="_blank" rel="noopener">https://www.cnblogs.com/h4ck0ne/p/5154599.html</a></p><p><a href="https://www.cnblogs.com/backlion/p/7401609.html" target="_blank" rel="noopener">https://www.cnblogs.com/backlion/p/7401609.html</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ntscan/x-scan&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/h4ck0ne/p/5154599.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/h4ck
-      
-    
-    </summary>
-    
-    
     
   </entry>
   

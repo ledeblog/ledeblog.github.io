@@ -82,14 +82,14 @@
 
 
 
-<meta name="description" content="面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒； 安恒北京： 1.http报头；cookie，session，token 2.常见端口： 3389,443,445， 3.常见漏洞： 你要能列出来 4.文件上传漏洞">
+<meta name="description" content="面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒； 安恒北京： 1.http报头；cookie，session，token 2.常见端口： 3389,443,445， 3.常见漏洞： 你要能列出来 4.文件上传漏洞 &#x2F;&#x2F; 命令执行： php 命令执行 system()&#x2F;shell_exec()&#x2F;shell_exec()&#x2F;exec()&#x2F;passthru(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面经">
 <meta property="og:url" content="http://yoursite.com/2020/03/24/%E9%9D%A2%E7%BB%8F/index.html">
 <meta property="og:site_name" content="deleのblog">
-<meta property="og:description" content="面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒； 安恒北京： 1.http报头；cookie，session，token 2.常见端口： 3389,443,445， 3.常见漏洞： 你要能列出来 4.文件上传漏洞">
+<meta property="og:description" content="面试才知道自己平时有大大咧咧，很多细小的东西都记得模模糊糊的，很难受，一些很简单的，都能被问倒； 安恒北京： 1.http报头；cookie，session，token 2.常见端口： 3389,443,445， 3.常见漏洞： 你要能列出来 4.文件上传漏洞 &#x2F;&#x2F; 命令执行： php 命令执行 system()&#x2F;shell_exec()&#x2F;shell_exec()&#x2F;exec()&#x2F;passthru(">
 <meta property="article:published_time" content="2020-03-24T08:16:20.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:47:31.144Z">
+<meta property="article:modified_time" content="2020-06-08T17:02:53.062Z">
 <meta property="article:author" content="dele">
 <meta name="twitter:card" content="summary">
 
@@ -361,6 +361,20 @@
 <p>3.常见漏洞：</p>
 <p>你要能列出来</p>
 <p>4.文件上传漏洞</p>
+<p>//</p>
+<p>命令执行：</p>
+<p>php 命令执行 system()/shell_exec()/shell_exec()/exec()/passthru()/;</p>
+<p>java : exec()</p>
+<p>三大框架：hibernate、spring、Struts</p>
+<p>框架执行漏洞：</p>
+<p>struts2代码执行漏洞：底层使用的Xwork核心；2010/7月Struts/xwork&lt;2.2.0；</p>
+<p>thinkphp问题集中于dispatcher.class.php文件：</p>
+<p>pathinfo数据解析合并到$_get[]数组；</p>
+<p>index.php/module/action/param1/${@print(THINK_VERSION)}</p>
+<p>index.php/module/action/param1/${@print(eval($_POST(c)))};</p>
+<p>文件包含：</p>
+<p>allow_url_include = off;</p>
+<p>有文件包含但无法上传文件，</p>
 
       
     </div>
@@ -482,7 +496,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">83</span>
+                  <span class="site-state-item-count">84</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
